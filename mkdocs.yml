@@ -1,0 +1,133 @@
+site_name: Révisions EPITA — Jibril
+site_description: Site personnel de révisions pour les cours de l'EPITA (S2 PA)
+site_author: Jibril Smaili
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/katex.js
+  - javascripts/pyodide-runner.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Lien direct vers cette section
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Accueil: index.md
+  - Mathématiques:
+      - maths/index.md
+      - 1. Ensembles:
+          - Cours: maths/1_ensembles/1_cours.md
+          - Exos — Bases: maths/1_ensembles/2_exos_bases.md
+          - Exos — Opérations: maths/1_ensembles/3_exos_operations.md
+          - Exos — Style examen: maths/1_ensembles/4_exos_examen.md
+      - 2. Fonctions:
+          - Cours: maths/2_fonctions/1_cours.md
+          - Exos — Graphes: maths/2_fonctions/2_exos_graphes.md
+          - Exos — Usuelles: maths/2_fonctions/3_exos_usuelles.md
+          - Exos — Style examen: maths/2_fonctions/4_exos_examen.md
+      - 3. Dénombrement:
+          - Cours: maths/3_denombrement/1_cours.md
+          - Exos — Cardinaux: maths/3_denombrement/2_exos_cardinaux.md
+          - Exos — Combinatoire: maths/3_denombrement/3_exos_combinatoire.md
+          - Exos — Binôme: maths/3_denombrement/4_exos_binome.md
+          - Exos — Style examen: maths/3_denombrement/5_exos_examen.md
+      - 4. Probabilités:
+          - Cours: maths/4_probabilites/1_cours.md
+          - Exos — Modélisation: maths/4_probabilites/2_exos_modelisation.md
+          - Exos — Équiprobabilité: maths/4_probabilites/3_exos_equiprobabilite.md
+          - Exos — Conditionnelles: maths/4_probabilites/4_exos_conditionnelles.md
+          - Exos — Variables aléatoires: maths/4_probabilites/5_exos_va_lois.md
+          - Exos — Style examen: maths/4_probabilites/6_exos_examen.md
+      - 5. Examens blancs:
+          - Sujet 2024: maths/5_examens_blancs/sujet_2024.md
+          - Sujet 2026: maths/5_examens_blancs/sujet_2026.md
+  - Algorithmique:
+      - algo/index.md
+      - 1. Récursion:
+          - Cours: algo/1_recursion/1_cours.md
+      - 2. Arbres Binaires:
+          - Cours: algo/2_arbres_binaires/1_cours.md
+  - Architecture:
+      - archi/index.md
+      - 1. Bascules:
+          - Introduction: archi/1_bascules/1_intro.md
+          - Cours complet: archi/1_bascules/2_cours.md
+      - 2. Compteurs:
+          - Cours: archi/2_compteurs/1_cours.md
+      - Exos — Spécial Examen: archi/2_exos_examen.md

@@ -1,0 +1,2977 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site personnel de révisions pour les cours de l'EPITA (S2 PA)">
+      
+      
+        <meta name="author" content="Jibril Smaili">
+      
+      
+      
+        <link rel="prev" href="../../3_denombrement/5_exos_examen/">
+      
+      
+        <link rel="next" href="../2_exos_modelisation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Cours - Révisions EPITA — Jibril</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cours-probabilites" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../.." title="Révisions EPITA — Jibril" class="md-header__button md-logo" aria-label="Révisions EPITA — Jibril" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Révisions EPITA — Jibril
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cours
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Mathématiques
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../algo/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Algorithmique
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../archi/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Révisions EPITA — Jibril" class="md-nav__button md-logo" aria-label="Révisions EPITA — Jibril" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Révisions EPITA — Jibril
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathématiques
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mathématiques
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Ensembles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Ensembles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_ensembles/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_ensembles/2_exos_bases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Bases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_ensembles/3_exos_operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Opérations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1_ensembles/4_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Fonctions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Fonctions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_fonctions/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_fonctions/2_exos_graphes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Graphes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_fonctions/3_exos_usuelles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Usuelles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_fonctions/4_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Dénombrement
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. Dénombrement
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3_denombrement/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3_denombrement/2_exos_cardinaux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Cardinaux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3_denombrement/3_exos_combinatoire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Combinatoire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3_denombrement/4_exos_binome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Binôme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3_denombrement/5_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Probabilités
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. Probabilités
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pourquoi-on-etudie-ca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pourquoi on étudie ça ?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-espace-probabilise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Espace probabilisé
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Espace probabilisé">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-univers-et-evenements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Univers et événements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-mesure-de-probabilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Mesure de probabilité
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-proprietes-a-savoir-redemontrer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Propriétés (à savoir redémontrer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-equiprobabilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Équiprobabilité
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-probabilites-conditionnelles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Probabilités conditionnelles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Probabilités conditionnelles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Définition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-formule-des-probabilites-composees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Formule des probabilités composées
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-formule-des-probabilites-totales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Formule des probabilités totales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-formule-de-bayes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Formule de Bayes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-independance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Indépendance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-variables-aleatoires-finies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Variables aléatoires finies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Variables aléatoires finies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Définition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-loi-de-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Loi de \(X\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-esperance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Espérance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-variance-et-ecart-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Variance et écart-type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-linearite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Linéarité
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-lois-usuelles-a-connaitre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Lois usuelles à connaître
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Lois usuelles à connaître">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-loi-uniforme-sur-1-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Loi uniforme sur \([\![1, n]\!]\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-loi-de-bernoulli-mathcalbp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Loi de Bernoulli \(\mathcal{B}(p)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-loi-binomiale-mathcalbn-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Loi binomiale \(\mathcal{B}(n, p)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-loi-hypergeometrique-en-bonus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Loi hypergéométrique (en bonus)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pieges-classiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Pièges classiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#va-tentrainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Va t'entraîner
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_exos_modelisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Modélisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_exos_equiprobabilite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Équiprobabilité
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_exos_conditionnelles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Conditionnelles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_exos_va_lois/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Variables aléatoires
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Examens blancs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5. Examens blancs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5_examens_blancs/sujet_2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sujet 2024
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5_examens_blancs/sujet_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sujet 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../algo/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithmique
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algorithmique
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Récursion
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Récursion
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../algo/1_recursion/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Arbres Binaires
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Arbres Binaires
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../algo/2_arbres_binaires/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../archi/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Bascules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Bascules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archi/1_bascules/1_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archi/1_bascules/2_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours complet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Compteurs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Compteurs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archi/2_compteurs/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archi/2_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Spécial Examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pourquoi-on-etudie-ca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pourquoi on étudie ça ?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-espace-probabilise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Espace probabilisé
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Espace probabilisé">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-univers-et-evenements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Univers et événements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-mesure-de-probabilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Mesure de probabilité
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-proprietes-a-savoir-redemontrer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Propriétés (à savoir redémontrer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-equiprobabilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Équiprobabilité
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-probabilites-conditionnelles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Probabilités conditionnelles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Probabilités conditionnelles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Définition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-formule-des-probabilites-composees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Formule des probabilités composées
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-formule-des-probabilites-totales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Formule des probabilités totales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-formule-de-bayes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Formule de Bayes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-independance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Indépendance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-variables-aleatoires-finies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Variables aléatoires finies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Variables aléatoires finies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Définition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-loi-de-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Loi de \(X\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-esperance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Espérance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-variance-et-ecart-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Variance et écart-type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-linearite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Linéarité
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-lois-usuelles-a-connaitre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Lois usuelles à connaître
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Lois usuelles à connaître">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-loi-uniforme-sur-1-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Loi uniforme sur \([\![1, n]\!]\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-loi-de-bernoulli-mathcalbp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Loi de Bernoulli \(\mathcal{B}(p)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-loi-binomiale-mathcalbn-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Loi binomiale \(\mathcal{B}(n, p)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-loi-hypergeometrique-en-bonus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Loi hypergéométrique (en bonus)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pieges-classiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Pièges classiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#va-tentrainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Va t'entraîner
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cours-probabilites">Cours — Probabilités<a class="headerlink" href="#cours-probabilites" title="Lien direct vers cette section">&para;</a></h1>
+<h2 id="pourquoi-on-etudie-ca"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca" title="Lien direct vers cette section">&para;</a></h2>
+<p>Les <strong>probabilités</strong>, c'est l'outil pour <strong>quantifier le hasard</strong>. On veut savoir :</p>
+<ul>
+<li>Quelle chance d'obtenir un brelan au poker ?</li>
+<li>Quelle proba qu'un algo de tri prenne du temps ?</li>
+<li>Si un test médical est positif, quelle chance d'être malade ?</li>
+</ul>
+<p>C'est la <strong>brique de base</strong> de tout ce qui touche aux statistiques, à l'IA, à la complexité d'algorithmes en moyenne.</p>
+<p>Bonne nouvelle : dans ce chapitre, on reste sur les <strong>probabilités finies</strong> (univers fini), ce qui veut dire que <strong>tout se ramène à du dénombrement</strong>.</p>
+<hr />
+<h2 id="1-espace-probabilise">1. Espace probabilisé<a class="headerlink" href="#1-espace-probabilise" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="11-univers-et-evenements">1.1 Univers et événements<a class="headerlink" href="#11-univers-et-evenements" title="Lien direct vers cette section">&para;</a></h3>
+<ul>
+<li><strong>Univers</strong> <span class="arithmatex">\(\Omega\)</span> : ensemble de <strong>toutes les issues possibles</strong> de l'expérience aléatoire.</li>
+<li><strong>Événement</strong> : une partie <span class="arithmatex">\(A \subset \Omega\)</span>.</li>
+<li><strong>Événement élémentaire</strong> : un singleton <span class="arithmatex">\(\{\omega\}\)</span>.</li>
+</ul>
+<p><strong>Exemple</strong> : lancer d'un dé à 6 faces.
+<span class="arithmatex">\(\Omega = \{1, 2, 3, 4, 5, 6\}\)</span>. L'événement "obtenir un nombre pair" est <span class="arithmatex">\(A = \{2, 4, 6\}\)</span>.</p>
+<h3 id="12-mesure-de-probabilite">1.2 Mesure de probabilité<a class="headerlink" href="#12-mesure-de-probabilite" title="Lien direct vers cette section">&para;</a></h3>
+<p>Une <strong>probabilité</strong> est une application <span class="arithmatex">\(P : \mathcal{P}(\Omega) \to [0, 1]\)</span> vérifiant les <strong>axiomes de Kolmogorov</strong> :</p>
+<div class="retenir">
+<p><strong>Axiomes</strong></p>
+<ol>
+<li><span class="arithmatex">\(P(\Omega) = 1\)</span></li>
+<li><span class="arithmatex">\(\forall A,\ P(A) \geq 0\)</span></li>
+<li>Si <span class="arithmatex">\(A \cap B = \varnothing\)</span> : <span class="arithmatex">\(P(A \cup B) = P(A) + P(B)\)</span></li>
+</ol>
+</div>
+<h3 id="13-proprietes-a-savoir-redemontrer">1.3 Propriétés (à savoir redémontrer)<a class="headerlink" href="#13-proprietes-a-savoir-redemontrer" title="Lien direct vers cette section">&para;</a></h3>
+<ul>
+<li><span class="arithmatex">\(P(\varnothing) = 0\)</span></li>
+<li><span class="arithmatex">\(P(\overline{A}) = 1 - P(A)\)</span></li>
+<li><span class="arithmatex">\(0 \leq P(A) \leq 1\)</span></li>
+<li><span class="arithmatex">\(A \subset B \Rightarrow P(A) \leq P(B)\)</span> et <span class="arithmatex">\(P(B \setminus A) = P(B) - P(A)\)</span></li>
+<li><span class="arithmatex">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span> (formule des probabilités)</li>
+</ul>
+<hr />
+<h2 id="2-equiprobabilite">2. Équiprobabilité<a class="headerlink" href="#2-equiprobabilite" title="Lien direct vers cette section">&para;</a></h2>
+<p>Quand toutes les issues élémentaires ont <strong>la même probabilité</strong> <span class="arithmatex">\(1/|\Omega|\)</span>, on parle d'<strong>équiprobabilité</strong> (ou loi uniforme).</p>
+<div class="retenir">
+<p><strong>Formule magique en équiprobabilité</strong></p>
+<div class="arithmatex">\[ P(A) = \frac{|A|}{|\Omega|} = \frac{\text{cas favorables}}{\text{cas possibles}} \]</div>
+<p>Tout devient un problème de <strong>dénombrement</strong>.</p>
+</div>
+<p><strong>Exemple</strong> : dans un jeu de 32 cartes, tirage de 5 cartes. Probabilité d'avoir 4 trèfles ?</p>
+<p><span class="arithmatex">\(|\Omega| = \binom{32}{5}\)</span> (mains possibles).
+<span class="arithmatex">\(|A| = \binom{8}{4} \times \binom{24}{1}\)</span> (4 trèfles parmi 8, et 1 autre carte parmi 24 non-trèfles).</p>
+<p><span class="arithmatex">\(P(A) = \dfrac{\binom{8}{4}\binom{24}{1}}{\binom{32}{5}}\)</span>.</p>
+<hr />
+<h2 id="3-probabilites-conditionnelles">3. Probabilités conditionnelles<a class="headerlink" href="#3-probabilites-conditionnelles" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="31-definition">3.1 Définition<a class="headerlink" href="#31-definition" title="Lien direct vers cette section">&para;</a></h3>
+<p>Si <span class="arithmatex">\(P(B) &gt; 0\)</span>, la <strong>probabilité de <span class="arithmatex">\(A\)</span> sachant <span class="arithmatex">\(B\)</span></strong> est :</p>
+<div class="arithmatex">\[ P(A \mid B) = \frac{P(A \cap B)}{P(B)} \]</div>
+<p><strong>Intuition</strong> : on se met "à l'intérieur de <span class="arithmatex">\(B\)</span>" et on calcule la proportion de <span class="arithmatex">\(B\)</span> qui est aussi dans <span class="arithmatex">\(A\)</span>.</p>
+<h3 id="32-formule-des-probabilites-composees">3.2 Formule des probabilités composées<a class="headerlink" href="#32-formule-des-probabilites-composees" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ P(A \cap B) = P(A \mid B) \cdot P(B) = P(B \mid A) \cdot P(A) \]</div>
+<h3 id="33-formule-des-probabilites-totales">3.3 Formule des probabilités totales<a class="headerlink" href="#33-formule-des-probabilites-totales" title="Lien direct vers cette section">&para;</a></h3>
+<p>Si <span class="arithmatex">\(\{B_1, B_2, \dots, B_n\}\)</span> est une <strong>partition</strong> de <span class="arithmatex">\(\Omega\)</span> (chaque <span class="arithmatex">\(B_i\)</span> disjoint, recouvrant tout, de probabilité <span class="arithmatex">\(&gt; 0\)</span>) :</p>
+<div class="retenir">
+<p><strong>Probabilités totales</strong></p>
+<div class="arithmatex">\[ P(A) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i) \]</div>
+<p>Très utilisé avec une <strong>partition à 2 éléments</strong> : <span class="arithmatex">\(\{B, \overline{B}\}\)</span>.
+$<span class="arithmatex">\(P(A) = P(A \mid B) P(B) + P(A \mid \overline{B}) P(\overline{B})\)</span>$</p>
+</div>
+<h3 id="34-formule-de-bayes">3.4 Formule de Bayes<a class="headerlink" href="#34-formule-de-bayes" title="Lien direct vers cette section">&para;</a></h3>
+<p>C'est la formule de <strong>retournement</strong> : on connaît <span class="arithmatex">\(P(B \mid A)\)</span>, on veut <span class="arithmatex">\(P(A \mid B)\)</span>.</p>
+<div class="retenir">
+<p><strong>Bayes</strong></p>
+<div class="arithmatex">\[ P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)} \]</div>
+<p>Souvent on calcule <span class="arithmatex">\(P(B)\)</span> avec les probabilités totales en bas.</p>
+</div>
+<h3 id="35-independance">3.5 Indépendance<a class="headerlink" href="#35-independance" title="Lien direct vers cette section">&para;</a></h3>
+<p>Deux événements <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> sont <strong>indépendants</strong> si :</p>
+<div class="arithmatex">\[ P(A \cap B) = P(A) \cdot P(B) \]</div>
+<p>Équivalent (si <span class="arithmatex">\(P(B) &gt; 0\)</span>) à : <span class="arithmatex">\(P(A \mid B) = P(A)\)</span> — savoir que <span class="arithmatex">\(B\)</span> s'est produit ne change pas la proba de <span class="arithmatex">\(A\)</span>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Indépendant ≠ Incompatible !</p>
+<ul>
+<li><strong>Incompatibles</strong> : <span class="arithmatex">\(A \cap B = \varnothing\)</span>, donc <span class="arithmatex">\(P(A \cap B) = 0\)</span>.</li>
+<li><strong>Indépendants</strong> : <span class="arithmatex">\(P(A \cap B) = P(A) P(B)\)</span>.</li>
+</ul>
+<p>Si <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> sont incompatibles <strong>et</strong> <span class="arithmatex">\(P(A), P(B) &gt; 0\)</span>, alors ils ne sont <strong>PAS indépendants</strong> (car <span class="arithmatex">\(0 \neq P(A) P(B)\)</span>).</p>
+</div>
+<hr />
+<h2 id="4-variables-aleatoires-finies">4. Variables aléatoires finies<a class="headerlink" href="#4-variables-aleatoires-finies" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="41-definition">4.1 Définition<a class="headerlink" href="#41-definition" title="Lien direct vers cette section">&para;</a></h3>
+<p>Une <strong>variable aléatoire</strong> (VA) <span class="arithmatex">\(X\)</span> est une <strong>fonction</strong> <span class="arithmatex">\(X : \Omega \to \mathbb{R}\)</span> qui à chaque issue associe une valeur numérique.</p>
+<p>L'ensemble des valeurs prises est noté <span class="arithmatex">\(X(\Omega) = \{x_1, x_2, \dots, x_n\}\)</span>.</p>
+<p><strong>Exemple</strong> : dé à 6 faces. <span class="arithmatex">\(X\)</span> = "valeur obtenue". <span class="arithmatex">\(X(\Omega) = \{1, 2, 3, 4, 5, 6\}\)</span>.</p>
+<h3 id="42-loi-de-x">4.2 Loi de <span class="arithmatex">\(X\)</span><a class="headerlink" href="#42-loi-de-x" title="Lien direct vers cette section">&para;</a></h3>
+<p>La <strong>loi</strong> de <span class="arithmatex">\(X\)</span> = liste des <span class="arithmatex">\(P(X = x_i)\)</span> pour chaque <span class="arithmatex">\(x_i \in X(\Omega)\)</span>.</p>
+<p>Vérification : <span class="arithmatex">\(\sum_i P(X = x_i) = 1\)</span>.</p>
+<h3 id="43-esperance">4.3 Espérance<a class="headerlink" href="#43-esperance" title="Lien direct vers cette section">&para;</a></h3>
+<p>L'<strong>espérance</strong> = la moyenne pondérée des valeurs :</p>
+<div class="arithmatex">\[ \mathbb{E}(X) = \sum_{i} x_i \cdot P(X = x_i) \]</div>
+<p><strong>Intuition</strong> : si on répète l'expérience plein de fois, la moyenne des <span class="arithmatex">\(X\)</span> tend vers <span class="arithmatex">\(\mathbb{E}(X)\)</span>.</p>
+<h3 id="44-variance-et-ecart-type">4.4 Variance et écart-type<a class="headerlink" href="#44-variance-et-ecart-type" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ \mathbb{V}(X) = \mathbb{E}\big[(X - \mathbb{E}(X))^2\big] = \mathbb{E}(X^2) - \mathbb{E}(X)^2 \]</div>
+<p>(La seconde formule est la <strong>formule de König–Huygens</strong>, plus simple à calculer.)</p>
+<p>L'écart-type est <span class="arithmatex">\(\sigma(X) = \sqrt{\mathbb{V}(X)}\)</span>.</p>
+<p><strong>Intuition</strong> : variance = à quel point les valeurs sont <strong>étalées</strong> autour de la moyenne.</p>
+<h3 id="45-linearite">4.5 Linéarité<a class="headerlink" href="#45-linearite" title="Lien direct vers cette section">&para;</a></h3>
+<div class="retenir">
+<p><strong>Pour <span class="arithmatex">\(a, b \in \mathbb{R}\)</span> :</strong></p>
+<ul>
+<li><span class="arithmatex">\(\mathbb{E}(aX + b) = a\mathbb{E}(X) + b\)</span></li>
+<li><span class="arithmatex">\(\mathbb{V}(aX + b) = a^2 \mathbb{V}(X)\)</span></li>
+<li>Pour deux VA <span class="arithmatex">\(X, Y\)</span> : <span class="arithmatex">\(\mathbb{E}(X + Y) = \mathbb{E}(X) + \mathbb{E}(Y)\)</span> (<strong>toujours vrai</strong>)</li>
+<li>Si <span class="arithmatex">\(X\)</span> et <span class="arithmatex">\(Y\)</span> sont <strong>indépendantes</strong> : <span class="arithmatex">\(\mathbb{V}(X + Y) = \mathbb{V}(X) + \mathbb{V}(Y)\)</span></li>
+</ul>
+</div>
+<hr />
+<h2 id="5-lois-usuelles-a-connaitre">5. Lois usuelles à connaître<a class="headerlink" href="#5-lois-usuelles-a-connaitre" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="51-loi-uniforme-sur-1-n">5.1 Loi uniforme sur <span class="arithmatex">\([\![1, n]\!]\)</span><a class="headerlink" href="#51-loi-uniforme-sur-1-n" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(P(X = k) = \dfrac{1}{n}\)</span> pour <span class="arithmatex">\(k \in [\![1, n]\!]\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(\mathbb{E}(X) = \dfrac{n+1}{2}\)</span></li>
+<li><span class="arithmatex">\(\mathbb{V}(X) = \dfrac{n^2 - 1}{12}\)</span></li>
+</ul>
+<h3 id="52-loi-de-bernoulli-mathcalbp">5.2 Loi de Bernoulli <span class="arithmatex">\(\mathcal{B}(p)\)</span><a class="headerlink" href="#52-loi-de-bernoulli-mathcalbp" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(X\)</span> vaut 1 (succès) avec proba <span class="arithmatex">\(p\)</span>, 0 (échec) avec proba <span class="arithmatex">\(1 - p\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(\mathbb{E}(X) = p\)</span></li>
+<li><span class="arithmatex">\(\mathbb{V}(X) = p(1 - p)\)</span></li>
+</ul>
+<p><strong>Quand l'utiliser</strong> : tout phénomène à <strong>deux issues</strong> (succès/échec).</p>
+<h3 id="53-loi-binomiale-mathcalbn-p">5.3 Loi binomiale <span class="arithmatex">\(\mathcal{B}(n, p)\)</span><a class="headerlink" href="#53-loi-binomiale-mathcalbn-p" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(X\)</span> = nombre de <strong>succès</strong> sur <span class="arithmatex">\(n\)</span> répétitions <strong>indépendantes</strong> d'une Bernoulli.</p>
+<div class="arithmatex">\[ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k \in [\![0, n]\!] \]</div>
+<ul>
+<li><span class="arithmatex">\(\mathbb{E}(X) = np\)</span></li>
+<li><span class="arithmatex">\(\mathbb{V}(X) = np(1 - p)\)</span></li>
+</ul>
+<p><strong>Quand l'utiliser</strong> : "on répète <span class="arithmatex">\(n\)</span> fois la même expérience à 2 issues, comptons les succès".</p>
+<h3 id="54-loi-hypergeometrique-en-bonus">5.4 Loi hypergéométrique (en bonus)<a class="headerlink" href="#54-loi-hypergeometrique-en-bonus" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(X\)</span> = nombre de "bonnes" boules tirées dans un tirage <strong>simultané</strong> de <span class="arithmatex">\(k\)</span> parmi <span class="arithmatex">\(n\)</span>, sachant qu'il y a <span class="arithmatex">\(a\)</span> bonnes parmi les <span class="arithmatex">\(n\)</span>.</p>
+<div class="arithmatex">\[ P(X = j) = \frac{\binom{a}{j} \binom{n-a}{k-j}}{\binom{n}{k}} \]</div>
+<p>(Pratique au poker, au loto, etc.)</p>
+<hr />
+<h2 id="6-pieges-classiques">6. Pièges classiques<a class="headerlink" href="#6-pieges-classiques" title="Lien direct vers cette section">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">À surveiller</p>
+<ol>
+<li>
+<p><strong>Indépendant ≠ Incompatible</strong> (déjà dit, mais c'est LE piège).</p>
+</li>
+<li>
+<p><strong>Proba toujours dans <span class="arithmatex">\([0, 1]\)</span></strong> : si tu trouves un résultat <span class="arithmatex">\(&gt; 1\)</span> ou <span class="arithmatex">\(&lt; 0\)</span>, c'est faux.</p>
+</li>
+<li>
+<p><strong>Avec ou sans remise</strong> ? Si avec remise : binomiale. Si simultané : hypergéométrique.</p>
+</li>
+<li>
+<p><strong>Bien choisir l'univers</strong> <span class="arithmatex">\(\Omega\)</span> : si tu confonds "tirage ordonné" et "tirage simultané", tu vas mélanger numérateur et dénominateur.</p>
+</li>
+<li>
+<p><strong>Sachant</strong> : <span class="arithmatex">\(P(A \mid B) \neq P(B \mid A)\)</span> en général ! Bayes existe précisément pour les relier.</p>
+</li>
+</ol>
+</div>
+<hr />
+<h2 id="va-tentrainer"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Va t'entraîner<a class="headerlink" href="#va-tentrainer" title="Lien direct vers cette section">&para;</a></h2>
+<ol>
+<li><a href="../2_exos_modelisation/">Exos — Modélisation</a> : décrire <span class="arithmatex">\(\Omega\)</span> et les axiomes</li>
+<li><a href="../3_exos_equiprobabilite/">Exos — Équiprobabilité</a> : cartes, dés, urnes</li>
+<li><a href="../4_exos_conditionnelles/">Exos — Conditionnelles</a> : arbres, totales, Bayes</li>
+<li><a href="../5_exos_va_lois/">Exos — Variables aléatoires</a> : loi, espérance, variance, lois usuelles</li>
+<li><a href="../6_exos_examen/">Exos — Style examen</a></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../../3_denombrement/5_exos_examen/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Exos — Style examen">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Exos — Style examen
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../2_exos_modelisation/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Exos — Modélisation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Exos — Modélisation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="../../../javascripts/pyodide-runner.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
