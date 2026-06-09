@@ -2530,6 +2530,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="cours-denombrement">Cours — Dénombrement<a class="headerlink" href="#cours-denombrement" title="Lien direct vers cette section">&para;</a></h1>
 <h2 id="pourquoi-on-etudie-ca"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca" title="Lien direct vers cette section">&para;</a></h2>
 <p><strong>Dénombrer</strong> = <strong>compter intelligemment</strong>. C'est utile partout :</p>
@@ -2729,7 +2730,225 @@
 <li><a href="../2_exos_cardinaux/">Exos — Cardinaux</a> : retour aux ensembles finis, premiers calculs.</li>
 <li><a href="../3_exos_combinatoire/">Exos — Combinatoire</a> : tirages, anagrammes, équipes.</li>
 <li><a href="../4_exos_binome/">Exos — Binôme</a> : Pascal, Newton, sommes.</li>
-<li><a href="../5_exos_examen/">Exos — Style examen</a>.</li>
+<li>
+<h1 id="exos-style-examen"><a href="../5_exos_examen/">Exos — Style examen</a>.<a class="headerlink" href="#exos-style-examen" title="Lien direct vers cette section">&para;</a></h1>
+</li>
+</ol>
+<h1 id="cours-denombrement_1">Cours — Dénombrement<a class="headerlink" href="#cours-denombrement_1" title="Lien direct vers cette section">&para;</a></h1>
+<h2 id="pourquoi-on-etudie-ca_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><strong>Dénombrer</strong> = <strong>compter intelligemment</strong>. C'est utile partout :</p>
+<ul>
+<li>Combien de mots de longueur 8 sur un alphabet de 26 lettres ?</li>
+<li>Combien d'arrangements possibles pour un mot de passe à 4 chiffres distincts ?</li>
+<li>Combien de mains possibles au poker ?</li>
+<li>Combien d'appels récursifs effectue un algorithme ?</li>
+</ul>
+<p>C'est aussi la <strong>base directe des probabilités finies</strong> : sous équiprobabilité, "probabilité = cas favorables / cas possibles" — donc savoir compter, c'est savoir calculer des probas.</p>
+<p>L'idée centrale : <strong>trouver le bon modèle</strong> (tirage avec ou sans remise, ordonné ou non) <strong>puis appliquer la bonne formule</strong>.</p>
+<hr />
+<h2 id="1-cardinaux-densembles-finis-rappel-rapide_1">1. Cardinaux d'ensembles finis (rappel rapide)<a class="headerlink" href="#1-cardinaux-densembles-finis-rappel-rapide_1" title="Lien direct vers cette section">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Formule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Union</td>
+<td>$</td>
+</tr>
+<tr>
+<td>Union disjointe</td>
+<td>$</td>
+</tr>
+<tr>
+<td>Produit cartésien</td>
+<td>$</td>
+</tr>
+<tr>
+<td>Ensemble des parties</td>
+<td>$</td>
+</tr>
+<tr>
+<td>Complémentaire (dans <span class="arithmatex">\(\Omega\)</span>)</td>
+<td>$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-principe-multiplicatif-la-regle-de-base_1">2. Principe multiplicatif — la règle de base<a class="headerlink" href="#2-principe-multiplicatif-la-regle-de-base_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Avant même les formules, il y a <strong>une règle qui gouverne tout le dénombrement</strong> :</p>
+<div class="retenir">
+<p><strong>Principe multiplicatif</strong></p>
+<p>Si une action se décompose en <strong>étapes indépendantes</strong>, le nombre total de façons de faire l'action est le <strong>produit</strong> du nombre de choix à chaque étape.</p>
+<p>Étape 1 : <span class="arithmatex">\(a\)</span> choix. Étape 2 : <span class="arithmatex">\(b\)</span> choix. Étape 3 : <span class="arithmatex">\(c\)</span> choix. → Total : <span class="arithmatex">\(a \times b \times c\)</span>.</p>
+</div>
+<p><strong>Indépendant</strong> = le nombre de choix d'une étape ne change pas selon ce qu'on a choisi avant.</p>
+<p><strong>Exemple</strong> : un code = 1 chiffre (10 choix) puis 1 lettre (26 choix) → <span class="arithmatex">\(10 \times 26 = 260\)</span> codes.</p>
+<p><strong>Exemple</strong> : équipe de foot avec 3 gardiens et 21 autres joueurs pour 10 postes :
+- Étape 1 — choisir le gardien : 3 choix
+- Étape 2 — remplir les 10 autres postes dans l'ordre : <span class="arithmatex">\(A_{21}^{10}\)</span> choix
+- Total : <span class="arithmatex">\(3 \times A_{21}^{10}\)</span></p>
+<div class="admonition tip">
+<p class="admonition-title">Le réflexe</p>
+<p>Dès que tu peux découper un problème en étapes indépendantes, tu <strong>multiplies</strong> les résultats. Les formules (<span class="arithmatex">\(n^k\)</span>, <span class="arithmatex">\(A_n^k\)</span>, <span class="arithmatex">\(\binom{n}{k}\)</span>) ne font que compter <strong>une étape à la fois</strong> — c'est le principe multiplicatif qui les <strong>combine</strong>.</p>
+</div>
+<hr />
+<h2 id="3-les-4-types-de-tirage-le-tableau-a-connaitre_1">3. Les 4 types de tirage — LE tableau à connaître<a class="headerlink" href="#3-les-4-types-de-tirage-le-tableau-a-connaitre_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>On tire <span class="arithmatex">\(k\)</span> éléments d'un ensemble à <span class="arithmatex">\(n\)</span> éléments. <strong>Quatre cas</strong> selon :</p>
+<ul>
+<li><strong>Successif vs Simultané</strong> = est-ce que l'ordre compte ?</li>
+<li><strong>Avec remise vs Sans remise</strong> = est-ce qu'on peut tirer deux fois le même ?</li>
+</ul>
+<div class="retenir">
+<p><strong>À retenir — les 4 formules</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type de tirage</th>
+<th>Ordre</th>
+<th>Répétition</th>
+<th>Formule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Successif <strong>avec</strong> remise</td>
+<td>✅ ordonné</td>
+<td>✅ peut répéter</td>
+<td><span class="arithmatex">\(n^k\)</span></td>
+</tr>
+<tr>
+<td>Successif <strong>sans</strong> remise</td>
+<td>✅ ordonné</td>
+<td>❌ pas de répétition</td>
+<td><span class="arithmatex">\(A_n^k = \dfrac{n!}{(n-k)!}\)</span></td>
+</tr>
+<tr>
+<td>Simultané (sans remise)</td>
+<td>❌ pas d'ordre</td>
+<td>❌ pas de répétition</td>
+<td><span class="arithmatex">\(\binom{n}{k} = \dfrac{n!}{k!(n-k)!}\)</span></td>
+</tr>
+<tr>
+<td>Permutation de <span class="arithmatex">\(n\)</span> éléments</td>
+<td>✅ tous</td>
+<td>❌</td>
+<td><span class="arithmatex">\(n!\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Le 4e cas est juste le cas successif sans remise avec <span class="arithmatex">\(k = n\)</span>.</p>
+</div>
+<h3 id="21-successif-avec-remise-nk_1">2.1 Successif avec remise → <span class="arithmatex">\(n^k\)</span><a class="headerlink" href="#21-successif-avec-remise-nk_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Pour chaque tirage (1er, 2e, …, <span class="arithmatex">\(k\)</span>-ième), on a <span class="arithmatex">\(n\)</span> choix indépendants. Donc <span class="arithmatex">\(n \times n \times \dots \times n = n^k\)</span>.</p>
+<p><strong>Exemple</strong> : code à 4 chiffres → <span class="arithmatex">\(10^4 = 10\,000\)</span> codes possibles.</p>
+<h3 id="22-successif-sans-remise-arrangements-a_nk_1">2.2 Successif sans remise → arrangements <span class="arithmatex">\(A_n^k\)</span><a class="headerlink" href="#22-successif-sans-remise-arrangements-a_nk_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Au 1er tirage, <span class="arithmatex">\(n\)</span> choix. Au 2e, <span class="arithmatex">\(n-1\)</span> (on a enlevé celui d'avant). Au <span class="arithmatex">\(k\)</span>-ième, <span class="arithmatex">\(n-k+1\)</span>.</p>
+<div class="arithmatex">\[ A_n^k = n \times (n-1) \times \dots \times (n-k+1) = \frac{n!}{(n-k)!} \]</div>
+<p><strong>Exemple</strong> : 11 joueurs choisis parmi 24 <strong>avec poste précis</strong> → <span class="arithmatex">\(A_{24}^{11}\)</span>.</p>
+<h3 id="23-simultane-combinaisons-binomnk_1">2.3 Simultané = combinaisons <span class="arithmatex">\(\binom{n}{k}\)</span><a class="headerlink" href="#23-simultane-combinaisons-binomnk_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Quand on tire <strong>simultanément</strong> <span class="arithmatex">\(k\)</span> objets dans une urne, <strong>l'ordre ne compte pas</strong>.</p>
+<div class="arithmatex">\[ \binom{n}{k} = \frac{A_n^k}{k!} = \frac{n!}{k!(n-k)!} \]</div>
+<p><strong>Pourquoi diviser par <span class="arithmatex">\(k!\)</span> ?</strong> Parce que pour chaque sous-ensemble de <span class="arithmatex">\(k\)</span> éléments, il y a <span class="arithmatex">\(k!\)</span> ordres possibles ; en passant de "ordonné" à "non ordonné", on divise par cette redondance.</p>
+<p><strong>Exemple</strong> : 11 joueurs choisis parmi 24 <strong>sans poste</strong> → <span class="arithmatex">\(\binom{24}{11}\)</span>.</p>
+<h3 id="24-permutations-n_1">2.4 Permutations → <span class="arithmatex">\(n!\)</span><a class="headerlink" href="#24-permutations-n_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Une <strong>permutation</strong> de <span class="arithmatex">\(n\)</span> éléments distincts = un ordre de classement. Il y en a <span class="arithmatex">\(n!\)</span>.</p>
+<p><strong>Exemple</strong> : faire passer 10 étudiants au tableau dans un ordre quelconque → <span class="arithmatex">\(10!\)</span> ordres possibles.</p>
+<hr />
+<h2 id="4-anagrammes-mots-avec-lettres-repetees_1">4. Anagrammes (mots avec lettres répétées)<a class="headerlink" href="#4-anagrammes-mots-avec-lettres-repetees_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Pour un mot de longueur <span class="arithmatex">\(n\)</span> dont les lettres se répètent :</p>
+<div class="arithmatex">\[ \text{nb d'anagrammes} = \frac{n!}{n_1! \cdot n_2! \cdots n_p!} \]</div>
+<p>où <span class="arithmatex">\(n_i\)</span> est le nombre d'occurrences de la <span class="arithmatex">\(i\)</span>-ème lettre distincte.</p>
+<p><strong>Exemple</strong> : "voiture" → 7 lettres toutes distinctes → <span class="arithmatex">\(7! = 5040\)</span> anagrammes.</p>
+<p>"saperlipopette" → 14 lettres, avec : s(1), a(1), p(3), e(3), r(1), l(1), i(1), o(1), t(2). On a <span class="arithmatex">\(\dfrac{14!}{3! \cdot 3! \cdot 2!}\)</span>.</p>
+<hr />
+<h2 id="5-triangle-de-pascal-et-formule-de-pascal_1">5. Triangle de Pascal et formule de Pascal<a class="headerlink" href="#5-triangle-de-pascal-et-formule-de-pascal_1" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="41-la-formule_1">4.1 La formule<a class="headerlink" href="#41-la-formule_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="retenir">
+<p><strong>Formule de Pascal</strong> — pour <span class="arithmatex">\(1 \leq k \leq n-1\)</span> :</p>
+<div class="arithmatex">\[ \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k} \]</div>
+</div>
+<p><strong>Interprétation combinatoire</strong> : choisir <span class="arithmatex">\(k\)</span> éléments parmi <span class="arithmatex">\(n\)</span> = soit on prend le <span class="arithmatex">\(n\)</span>-ième (et il faut <span class="arithmatex">\(k-1\)</span> autres parmi les <span class="arithmatex">\(n-1\)</span> restants), soit on ne le prend pas (et il faut <span class="arithmatex">\(k\)</span> parmi les <span class="arithmatex">\(n-1\)</span> restants).</p>
+<h3 id="42-triangle-de-pascal_1">4.2 Triangle de Pascal<a class="headerlink" href="#42-triangle-de-pascal_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>n=0:        1
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>n=1:       1 1
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>n=2:      1 2 1
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>n=3:     1 3 3 1
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>n=4:    1 4 6 4 1
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>n=5:   1 5 10 10 5 1
+</span></code></pre></div>
+<p>Chaque entrée = somme des deux du dessus.</p>
+<h3 id="43-symetrie_1">4.3 Symétrie<a class="headerlink" href="#43-symetrie_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(\binom{n}{k} = \binom{n}{n-k}\)</span></p>
+<p>(Choisir <span class="arithmatex">\(k\)</span> éléments à prendre = choisir <span class="arithmatex">\(n-k\)</span> éléments à laisser.)</p>
+<hr />
+<h2 id="6-formule-du-binome-de-newton_1">6. Formule du binôme de Newton<a class="headerlink" href="#6-formule-du-binome-de-newton_1" title="Lien direct vers cette section">&para;</a></h2>
+<div class="retenir">
+<p><strong>Binôme de Newton</strong> — pour <span class="arithmatex">\((x, y) \in \mathbb{R}^2\)</span> et <span class="arithmatex">\(n \in \mathbb{N}\)</span> :</p>
+<div class="arithmatex">\[ (x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^k y^{n-k} \]</div>
+</div>
+<p><strong>Exemple</strong> : <span class="arithmatex">\((x + y)^4 = x^4 + 4x^3y + 6x^2y^2 + 4xy^3 + y^4\)</span> (avec les coefficients du triangle).</p>
+<h3 id="consequence-mathcalpe-2n_1">Conséquence : <span class="arithmatex">\(|\mathcal{P}(E)| = 2^n\)</span><a class="headerlink" href="#consequence-mathcalpe-2n_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>On applique Newton avec <span class="arithmatex">\(x = y = 1\)</span> :</p>
+<div class="arithmatex">\[ 2^n = (1+1)^n = \sum_{k=0}^{n} \binom{n}{k} = |\mathcal{P}(E)| \]</div>
+<p>(En effet, <span class="arithmatex">\(\binom{n}{k}\)</span> = nombre de sous-ensembles de taille <span class="arithmatex">\(k\)</span>, et la somme totalise tous les sous-ensembles.)</p>
+<hr />
+<h2 id="7-pieges-classiques_1">7. Pièges classiques<a class="headerlink" href="#7-pieges-classiques_1" title="Lien direct vers cette section">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Pièges à éviter</p>
+<ol>
+<li>
+<p><strong>Ordre ou pas ?</strong> C'est la question #1 à se poser AVANT de choisir une formule.</p>
+</li>
+<li>
+<p><strong>Tirage simultané = sans ordre et sans remise.</strong> Pas besoin de réfléchir, c'est <span class="arithmatex">\(\binom{n}{k}\)</span> par défaut.</p>
+</li>
+<li>
+<p><strong>"Au moins une"</strong> : passe au complémentaire ! "Au moins un X" = "total – aucun X".</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\binom{n}{k}\)</span> se note aussi <span class="arithmatex">\(C_n^k\)</span></strong> dans certains exercices/QCM. À reconnaître.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(A_n^k = k! \binom{n}{k}\)</span></strong> : relation utile à retenir.</p>
+</li>
+</ol>
+</div>
+<hr />
+<h2 id="8-mini-methode-pour-aborder-un-probleme-de-denombrement_1">8. Mini-méthode pour aborder un problème de dénombrement<a class="headerlink" href="#8-mini-methode-pour-aborder-un-probleme-de-denombrement_1" title="Lien direct vers cette section">&para;</a></h2>
+<ol>
+<li><strong>Identifie l'ensemble</strong> dont on cherche le cardinal.</li>
+<li><strong>Y a-t-il un ordre</strong> (successif) ou pas (simultané) ?</li>
+<li><strong>Y a-t-il répétition</strong> (avec remise) ou pas (sans remise) ?</li>
+<li>Choisis la formule adaptée.</li>
+<li><strong>Cas "au moins un"</strong> : passe au complémentaire.</li>
+<li><strong>Vérifie l'ordre de grandeur</strong> : un nombre négatif ou non-entier = erreur.</li>
+</ol>
+<hr />
+<h2 id="va-tentrainer_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Va t'entraîner<a class="headerlink" href="#va-tentrainer_1" title="Lien direct vers cette section">&para;</a></h2>
+<ol>
+<li><a href="../2_exos_cardinaux/">Exos — Cardinaux</a> : retour aux ensembles finis, premiers calculs.</li>
+<li><a href="../3_exos_combinatoire/">Exos — Combinatoire</a> : tirages, anagrammes, équipes.</li>
+<li><a href="../4_exos_binome/">Exos — Binôme</a> : Pascal, Newton, sommes.</li>
+<li><a href="../5_exos_examen/">Exos — Style examen</a>.<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
 </ol>
 
 

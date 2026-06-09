@@ -2530,6 +2530,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="cours-fonctions">Cours — Fonctions<a class="headerlink" href="#cours-fonctions" title="Lien direct vers cette section">&para;</a></h1>
 <h2 id="pourquoi-on-etudie-ca"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca" title="Lien direct vers cette section">&para;</a></h2>
 <p>Une <strong>fonction</strong>, c'est une <strong>règle qui transforme</strong> des objets d'un ensemble en objets d'un autre.</p>
@@ -2689,7 +2690,185 @@ Alors <span class="arithmatex">\(f([-1, 2]) = [0, 4]\)</span> (les carrés des n
 <ol>
 <li><a href="../2_exos_graphes/">Exos — Graphes</a> : fonctions données par un dessin, calcul de <span class="arithmatex">\(f(A)\)</span> et <span class="arithmatex">\(f^{-1}(B)\)</span>.</li>
 <li><a href="../3_exos_usuelles/">Exos — Usuelles</a> : exp, ln, sin, <strong>arctan</strong>.</li>
-<li><a href="../4_exos_examen/">Exos — Style examen</a> : enchaînements de questions à la difficulté B3.</li>
+<li>
+<h1 id="exos-style-examen-enchainements-de-questions-a-la-difficulte-b3"><a href="../4_exos_examen/">Exos — Style examen</a> : enchaînements de questions à la difficulté B3.<a class="headerlink" href="#exos-style-examen-enchainements-de-questions-a-la-difficulte-b3" title="Lien direct vers cette section">&para;</a></h1>
+</li>
+</ol>
+<h1 id="cours-fonctions_1">Cours — Fonctions<a class="headerlink" href="#cours-fonctions_1" title="Lien direct vers cette section">&para;</a></h1>
+<h2 id="pourquoi-on-etudie-ca_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Une <strong>fonction</strong>, c'est une <strong>règle qui transforme</strong> des objets d'un ensemble en objets d'un autre.</p>
+<p>Tu connais déjà <span class="arithmatex">\(f : x \mapsto x^2\)</span>. Le but de ce chapitre, c'est de regarder <strong>plus en profondeur</strong> ce que fait une fonction :</p>
+<ul>
+<li>Est-ce qu'elle <strong>rate des valeurs</strong> dans son arrivée ? → Surjectivité.</li>
+<li>Est-ce qu'elle <strong>identifie</strong> des éléments différents (deux entrées qui sortent au même résultat) ? → Injectivité.</li>
+<li>Si elle ne fait <strong>aucun des deux</strong>, elle est <strong>bijective</strong> — et là on peut la "remonter à l'envers".</li>
+</ul>
+<p>Et on découvre une nouvelle fonction usuelle : <span class="arithmatex">\(\arctan\)</span>, qui est l'inverse de <span class="arithmatex">\(\tan\)</span>.</p>
+<hr />
+<h2 id="1-definition-formelle_1">1. Définition formelle<a class="headerlink" href="#1-definition-formelle_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Une <strong>fonction</strong> <span class="arithmatex">\(f\)</span> de <span class="arithmatex">\(E\)</span> vers <span class="arithmatex">\(F\)</span> associe à <strong>chaque</strong> élément <span class="arithmatex">\(x \in E\)</span> <strong>un unique</strong> élément <span class="arithmatex">\(f(x) \in F\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(E\)</span> : <strong>ensemble de départ</strong> (ou domaine)</li>
+<li><span class="arithmatex">\(F\)</span> : <strong>ensemble d'arrivée</strong></li>
+<li>On note <span class="arithmatex">\(f : E \to F\)</span> ou <span class="arithmatex">\(f : E \to F,\ x \mapsto f(x)\)</span>.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>Pour que ce soit une fonction, <strong>chaque</strong> élément de <span class="arithmatex">\(E\)</span> doit avoir <strong>exactement un</strong> correspondant dans <span class="arithmatex">\(F\)</span> — pas zéro, pas deux.</p>
+<p>Si l'élément <span class="arithmatex">\(a \in E\)</span> n'a pas de flèche partant de lui, ce n'est <strong>pas</strong> une fonction de <span class="arithmatex">\(E\)</span> vers <span class="arithmatex">\(F\)</span>.</p>
+</div>
+<hr />
+<h2 id="2-image-directe-et-image-reciproque_1">2. Image directe et image réciproque<a class="headerlink" href="#2-image-directe-et-image-reciproque_1" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="21-image-directe_1">2.1 Image directe<a class="headerlink" href="#21-image-directe_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Soit <span class="arithmatex">\(A \subset E\)</span>. L'<strong>image directe</strong> de <span class="arithmatex">\(A\)</span> par <span class="arithmatex">\(f\)</span> est :</p>
+<div class="arithmatex">\[ f(A) = \{f(x),\ x \in A\} \subset F \]</div>
+<p>C'est l'<strong>ensemble des résultats</strong> quand on applique <span class="arithmatex">\(f\)</span> à tous les éléments de <span class="arithmatex">\(A\)</span>.</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p><span class="arithmatex">\(f : \mathbb{R} \to \mathbb{R},\ x \mapsto x^2\)</span>.
+Alors <span class="arithmatex">\(f([-1, 2]) = [0, 4]\)</span> (les carrés des nombres entre <span class="arithmatex">\(-1\)</span> et <span class="arithmatex">\(2\)</span>).</p>
+</div>
+<h3 id="22-image-reciproque_1">2.2 Image réciproque<a class="headerlink" href="#22-image-reciproque_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Soit <span class="arithmatex">\(B \subset F\)</span>. L'<strong>image réciproque</strong> de <span class="arithmatex">\(B\)</span> par <span class="arithmatex">\(f\)</span> est :</p>
+<div class="arithmatex">\[ f^{-1}(B) = \{x \in E,\ f(x) \in B\} \subset E \]</div>
+<p>C'est l'ensemble des <strong>antécédents</strong> des éléments de <span class="arithmatex">\(B\)</span>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Attention au piège de notation</p>
+<p><span class="arithmatex">\(f^{-1}(B)\)</span> <strong>ne suppose pas</strong> que <span class="arithmatex">\(f\)</span> est bijective ! C'est juste un <strong>ensemble</strong>, défini pour n'importe quelle fonction.</p>
+<p>Quand <span class="arithmatex">\(f\)</span> est bijective, on note aussi <span class="arithmatex">\(f^{-1}\)</span> la <strong>fonction réciproque</strong>. Le contexte indique de quoi on parle.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p><span class="arithmatex">\(f : \mathbb{R} \to \mathbb{R},\ x \mapsto x^2\)</span>.
+- <span class="arithmatex">\(f^{-1}(\{4\}) = \{-2, 2\}\)</span> (les antécédents de 4)
+- <span class="arithmatex">\(f^{-1}(\{-1\}) = \varnothing\)</span> (pas d'antécédent : <span class="arithmatex">\(x^2 \geq 0\)</span>)
+- <span class="arithmatex">\(f^{-1}([0, 4]) = [-2, 2]\)</span></p>
+</div>
+<hr />
+<h2 id="3-injection-surjection-bijection_1">3. Injection, surjection, bijection<a class="headerlink" href="#3-injection-surjection-bijection_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Trois propriétés clés.</p>
+<h3 id="31-injective_1">3.1 Injective<a class="headerlink" href="#31-injective_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(f\)</span> est <strong>injective</strong> si <strong>deux éléments différents</strong> de <span class="arithmatex">\(E\)</span> donnent <strong>deux résultats différents</strong> dans <span class="arithmatex">\(F\)</span> :</p>
+<div class="arithmatex">\[ \forall (x_1, x_2) \in E^2,\ f(x_1) = f(x_2) \Rightarrow x_1 = x_2 \]</div>
+<p><strong>Traduction simple</strong> : "pas deux entrées qui sortent au même résultat".</p>
+<h3 id="32-surjective_1">3.2 Surjective<a class="headerlink" href="#32-surjective_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(f\)</span> est <strong>surjective</strong> si <strong>tout élément de <span class="arithmatex">\(F\)</span> a au moins un antécédent</strong> dans <span class="arithmatex">\(E\)</span> :</p>
+<div class="arithmatex">\[ \forall y \in F,\ \exists x \in E,\ y = f(x) \]</div>
+<p><strong>Traduction simple</strong> : "tous les éléments de <span class="arithmatex">\(F\)</span> sont atteints".</p>
+<h3 id="33-bijective_1">3.3 Bijective<a class="headerlink" href="#33-bijective_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(f\)</span> est <strong>bijective</strong> si elle est <strong>à la fois</strong> injective <strong>et</strong> surjective :</p>
+<div class="arithmatex">\[ \forall y \in F,\ \exists !\ x \in E,\ y = f(x) \]</div>
+<p><strong>Traduction simple</strong> : "chaque élément de <span class="arithmatex">\(F\)</span> est atteint <strong>exactement une fois</strong>".</p>
+<div class="retenir">
+<p><strong>À retenir — image visuelle (patates)</strong></p>
+<ul>
+<li><strong>Injective</strong> : chaque flèche d'arrivée a au plus une flèche entrante.</li>
+<li><strong>Surjective</strong> : chaque élément de <span class="arithmatex">\(F\)</span> a au moins une flèche entrante.</li>
+<li><strong>Bijective</strong> : chaque élément de <span class="arithmatex">\(F\)</span> a exactement une flèche entrante.</li>
+</ul>
+</div>
+<h3 id="34-comment-ajuster-les-ensembles_1">3.4 Comment AJUSTER les ensembles ?<a class="headerlink" href="#34-comment-ajuster-les-ensembles_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Souvent en examen, on demande de <strong>modifier</strong> <span class="arithmatex">\(E\)</span> ou <span class="arithmatex">\(F\)</span> pour rendre <span class="arithmatex">\(f\)</span> injective / surjective / bijective.</p>
+<table>
+<thead>
+<tr>
+<th>Pour rendre <span class="arithmatex">\(f\)</span></th>
+<th>Stratégie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Injective</td>
+<td><strong>Restreindre <span class="arithmatex">\(E\)</span></strong> (enlever les éléments qui causent des conflits)</td>
+</tr>
+<tr>
+<td>Surjective</td>
+<td><strong>Restreindre <span class="arithmatex">\(F\)</span></strong> à l'image <span class="arithmatex">\(f(E)\)</span></td>
+</tr>
+<tr>
+<td>Bijective</td>
+<td>Restreindre <span class="arithmatex">\(E\)</span> pour l'injectivité, puis <span class="arithmatex">\(F\)</span> pour la surjectivité</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Exemple typique</p>
+<p><span class="arithmatex">\(f : \mathbb{R} \to \mathbb{R},\ x \mapsto x^2\)</span> n'est ni injective (car <span class="arithmatex">\((-x)^2 = x^2\)</span>) ni surjective (les négatifs ne sont pas atteints).</p>
+<ul>
+<li>Pour la rendre injective : on restreint à <span class="arithmatex">\(E = \mathbb{R}_+\)</span>.</li>
+<li>Pour la rendre surjective : on restreint <span class="arithmatex">\(F\)</span> à <span class="arithmatex">\(\mathbb{R}_+\)</span>.</li>
+<li>Pour la rendre bijective : <span class="arithmatex">\(f : \mathbb{R}_+ \to \mathbb{R}_+,\ x \mapsto x^2\)</span>. C'est bijective ; sa réciproque est <span class="arithmatex">\(\sqrt{\cdot}\)</span>.</li>
+</ul>
+</div>
+<hr />
+<h2 id="4-fonction-reciproque_1">4. Fonction réciproque<a class="headerlink" href="#4-fonction-reciproque_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Si <span class="arithmatex">\(f : E \to F\)</span> est <strong>bijective</strong>, alors il existe une unique fonction <span class="arithmatex">\(f^{-1} : F \to E\)</span> telle que :</p>
+<div class="arithmatex">\[ \forall x \in E,\ f^{-1}(f(x)) = x \quad \text{et} \quad \forall y \in F,\ f(f^{-1}(y)) = y \]</div>
+<p><strong>Graphiquement</strong> : le graphe de <span class="arithmatex">\(f^{-1}\)</span> est obtenu par <strong>symétrie</strong> du graphe de <span class="arithmatex">\(f\)</span> par rapport à la droite <span class="arithmatex">\(y = x\)</span>.</p>
+<hr />
+<h2 id="5-fonctions-usuelles-a-connaitre_1">5. Fonctions usuelles à connaître<a class="headerlink" href="#5-fonctions-usuelles-a-connaitre_1" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="51-exponentielle_1">5.1 Exponentielle<a class="headerlink" href="#51-exponentielle_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(\exp : \mathbb{R} \to \mathbb{R}_+^*\)</span>. Bijective. Strictement croissante. <span class="arithmatex">\(\exp(0) = 1\)</span>.</p>
+<h3 id="52-logarithme-neperien_1">5.2 Logarithme népérien<a class="headerlink" href="#52-logarithme-neperien_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(\ln : \mathbb{R}_+^* \to \mathbb{R}\)</span>. <strong>Réciproque de <span class="arithmatex">\(\exp\)</span></strong>. Bijective. Strictement croissante. <span class="arithmatex">\(\ln(1) = 0\)</span>.</p>
+<h3 id="53-sinus_1">5.3 Sinus<a class="headerlink" href="#53-sinus_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(\sin : \mathbb{R} \to [-1, 1]\)</span>. Surjective de <span class="arithmatex">\(\mathbb{R}\)</span> vers <span class="arithmatex">\([-1, 1]\)</span>, mais <strong>pas injective</strong> (périodique).</p>
+<p>Restreinte à <span class="arithmatex">\([-\pi/2, \pi/2]\)</span>, elle devient bijective vers <span class="arithmatex">\([-1, 1]\)</span>.</p>
+<h3 id="54-arctangente-a-connaitre-par-cur_1">5.4 Arctangente — <strong>à connaître par cœur</strong><a class="headerlink" href="#54-arctangente-a-connaitre-par-cur_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>On part de <span class="arithmatex">\(\tan : ]-\pi/2, \pi/2[ \to \mathbb{R}\)</span>, qui est <strong>bijective</strong> (strictement croissante, atteint tous les réels).</p>
+<p>Sa réciproque est <span class="arithmatex">\(\arctan : \mathbb{R} \to ]-\pi/2, \pi/2[\)</span>.</p>
+<div class="retenir">
+<p><strong>À retenir — <span class="arithmatex">\(\arctan\)</span></strong></p>
+<ul>
+<li>Domaine : <span class="arithmatex">\(\mathbb{R}\)</span>. Image : <span class="arithmatex">\(]-\pi/2, \pi/2[\)</span>.</li>
+<li>Strictement croissante.</li>
+<li><span class="arithmatex">\(\arctan(0) = 0\)</span>, <span class="arithmatex">\(\arctan(1) = \pi/4\)</span>, <span class="arithmatex">\(\arctan(\sqrt{3}) = \pi/3\)</span>, <span class="arithmatex">\(\arctan(1/\sqrt{3}) = \pi/6\)</span>.</li>
+<li><strong>Dérivée</strong> : <span class="arithmatex">\(\displaystyle \arctan'(y) = \frac{1}{1 + y^2}\)</span>.</li>
+<li><span class="arithmatex">\(\arctan(-x) = -\arctan(x)\)</span> (impaire).</li>
+<li>Asymptotes horizontales : <span class="arithmatex">\(\lim_{x \to +\infty} \arctan(x) = \pi/2\)</span>, <span class="arithmatex">\(\lim_{x \to -\infty} \arctan(x) = -\pi/2\)</span>.</li>
+</ul>
+</div>
+<p><strong>Allure</strong> : courbe en "S" couché, symétrique par rapport à l'origine, comprise entre les droites <span class="arithmatex">\(y = \pm \pi/2\)</span>.</p>
+<hr />
+<h2 id="6-pieges-classiques_1">6. Pièges classiques<a class="headerlink" href="#6-pieges-classiques_1" title="Lien direct vers cette section">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">À surveiller</p>
+<ol>
+<li>
+<p><strong>Bien préciser les ensembles de départ et d'arrivée</strong> quand on parle d'inj/surj/bij. La même formule peut être bijective, injective non surjective, etc., selon <span class="arithmatex">\(E\)</span> et <span class="arithmatex">\(F\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(f^{-1}(B)\)</span> comme <strong>ensemble</strong> existe toujours. La fonction <span class="arithmatex">\(f^{-1}\)</span> n'existe que si <span class="arithmatex">\(f\)</span> est bijective.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(f(A \cap B) \subset f(A) \cap f(B)\)</span> — l'égalité n'est pas garantie en général.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\arctan(\tan(x)) \neq x\)</span> en général</strong> ! Vrai seulement si <span class="arithmatex">\(x \in ]-\pi/2, \pi/2[\)</span>.</p>
+</li>
+</ol>
+</div>
+<hr />
+<h2 id="va-tentrainer_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Va t'entraîner<a class="headerlink" href="#va-tentrainer_1" title="Lien direct vers cette section">&para;</a></h2>
+<ol>
+<li><a href="../2_exos_graphes/">Exos — Graphes</a> : fonctions données par un dessin, calcul de <span class="arithmatex">\(f(A)\)</span> et <span class="arithmatex">\(f^{-1}(B)\)</span>.</li>
+<li><a href="../3_exos_usuelles/">Exos — Usuelles</a> : exp, ln, sin, <strong>arctan</strong>.</li>
+<li><a href="../4_exos_examen/">Exos — Style examen</a> : enchaînements de questions à la difficulté B3.<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
 </ol>
 
 

@@ -2252,6 +2252,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="exercices-bases-ensemblistes">Exercices — Bases ensemblistes<a class="headerlink" href="#exercices-bases-ensemblistes" title="Lien direct vers cette section">&para;</a></h1>
 <blockquote>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Avant de commencer, relis le <a href="../1_cours/">cours</a> si besoin (sections 1 et 2).</p>
@@ -2416,7 +2417,187 @@ Donc <span class="arithmatex">\(f\)</span> est paire, soit <span class="arithmat
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Démontrer une inclusion par la méthode "soit <span class="arithmatex">\(x \in A\)</span>, montrons que <span class="arithmatex">\(x \in B\)</span>"</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Donner un contre-exemple à une égalité d'ensembles</li>
 </ul>
+<h1 id="suite-operations-sur-les-ensembles"><a href="../3_exos_operations/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : Opérations sur les ensembles</a><a class="headerlink" href="#suite-operations-sur-les-ensembles" title="Lien direct vers cette section">&para;</a></h1>
+<h1 id="exercices-bases-ensemblistes_1">Exercices — Bases ensemblistes<a class="headerlink" href="#exercices-bases-ensemblistes_1" title="Lien direct vers cette section">&para;</a></h1>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Avant de commencer, relis le <a href="../1_cours/">cours</a> si besoin (sections 1 et 2).</p>
+<p><strong>Notation utile</strong> : <span class="arithmatex">\([\![a, b]\!]\)</span> désigne l'ensemble des entiers entre <span class="arithmatex">\(a\)</span> et <span class="arithmatex">\(b\)</span> inclus.</p>
+</blockquote>
+<hr />
+<h2 id="exercice-1-reconnaitre-lappartenance-ou-linclusion_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 7v2h2v8h2V7zm2-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 1 — Reconnaître l'appartenance ou l'inclusion<a class="headerlink" href="#exercice-1-reconnaitre-lappartenance-ou-linclusion_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p>Soit <span class="arithmatex">\(A = [\![0, 10]\!]\)</span>. Place le bon symbole (<span class="arithmatex">\(\in\)</span>, <span class="arithmatex">\(\notin\)</span>, <span class="arithmatex">\(\subset\)</span>, <span class="arithmatex">\(\not\subset\)</span>) à la place des pointillés.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a) <span class="arithmatex">\(-1 \;\cdots\; A\)</span></td>
+<td>b) <span class="arithmatex">\(2 \;\cdots\; A\)</span></td>
+<td>c) <span class="arithmatex">\(\varnothing \;\cdots\; A\)</span></td>
+</tr>
+<tr>
+<td>d) <span class="arithmatex">\(\{5\} \;\cdots\; A\)</span></td>
+<td>e) <span class="arithmatex">\(\{3\} \;\cdots\; \{1, 2, 3\}\)</span></td>
+<td>f) <span class="arithmatex">\(\{3\} \;\cdots\; \mathcal{P}(A)\)</span></td>
+</tr>
+</tbody>
+</table>
+<details class="success">
+<summary>Voir la correction</summary>
+<p>a) <span class="arithmatex">\(-1 \notin A\)</span> (car <span class="arithmatex">\(A \subset \mathbb{N}\)</span>, pas de négatifs)</p>
+<p>b) <span class="arithmatex">\(2 \in A\)</span></p>
+<p>c) <span class="arithmatex">\(\varnothing \subset A\)</span> (l'ensemble vide est inclus dans tout)</p>
+<p>d) <span class="arithmatex">\(\{5\} \subset A\)</span> (c'est un ensemble, donc inclusion ; et <span class="arithmatex">\(5 \in A\)</span>)</p>
+<p>e) <span class="arithmatex">\(\{3\} \subset \{1,2,3\}\)</span> (à gauche c'est un ensemble)</p>
+<p>f) <span class="arithmatex">\(\{3\} \in \mathcal{P}(A)\)</span> (car <span class="arithmatex">\(\{3\}\)</span> est un sous-ensemble de <span class="arithmatex">\(A\)</span>, donc c'est un élément de <span class="arithmatex">\(\mathcal{P}(A)\)</span>)</p>
+<p><strong>Réflexe à acquérir</strong> : regarde <strong>ce qui est à gauche</strong> du symbole.
+- Élément simple à gauche → <span class="arithmatex">\(\in\)</span>
+- Ensemble à gauche → <span class="arithmatex">\(\subset\)</span></p>
+</details>
+<hr />
+<h2 id="exercice-2-ecrire-en-extension-en-comprehension-en-parametrique_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v2h4v2h-2a2 2 0 0 0-2 2v4h6v-2h-4v-2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 2 — Écrire en extension, en compréhension, en paramétrique<a class="headerlink" href="#exercice-2-ecrire-en-extension-en-comprehension-en-parametrique_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p>Pour chacun de ces ensembles, donne <strong>les trois écritures</strong> (extension, compréhension, paramétrique) quand c'est possible.</p>
+<p>a) L'ensemble des entiers naturels impairs strictement plus petits que 20.
+b) L'ensemble des entiers strictement compris entre 2 et 30 et multiples de 4.
+c) L'ensemble des solutions réelles de <span class="arithmatex">\((x-1)(x^2 - 5x + 6) = 0\)</span>.
+d) L'ensemble des réels compris entre <span class="arithmatex">\(-3\pi\)</span> et <span class="arithmatex">\(3\pi\)</span> dont le sinus est nul.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>a) Impairs <span class="arithmatex">\(&lt; 20\)</span></strong>
+- Extension : <span class="arithmatex">\(\{1, 3, 5, 7, 9, 11, 13, 15, 17, 19\}\)</span>
+- Compréhension : <span class="arithmatex">\(\{n \in \mathbb{N},\ n \text{ impair},\ n &lt; 20\}\)</span>
+- Paramétrique : <span class="arithmatex">\(\{2k + 1,\ k \in [\![0, 9]\!]\}\)</span></p>
+<p><strong>b) Multiples de 4 entre 2 et 30 strictement</strong>
+- Extension : <span class="arithmatex">\(\{4, 8, 12, 16, 20, 24, 28\}\)</span>
+- Compréhension : <span class="arithmatex">\(\{n \in \mathbb{Z},\ 2 &lt; n &lt; 30,\ 4 \mid n\}\)</span>
+- Paramétrique : <span class="arithmatex">\(\{4k,\ k \in [\![1, 7]\!]\}\)</span></p>
+<p><strong>c) Solutions de <span class="arithmatex">\((x-1)(x^2 - 5x + 6) = 0\)</span></strong></p>
+<p>On factorise <span class="arithmatex">\(x^2 - 5x + 6 = (x-2)(x-3)\)</span>.
+Donc les solutions sont <span class="arithmatex">\(1, 2, 3\)</span>.
+- Extension : <span class="arithmatex">\(\{1, 2, 3\}\)</span>
+- Compréhension : <span class="arithmatex">\(\{x \in \mathbb{R},\ (x-1)(x^2 - 5x + 6) = 0\}\)</span>
+- Pas de paramétrique évidente.</p>
+<p><strong>d) Réels dans <span class="arithmatex">\([-3\pi, 3\pi]\)</span> avec <span class="arithmatex">\(\sin(x) = 0\)</span></strong></p>
+<p><span class="arithmatex">\(\sin(x) = 0 \iff x = k\pi,\ k \in \mathbb{Z}\)</span>. On garde <span class="arithmatex">\(k \in \{-3, -2, -1, 0, 1, 2, 3\}\)</span>.
+- Extension : <span class="arithmatex">\(\{-3\pi, -2\pi, -\pi, 0, \pi, 2\pi, 3\pi\}\)</span>
+- Compréhension : <span class="arithmatex">\(\{x \in [-3\pi, 3\pi],\ \sin(x) = 0\}\)</span>
+- Paramétrique : <span class="arithmatex">\(\{k\pi,\ k \in [\![-3, 3]\!]\}\)</span></p>
+</details>
+<hr />
+<h2 id="exercice-3-que-veulent-dire-ces-ensembles_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 15v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5V9a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 3 — Que veulent dire ces ensembles ?<a class="headerlink" href="#exercice-3-que-veulent-dire-ces-ensembles_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Pour chacun, <strong>explique</strong> ce que l'ensemble contient, puis donne <strong>un élément qui appartient</strong> et <strong>un élément qui n'appartient pas</strong>.</p>
+<p>a) <span class="arithmatex">\(E = \{f : \mathbb{R} \to \mathbb{R},\ \forall x \in \mathbb{R},\ f(x) \geq 0\}\)</span>
+b) <span class="arithmatex">\(F = \{(u_n) \in \mathbb{R}^{\mathbb{N}},\ \forall n \in \mathbb{N},\ u_{n+1} - u_n \geq 0\}\)</span>
+c) <span class="arithmatex">\(G = \{x \in \mathbb{R},\ \exists y \in \mathbb{R},\ x = y^2\}\)</span></p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>a) <span class="arithmatex">\(E\)</span></strong> = ensemble des <strong>fonctions positives ou nulles</strong> sur <span class="arithmatex">\(\mathbb{R}\)</span>.
+- Appartient : <span class="arithmatex">\(f : x \mapsto x^2\)</span> (toujours <span class="arithmatex">\(\geq 0\)</span>)
+- N'appartient pas : <span class="arithmatex">\(f : x \mapsto x\)</span> (négatif pour <span class="arithmatex">\(x &lt; 0\)</span>)</p>
+<p><strong>b) <span class="arithmatex">\(F\)</span></strong> = ensemble des <strong>suites réelles croissantes</strong> (au sens large).
+- Appartient : <span class="arithmatex">\(u_n = n\)</span>
+- N'appartient pas : <span class="arithmatex">\(u_n = (-1)^n\)</span></p>
+<p><strong>c) <span class="arithmatex">\(G\)</span></strong> = ensemble des <strong>réels qui s'écrivent comme un carré</strong>.
+Or <span class="arithmatex">\(y^2 \geq 0\)</span> toujours, et tout réel positif est un carré (<span class="arithmatex">\(x = (\sqrt{x})^2\)</span>).
+Donc <span class="arithmatex">\(G = \mathbb{R}_+\)</span>.
+- Appartient : <span class="arithmatex">\(4 \in G\)</span> (car <span class="arithmatex">\(4 = 2^2\)</span>)
+- N'appartient pas : <span class="arithmatex">\(-1 \notin G\)</span></p>
+</details>
+<hr />
+<h2 id="exercice-4-comparer-deux-ensembles_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v4h2V7h-2v4h-2V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 4 — Comparer deux ensembles<a class="headerlink" href="#exercice-4-comparer-deux-ensembles_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Compare les deux ensembles suivants :
+$$ E = {n \in \mathbb{N}, \exists k \in \mathbb{N}, n = 2k} \quad \text{et} \quad F = {2p, p \in \mathbb{N}} $$</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>Lecture des deux écritures.</strong>
+- <span class="arithmatex">\(E\)</span> (compréhension) : "les <span class="arithmatex">\(n\)</span> dans <span class="arithmatex">\(\mathbb{N}\)</span> tels qu'il existe un <span class="arithmatex">\(k\)</span> entier avec <span class="arithmatex">\(n = 2k\)</span>"
+- <span class="arithmatex">\(F\)</span> (paramétrique) : "tous les <span class="arithmatex">\(2p\)</span> quand <span class="arithmatex">\(p\)</span> parcourt <span class="arithmatex">\(\mathbb{N}\)</span>"</p>
+<p><strong>Les deux décrivent exactement les entiers naturels pairs.</strong> Donc <span class="arithmatex">\(E = F\)</span>.</p>
+<p><strong>Preuve formelle.</strong>
+- <span class="arithmatex">\(E \subset F\)</span> : soit <span class="arithmatex">\(n \in E\)</span>. Il existe <span class="arithmatex">\(k \in \mathbb{N}\)</span> avec <span class="arithmatex">\(n = 2k\)</span>. En prenant <span class="arithmatex">\(p = k\)</span>, on a <span class="arithmatex">\(n = 2p\)</span>, donc <span class="arithmatex">\(n \in F\)</span>.
+- <span class="arithmatex">\(F \subset E\)</span> : soit <span class="arithmatex">\(n \in F\)</span>. Il existe <span class="arithmatex">\(p \in \mathbb{N}\)</span> avec <span class="arithmatex">\(n = 2p\)</span>. En prenant <span class="arithmatex">\(k = p\)</span>, on a <span class="arithmatex">\(n = 2k\)</span>, donc <span class="arithmatex">\(n \in E\)</span>.</p>
+<p>Conclusion : <span class="arithmatex">\(E = F\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-5-remplir-des-assertions-vraies_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v2H9v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 5 — Remplir des assertions vraies<a class="headerlink" href="#exercice-5-remplir-des-assertions-vraies_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>On considère <span class="arithmatex">\(A = \{x \in \mathbb{R},\ -1 &lt; x &lt; 10\}\)</span> et <span class="arithmatex">\(B = \{n \in \mathbb{N},\ n + 1 \leq 8\}\)</span>.</p>
+<ol>
+<li>De quel ensemble commun de référence <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> sont-ils tous deux des sous-ensembles ?</li>
+<li>Remplace les pointillés pour rendre les assertions vraies (remplacer par <span class="arithmatex">\(\varnothing\)</span> est interdit) :</li>
+<li>a) <span class="arithmatex">\(\cdots \in A\)</span></li>
+<li>b) <span class="arithmatex">\(\cdots \notin A \cup B\)</span></li>
+<li>c) <span class="arithmatex">\(\cdots \subset A \cup B\)</span></li>
+<li>d) <span class="arithmatex">\(\cdots \in A \cap B\)</span></li>
+<li>e) <span class="arithmatex">\(\cdots \subset A \times B\)</span></li>
+<li>Quel est le complémentaire de <span class="arithmatex">\(B\)</span> dans <span class="arithmatex">\(\mathbb{Z}\)</span> ?</li>
+</ol>
+<details class="success">
+<summary>Voir la correction</summary>
+<p>Notons d'abord : <span class="arithmatex">\(A = ]-1, 10[\)</span> (un intervalle ouvert dans <span class="arithmatex">\(\mathbb{R}\)</span>) et <span class="arithmatex">\(B = \{0, 1, 2, 3, 4, 5, 6, 7\}\)</span>.</p>
+<p><strong>1.</strong> <span class="arithmatex">\(\mathbb{R}\)</span> (car <span class="arithmatex">\(B \subset \mathbb{N} \subset \mathbb{R}\)</span>).</p>
+<p><strong>2.</strong> (plusieurs réponses possibles, voici des exemples)
+- a) <span class="arithmatex">\(\pi \in A\)</span>
+- b) <span class="arithmatex">\(-2 \notin A \cup B\)</span> (car <span class="arithmatex">\(-2 \notin A\)</span> et <span class="arithmatex">\(-2 \notin B\)</span>)
+- c) <span class="arithmatex">\(\{0, 1, 2\} \subset A \cup B\)</span>
+- d) <span class="arithmatex">\(3 \in A \cap B\)</span> (car <span class="arithmatex">\(3 \in A\)</span> et <span class="arithmatex">\(3 \in B\)</span>)
+- e) <span class="arithmatex">\(\{(0, 0), (1, 1)\} \subset A \times B\)</span></p>
+<p><strong>3.</strong> Complémentaire de <span class="arithmatex">\(B\)</span> dans <span class="arithmatex">\(\mathbb{Z}\)</span> :
+$$ \overline{B}^{\,\mathbb{Z}} = {n \in \mathbb{Z}, n &lt; 0 \text{ ou } n \geq 8} = \mathbb{Z} \setminus [![0, 7]!] $$</p>
+</details>
+<hr />
+<h2 id="exercice-6-demontrer-une-inclusion-methode_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm0 6h2v2h-2zm1-11a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 6 — Démontrer une inclusion (méthode)<a class="headerlink" href="#exercice-6-demontrer-une-inclusion-methode_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-dur">🔴 Niveau examen</span></p>
+<ol>
+<li>Soient <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> deux ensembles. Comment s'y prend-on pour démontrer <span class="arithmatex">\(A \subset B\)</span> ? Pour démontrer <span class="arithmatex">\(A = B\)</span> ?</li>
+<li>Soit <span class="arithmatex">\(A\)</span> l'ensemble des fonctions constantes de <span class="arithmatex">\(\mathbb{R}\)</span> dans <span class="arithmatex">\(\mathbb{R}\)</span> et <span class="arithmatex">\(B\)</span> l'ensemble des fonctions paires. Montre que <span class="arithmatex">\(A \subset B\)</span>. A-t-on <span class="arithmatex">\(A = B\)</span> ?</li>
+</ol>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1. Méthode.</strong>
+- Pour montrer <span class="arithmatex">\(A \subset B\)</span> : on prend un <strong>élément quelconque</strong> <span class="arithmatex">\(x \in A\)</span> et on montre que <span class="arithmatex">\(x \in B\)</span>.
+- Pour montrer <span class="arithmatex">\(A = B\)</span> : on montre <strong>les deux inclusions</strong> <span class="arithmatex">\(A \subset B\)</span> et <span class="arithmatex">\(B \subset A\)</span>.</p>
+<p><strong>2. <span class="arithmatex">\(A \subset B\)</span> ?</strong></p>
+<p>Soit <span class="arithmatex">\(f \in A\)</span> : <span class="arithmatex">\(f\)</span> est constante, donc il existe <span class="arithmatex">\(c \in \mathbb{R}\)</span> avec <span class="arithmatex">\(f(x) = c\)</span> pour tout <span class="arithmatex">\(x\)</span>.
+Alors pour tout <span class="arithmatex">\(x \in \mathbb{R}\)</span> : <span class="arithmatex">\(f(-x) = c = f(x)\)</span>.
+Donc <span class="arithmatex">\(f\)</span> est paire, soit <span class="arithmatex">\(f \in B\)</span>. Conclusion : <span class="arithmatex">\(A \subset B\)</span>. <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /></p>
+<p><strong>A-t-on <span class="arithmatex">\(A = B\)</span> ?</strong> Non.</p>
+<p>Contre-exemple : <span class="arithmatex">\(f : x \mapsto x^2\)</span> est paire (<span class="arithmatex">\(f \in B\)</span>) mais pas constante (<span class="arithmatex">\(f \notin A\)</span>).</p>
+</details>
+<hr />
+<h2 id="ce-que-tu-dois-savoir-faire-apres-cette-page_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg></span> Ce que tu dois savoir faire après cette page<a class="headerlink" href="#ce-que-tu-dois-savoir-faire-apres-cette-page_1" title="Lien direct vers cette section">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Placer correctement <span class="arithmatex">\(\in\)</span>, <span class="arithmatex">\(\subset\)</span>, <span class="arithmatex">\(\varnothing\)</span></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Écrire un ensemble en extension, compréhension, paramétrique</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Comparer deux écritures différentes et démontrer qu'elles définissent le même ensemble</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Démontrer une inclusion par la méthode "soit <span class="arithmatex">\(x \in A\)</span>, montrons que <span class="arithmatex">\(x \in B\)</span>"</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Donner un contre-exemple à une égalité d'ensembles</li>
+</ul>
 <p><a href="../3_exos_operations/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : Opérations sur les ensembles</a></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 
 
 

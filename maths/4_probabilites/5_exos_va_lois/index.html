@@ -2296,6 +2296,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="exercices-variables-aleatoires-et-lois-usuelles">Exercices — Variables aléatoires et lois usuelles<a class="headerlink" href="#exercices-variables-aleatoires-et-lois-usuelles" title="Lien direct vers cette section">&para;</a></h1>
 <blockquote>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours : <a href="../1_cours/#4-variables-aleatoires-finies">Sections 4 et 5</a>.</p>
@@ -2491,7 +2492,218 @@ Idem pour les 3 autres cases. <strong>Indépendantes</strong>.</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Standardisation <span class="arithmatex">\(\widehat{X}\)</span></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Vérifier l'indépendance d'un couple par le <strong>tableau</strong></li>
 </ul>
+<h1 id="suite-exercices-style-examen"><a href="../6_exos_examen/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : exercices style examen</a><a class="headerlink" href="#suite-exercices-style-examen" title="Lien direct vers cette section">&para;</a></h1>
+<h1 id="exercices-variables-aleatoires-et-lois-usuelles_1">Exercices — Variables aléatoires et lois usuelles<a class="headerlink" href="#exercices-variables-aleatoires-et-lois-usuelles_1" title="Lien direct vers cette section">&para;</a></h1>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours : <a href="../1_cours/#4-variables-aleatoires-finies">Sections 4 et 5</a>.</p>
+<p><strong>Méthode-clé</strong> : (1) déterminer <span class="arithmatex">\(X(\Omega)\)</span>, (2) calculer <span class="arithmatex">\(P(X = k)\)</span> pour chaque <span class="arithmatex">\(k\)</span>, (3) vérifier <span class="arithmatex">\(\sum P(X = k) = 1\)</span>, (4) appliquer les formules d'espérance et de variance.</p>
+</blockquote>
+<hr />
+<h2 id="exercice-1-va-et-transformation-affine_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 7v2h2v8h2V7zm2-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 1 — VA et transformation affine<a class="headerlink" href="#exercice-1-va-et-transformation-affine_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p>On lance un dé équilibré une fois.
+<span class="arithmatex">\(T\)</span> = "numéro de la face apparue", <span class="arithmatex">\(X\)</span> = "double du numéro moins 6".</p>
+<p><strong>1.</strong> Donne la loi de <span class="arithmatex">\(T\)</span>. Calcule <span class="arithmatex">\(\mathbb{E}(T)\)</span> et <span class="arithmatex">\(\mathbb{V}(T)\)</span>.
+<strong>2.</strong> Quelles valeurs prend <span class="arithmatex">\(X\)</span> ? Relie <span class="arithmatex">\(X\)</span> à <span class="arithmatex">\(T\)</span>.
+<strong>3.</strong> En déduis <span class="arithmatex">\(\mathbb{E}(X)\)</span> et <span class="arithmatex">\(\mathbb{V}(X)\)</span>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Loi uniforme sur <span class="arithmatex">\([\![1, 6]\!]\)</span> : <span class="arithmatex">\(P(T = k) = 1/6\)</span> pour <span class="arithmatex">\(k \in [\![1, 6]\!]\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{E}(T) = \sum_{k=1}^6 k \cdot 1/6 = (1+2+\dots+6)/6 = 21/6 = 7/2\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{E}(T^2) = (1+4+9+16+25+36)/6 = 91/6\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{V}(T) = 91/6 - (7/2)^2 = 91/6 - 49/4 = 182/12 - 147/12 = 35/12\)</span>.</p>
+<p><strong>2.</strong> <span class="arithmatex">\(X = 2T - 6\)</span>. Valeurs : <span class="arithmatex">\(X(\Omega) = \{-4, -2, 0, 2, 4, 6\}\)</span>.</p>
+<p><strong>3.</strong> Linéarité :
+<span class="arithmatex">\(\mathbb{E}(X) = 2 \mathbb{E}(T) - 6 = 7 - 6 = 1\)</span>.
+<span class="arithmatex">\(\mathbb{V}(X) = 4 \mathbb{V}(T) = 4 \cdot 35/12 = 35/3\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-2-urne-tricolore-jeu-de-gain_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v2h4v2h-2a2 2 0 0 0-2 2v4h6v-2h-4v-2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 2 — Urne tricolore (jeu de gain)<a class="headerlink" href="#exercice-2-urne-tricolore-jeu-de-gain_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p>Urne : 4 boules bleues numérotées 1-4, 3 rouges numérotées 1-3, 2 vertes numérotées 1-2. On tire une boule.</p>
+<p><strong>1.</strong> <span class="arithmatex">\(X\)</span> = numéro de la boule. Donne la loi, <span class="arithmatex">\(\mathbb{E}(X)\)</span>, <span class="arithmatex">\(\mathbb{V}(X)\)</span>.
+<strong>2.</strong> Règle de gain : boule bleue paire → 2€, autre couleur paire → 3€, sinon 0€. <span class="arithmatex">\(Y\)</span> = gain.
+   a) Donne la loi de <span class="arithmatex">\(Y\)</span>.
+   b) Probabilité de gagner de l'argent ?</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p>Total : 9 boules. Équiprobabilité, chaque boule a proba <span class="arithmatex">\(1/9\)</span>.</p>
+<p><strong>1.</strong> Numéros présents : 1 (bleue), 2 (bleue), 3 (bleue), 4 (bleue), 1 (rouge), 2 (rouge), 3 (rouge), 1 (verte), 2 (verte).</p>
+<p>Comptage par numéro :
+- <span class="arithmatex">\(X = 1\)</span> : 3 boules (1 bleue + 1 rouge + 1 verte). <span class="arithmatex">\(P(X=1) = 3/9 = 1/3\)</span>.
+- <span class="arithmatex">\(X = 2\)</span> : 3 boules. <span class="arithmatex">\(P = 1/3\)</span>.
+- <span class="arithmatex">\(X = 3\)</span> : 2 boules. <span class="arithmatex">\(P = 2/9\)</span>.
+- <span class="arithmatex">\(X = 4\)</span> : 1 boule. <span class="arithmatex">\(P = 1/9\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{E}(X) = 1 \cdot 1/3 + 2 \cdot 1/3 + 3 \cdot 2/9 + 4 \cdot 1/9 = 3/9 + 6/9 + 6/9 + 4/9 = 19/9\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{E}(X^2) = 1 \cdot 1/3 + 4 \cdot 1/3 + 9 \cdot 2/9 + 16 \cdot 1/9 = 3/9 + 12/9 + 18/9 + 16/9 = 49/9\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{V}(X) = 49/9 - (19/9)^2 = 49/9 - 361/81 = (441 - 361)/81 = 80/81\)</span>.</p>
+<p><strong>2.</strong></p>
+<p>a)
+- <span class="arithmatex">\(Y = 2\)</span> : bleue paire (numéros 2 ou 4) → 2 boules. <span class="arithmatex">\(P = 2/9\)</span>.
+- <span class="arithmatex">\(Y = 3\)</span> : non-bleue paire (rouge 2, verte 2) → 2 boules. <span class="arithmatex">\(P = 2/9\)</span>.
+- <span class="arithmatex">\(Y = 0\)</span> : 5 boules restantes. <span class="arithmatex">\(P = 5/9\)</span>.</p>
+<p>Vérif : <span class="arithmatex">\(2/9 + 2/9 + 5/9 = 1\)</span> ✅.</p>
+<p>b) <span class="arithmatex">\(P(Y &gt; 0) = 4/9\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-3-tirage-hypergeometrique_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 15v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5V9a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 3 — Tirage hypergéométrique<a class="headerlink" href="#exercice-3-tirage-hypergeometrique_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>(TD3 ex 4.15)</p>
+<p>Main de 5 cartes dans un jeu de 32. <span class="arithmatex">\(X\)</span> = nombre de cœurs obtenus.</p>
+<p><strong>1.</strong> Valeurs prises ?
+<strong>2.</strong> Loi de <span class="arithmatex">\(X\)</span> ?
+<strong>3.</strong> Calcule <span class="arithmatex">\(\mathbb{E}(X)\)</span>. (On admet <strong>Vandermonde</strong> : <span class="arithmatex">\(\sum_{k=0}^n \binom{a}{k}\binom{b}{n-k} = \binom{a+b}{n}\)</span>.)</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Il y a 8 cœurs, on tire 5 cartes : <span class="arithmatex">\(X \in [\![0, 5]\!]\)</span>.</p>
+<p><strong>2.</strong> Loi hypergéométrique :
+$$ P(X = k) = \dfrac{\binom{8}{k} \binom{24}{5-k}}{\binom{32}{5}}, \quad k \in [![0, 5]!]. $$</p>
+<p><strong>3.</strong> Espérance :
+<span class="arithmatex">\(\mathbb{E}(X) = \sum_{k=0}^5 k P(X = k) = \dfrac{1}{\binom{32}{5}} \sum_{k=1}^5 k \binom{8}{k} \binom{24}{5-k}\)</span>.</p>
+<p>On utilise <span class="arithmatex">\(k \binom{8}{k} = 8 \binom{7}{k-1}\)</span>. Substitue <span class="arithmatex">\(j = k - 1\)</span> :
+<span class="arithmatex">\(\sum_{k=1}^5 k \binom{8}{k} \binom{24}{5-k} = 8 \sum_{j=0}^{4} \binom{7}{j} \binom{24}{4-j} = 8 \binom{31}{4}\)</span> (Vandermonde).</p>
+<p><span class="arithmatex">\(\mathbb{E}(X) = \dfrac{8 \binom{31}{4}}{\binom{32}{5}}\)</span>.</p>
+<p>On simplifie : <span class="arithmatex">\(\binom{32}{5} = \dfrac{32}{5} \binom{31}{4}\)</span>. Donc <span class="arithmatex">\(\mathbb{E}(X) = \dfrac{8 \cdot 5}{32} = \dfrac{40}{32} = \dfrac{5}{4}\)</span>.</p>
+<p><strong>Intuition</strong> : 8 cœurs sur 32 cartes = proportion <span class="arithmatex">\(1/4\)</span>. Sur 5 cartes : <span class="arithmatex">\(5 \times 1/4 = 5/4\)</span> en moyenne. ✅</p>
+</details>
+<hr />
+<h2 id="exercice-4-loi-uniforme-cours_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v4h2V7h-2v4h-2V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 4 — Loi uniforme (cours)<a class="headerlink" href="#exercice-4-loi-uniforme-cours_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p><span class="arithmatex">\(X\)</span> suit la loi uniforme sur <span class="arithmatex">\([\![1, n]\!]\)</span>.</p>
+<p><strong>1.</strong> Calcule <span class="arithmatex">\(\mathbb{E}(X)\)</span>.
+<strong>2.</strong> Calcule <span class="arithmatex">\(\mathbb{V}(X)\)</span>.</p>
+<p>On admet : <span class="arithmatex">\(\sum_{k=1}^n k = n(n+1)/2\)</span> et <span class="arithmatex">\(\sum_{k=1}^n k^2 = n(n+1)(2n+1)/6\)</span>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> <span class="arithmatex">\(\mathbb{E}(X) = \dfrac{1}{n} \sum_{k=1}^n k = \dfrac{n+1}{2}\)</span>.</p>
+<p><strong>2.</strong> <span class="arithmatex">\(\mathbb{E}(X^2) = \dfrac{1}{n} \sum k^2 = \dfrac{(n+1)(2n+1)}{6}\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{V}(X) = \dfrac{(n+1)(2n+1)}{6} - \left(\dfrac{n+1}{2}\right)^2 = \dfrac{(n+1)}{12} \big(2(2n+1) - 3(n+1)\big) = \dfrac{(n+1)(n-1)}{12} = \dfrac{n^2 - 1}{12}\)</span>.</p>
+<p><strong>À retenir</strong> : <span class="arithmatex">\(\mathbb{E} = (n+1)/2\)</span>, <span class="arithmatex">\(\mathbb{V} = (n^2 - 1)/12\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-5-notation-aleatoire-binomiale_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v2H9v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 5 — Notation aléatoire (binomiale)<a class="headerlink" href="#exercice-5-notation-aleatoire-binomiale_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>(TD3 ex 5.19)</p>
+<p>Un prof a 40 copies. Pour chacune, il lance un dé à 20 faces et <strong>assigne le résultat</strong> comme note.</p>
+<p><strong>1.</strong> Pour l'élève <span class="arithmatex">\(i\)</span>, <span class="arithmatex">\(N_i\)</span> = note. Loi, espérance, probabilité d'avoir la moyenne (<span class="arithmatex">\(\geq 10\)</span>) ?</p>
+<p><strong>2.</strong> <span class="arithmatex">\(X\)</span> = nombre d'élèves qui ont la moyenne. Donne la loi de <span class="arithmatex">\(X\)</span>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> <span class="arithmatex">\(N_i\)</span> suit la loi uniforme sur <span class="arithmatex">\([\![1, 20]\!]\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{E}(N_i) = 21/2 = 10.5\)</span>.</p>
+<p><span class="arithmatex">\(P(N_i \geq 10) = P(N_i \in \{10, 11, \dots, 20\}) = 11/20\)</span>.</p>
+<p><strong>2.</strong> Chaque élève a une probabilité <span class="arithmatex">\(p = 11/20\)</span> d'avoir la moyenne, indépendamment des autres.</p>
+<p>Donc <span class="arithmatex">\(X\)</span> suit <span class="arithmatex">\(\mathcal{B}(40, 11/20)\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{E}(X) = 40 \cdot 11/20 = 22\)</span>. <span class="arithmatex">\(\mathbb{V}(X) = 40 \cdot 11/20 \cdot 9/20 = 198/20 = 9.9\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-6-qcm-aleatoire-bernoulli-binomiale_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm0 6h2v2h-2zm1-11a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 6 — QCM aléatoire (Bernoulli → binomiale)<a class="headerlink" href="#exercice-6-qcm-aleatoire-bernoulli-binomiale_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>(TD3 ex 5.20)</p>
+<p>QCM à 20 questions, <span class="arithmatex">\(1\)</span> point chacune. Un étudiant répond au hasard, <span class="arithmatex">\(P(\text{juste}) = 1/3\)</span>, réponses indépendantes.</p>
+<p><strong>1.</strong> Pour la question <span class="arithmatex">\(k\)</span>, <span class="arithmatex">\(X_k\)</span> = note. Loi de <span class="arithmatex">\(X_k\)</span> ? Nom ? <span class="arithmatex">\(\mathbb{E}, \mathbb{V}\)</span> ?
+<strong>2.</strong> <span class="arithmatex">\(Y\)</span> = note totale. Exprime <span class="arithmatex">\(Y\)</span> en fonction des <span class="arithmatex">\(X_k\)</span>. Loi de <span class="arithmatex">\(Y\)</span> ?
+<strong>3.</strong> Probabilité d'avoir la moyenne <span class="arithmatex">\(Y \geq 10\)</span> ?</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> <span class="arithmatex">\(X_k \in \{0, 1\}\)</span> avec <span class="arithmatex">\(P(X_k = 1) = 1/3\)</span>. C'est une <strong>Bernoulli</strong> <span class="arithmatex">\(\mathcal{B}(1/3)\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{E}(X_k) = 1/3\)</span>. <span class="arithmatex">\(\mathbb{V}(X_k) = (1/3)(2/3) = 2/9\)</span>.</p>
+<p><strong>2.</strong> <span class="arithmatex">\(Y = \sum_{k=1}^{20} X_k\)</span>. Somme de 20 Bernoulli indépendantes de même paramètre <span class="arithmatex">\(1/3\)</span> ⟹ <span class="arithmatex">\(Y \sim \mathcal{B}(20, 1/3)\)</span>.</p>
+<p><span class="arithmatex">\(\mathbb{E}(Y) = 20/3 \approx 6.67\)</span>. <span class="arithmatex">\(\mathbb{V}(Y) = 20 \cdot 2/9 = 40/9\)</span>.</p>
+<div class="arithmatex">\[ P(Y = i) = \binom{20}{i} (1/3)^i (2/3)^{20-i}. \]</div>
+<p><strong>3.</strong> <span class="arithmatex">\(P(Y \geq 10) = \sum_{i=10}^{20} \binom{20}{i} (1/3)^i (2/3)^{20-i}\)</span>. (Formule, calcul à la machine. Valeur ≈ 1.4%.)</p>
+</details>
+<hr />
+<h2 id="exercice-7-variable-centree-reduite_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11 17 4-8V7H9v2h4l-4 8zm1-15a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 7 — Variable centrée réduite<a class="headerlink" href="#exercice-7-variable-centree-reduite_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-dur">🔴 Niveau examen</span></p>
+<p>(TD3 ex 4.16)</p>
+<p>Soit <span class="arithmatex">\(X\)</span> une VA d'espérance <span class="arithmatex">\(\mu = \mathbb{E}(X)\)</span> et écart-type <span class="arithmatex">\(\sigma = \sigma(X) &gt; 0\)</span>. On pose :</p>
+<div class="arithmatex">\[ \widehat{X} = \dfrac{X - \mu}{\sigma}. \]</div>
+<p>Vérifie que <span class="arithmatex">\(\mathbb{E}(\widehat{X}) = 0\)</span> et <span class="arithmatex">\(\mathbb{V}(\widehat{X}) = 1\)</span>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p>Par linéarité (avec <span class="arithmatex">\(a = 1/\sigma\)</span>, <span class="arithmatex">\(b = -\mu/\sigma\)</span>) :</p>
+<p><span class="arithmatex">\(\mathbb{E}(\widehat{X}) = \dfrac{1}{\sigma} \mathbb{E}(X) - \dfrac{\mu}{\sigma} = \dfrac{\mu - \mu}{\sigma} = 0\)</span>. ✅</p>
+<p><span class="arithmatex">\(\mathbb{V}(\widehat{X}) = \left(\dfrac{1}{\sigma}\right)^2 \mathbb{V}(X) = \dfrac{\sigma^2}{\sigma^2} = 1\)</span>. ✅</p>
+<p><strong>Pourquoi c'est utile</strong> : en machine learning et stats, on <strong>standardise</strong> souvent les données (<span class="arithmatex">\(\mu = 0, \sigma = 1\)</span>) avant d'appliquer un algo.</p>
+</details>
+<hr />
+<h2 id="exercice-8-independance-dun-couple-de-va_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 13h2v2h-2zm0-4h2v2h-2zm0 8h2a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5V9a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v1.5a1.5 1.5 0 0 0 1.5 1.5A1.5 1.5 0 0 0 9 13.5V15a2 2 0 0 0 2 2m1-15a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 8 — Indépendance d'un couple de VA<a class="headerlink" href="#exercice-8-independance-dun-couple-de-va_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-dur">🔴 Niveau examen</span></p>
+<p>(TD3 ex 4.17)</p>
+<p>Jeu de 32 cartes. <span class="arithmatex">\(X\)</span> = nombre de dames obtenues, <span class="arithmatex">\(Y\)</span> = nombre de cœurs.</p>
+<p><strong>1.</strong> On tire <strong>une</strong> carte.
+   a) Lois de <span class="arithmatex">\(X\)</span> et <span class="arithmatex">\(Y\)</span>.
+   b) Loi du couple <span class="arithmatex">\((X, Y)\)</span> (tableau).
+   c) <span class="arithmatex">\(X\)</span> et <span class="arithmatex">\(Y\)</span> sont-elles indépendantes ?</p>
+<p><strong>2.</strong> On tire <strong>deux</strong> cartes (simultanées).
+   a) Lois de <span class="arithmatex">\(X\)</span> et <span class="arithmatex">\(Y\)</span>.
+   b) Tableau de la loi couple.
+   c) <span class="arithmatex">\(X\)</span> et <span class="arithmatex">\(Y\)</span> sont-elles indépendantes ?</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Une carte.</p>
+<p>a) <span class="arithmatex">\(X \in \{0, 1\}\)</span> : <span class="arithmatex">\(P(X=1) = 4/32 = 1/8\)</span>. <span class="arithmatex">\(P(X=0) = 7/8\)</span>.
+<span class="arithmatex">\(Y \in \{0, 1\}\)</span> : <span class="arithmatex">\(P(Y=1) = 8/32 = 1/4\)</span>. <span class="arithmatex">\(P(Y=0) = 3/4\)</span>.</p>
+<p>b) Tableau du couple :</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="arithmatex">\(Y=0\)</span></th>
+<th><span class="arithmatex">\(Y=1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(X=0\)</span></td>
+<td>21/32 (non-dame non-cœur)</td>
+<td>7/32 (cœur non-dame)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(X=1\)</span></td>
+<td>3/32 (dame non-cœur)</td>
+<td>1/32 (dame de cœur)</td>
+</tr>
+</tbody>
+</table>
+<p>c) Vérif : <span class="arithmatex">\(P(X=0) P(Y=0) = (7/8)(3/4) = 21/32 = P(X=0, Y=0)\)</span>. ✅
+Idem pour les 3 autres cases. <strong>Indépendantes</strong>.</p>
+<p><strong>2.</strong> Deux cartes (simultanées). <span class="arithmatex">\(X, Y \in \{0, 1, 2\}\)</span>.</p>
+<p>a) Lois (hypergéométriques) :
+<span class="arithmatex">\(P(X = k) = \dfrac{\binom{4}{k}\binom{28}{2-k}}{\binom{32}{2}}\)</span>, <span class="arithmatex">\(P(Y = k) = \dfrac{\binom{8}{k}\binom{24}{2-k}}{\binom{32}{2}}\)</span>.</p>
+<p>Avec <span class="arithmatex">\(\binom{32}{2} = 496\)</span> :
+<span class="arithmatex">\(P(X=0) = \binom{28}{2}/496 = 378/496\)</span>, <span class="arithmatex">\(P(X=1) = 4 \cdot 28/496 = 112/496\)</span>, <span class="arithmatex">\(P(X=2) = 6/496\)</span>.</p>
+<p>b) Tableau plus complexe (9 cases). On compte par couple <span class="arithmatex">\((X = i, Y = j)\)</span> le nombre de mains.</p>
+<p>Par exemple <span class="arithmatex">\(P(X=1, Y=1)\)</span> : la main contient 1 dame ET 1 cœur. Soit la dame est de cœur (1 dame de cœur, l'autre carte parmi 31 sans cœur sans dame = 21) : <span class="arithmatex">\(1 \times 21 / \binom{32}{2}\)</span>. Soit la dame n'est pas de cœur (3 dames non-cœur × 7 cœurs non-dame) : <span class="arithmatex">\(3 \times 7 = 21\)</span>. Total : <span class="arithmatex">\(42/496\)</span>.</p>
+<p>c) Pour montrer la non-indépendance, il suffit d'<strong>une case</strong> où la formule produit ≠ loi jointe. On constate que <span class="arithmatex">\(P(X=1) P(Y=1) \neq P(X=1, Y=1)\)</span>. ⟹ <strong>Pas indépendantes</strong>.</p>
+<p><strong>Intuition</strong> : avec 2 cartes, savoir qu'on a 1 dame change la proba d'avoir 1 cœur (effet de "sans remise").</p>
+</details>
+<hr />
+<h2 id="recap_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg></span> Récap<a class="headerlink" href="#recap_1" title="Lien direct vers cette section">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Loi, <span class="arithmatex">\(\mathbb{E}, \mathbb{V}\)</span> à partir d'un univers simple</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Linéarité de l'espérance et de la variance (avec coefficient <span class="arithmatex">\(a^2\)</span>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Reconnaître <strong>Bernoulli</strong> vs <strong>binomiale</strong> vs <strong>hypergéométrique</strong> vs <strong>uniforme</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Standardisation <span class="arithmatex">\(\widehat{X}\)</span></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Vérifier l'indépendance d'un couple par le <strong>tableau</strong></li>
+</ul>
 <p><a href="../6_exos_examen/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : exercices style examen</a></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 
 
 

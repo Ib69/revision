@@ -2696,6 +2696,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="cours-probabilites">Cours — Probabilités<a class="headerlink" href="#cours-probabilites" title="Lien direct vers cette section">&para;</a></h1>
 <h2 id="pourquoi-on-etudie-ca"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca" title="Lien direct vers cette section">&para;</a></h2>
 <p>Les <strong>probabilités</strong>, c'est l'outil pour <strong>quantifier le hasard</strong>. On veut savoir :</p>
@@ -2865,7 +2866,195 @@ $<span class="arithmatex">\(P(A) = P(A \mid B) P(B) + P(A \mid \overline{B}) P(\
 <li><a href="../3_exos_equiprobabilite/">Exos — Équiprobabilité</a> : cartes, dés, urnes</li>
 <li><a href="../4_exos_conditionnelles/">Exos — Conditionnelles</a> : arbres, totales, Bayes</li>
 <li><a href="../5_exos_va_lois/">Exos — Variables aléatoires</a> : loi, espérance, variance, lois usuelles</li>
-<li><a href="../6_exos_examen/">Exos — Style examen</a></li>
+<li>
+<h1 id="exos-style-examen"><a href="../6_exos_examen/">Exos — Style examen</a><a class="headerlink" href="#exos-style-examen" title="Lien direct vers cette section">&para;</a></h1>
+</li>
+</ol>
+<h1 id="cours-probabilites_1">Cours — Probabilités<a class="headerlink" href="#cours-probabilites_1" title="Lien direct vers cette section">&para;</a></h1>
+<h2 id="pourquoi-on-etudie-ca_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Les <strong>probabilités</strong>, c'est l'outil pour <strong>quantifier le hasard</strong>. On veut savoir :</p>
+<ul>
+<li>Quelle chance d'obtenir un brelan au poker ?</li>
+<li>Quelle proba qu'un algo de tri prenne du temps ?</li>
+<li>Si un test médical est positif, quelle chance d'être malade ?</li>
+</ul>
+<p>C'est la <strong>brique de base</strong> de tout ce qui touche aux statistiques, à l'IA, à la complexité d'algorithmes en moyenne.</p>
+<p>Bonne nouvelle : dans ce chapitre, on reste sur les <strong>probabilités finies</strong> (univers fini), ce qui veut dire que <strong>tout se ramène à du dénombrement</strong>.</p>
+<hr />
+<h2 id="1-espace-probabilise_1">1. Espace probabilisé<a class="headerlink" href="#1-espace-probabilise_1" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="11-univers-et-evenements_1">1.1 Univers et événements<a class="headerlink" href="#11-univers-et-evenements_1" title="Lien direct vers cette section">&para;</a></h3>
+<ul>
+<li><strong>Univers</strong> <span class="arithmatex">\(\Omega\)</span> : ensemble de <strong>toutes les issues possibles</strong> de l'expérience aléatoire.</li>
+<li><strong>Événement</strong> : une partie <span class="arithmatex">\(A \subset \Omega\)</span>.</li>
+<li><strong>Événement élémentaire</strong> : un singleton <span class="arithmatex">\(\{\omega\}\)</span>.</li>
+</ul>
+<p><strong>Exemple</strong> : lancer d'un dé à 6 faces.
+<span class="arithmatex">\(\Omega = \{1, 2, 3, 4, 5, 6\}\)</span>. L'événement "obtenir un nombre pair" est <span class="arithmatex">\(A = \{2, 4, 6\}\)</span>.</p>
+<h3 id="12-mesure-de-probabilite_1">1.2 Mesure de probabilité<a class="headerlink" href="#12-mesure-de-probabilite_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Une <strong>probabilité</strong> est une application <span class="arithmatex">\(P : \mathcal{P}(\Omega) \to [0, 1]\)</span> vérifiant les <strong>axiomes de Kolmogorov</strong> :</p>
+<div class="retenir">
+<p><strong>Axiomes</strong></p>
+<ol>
+<li><span class="arithmatex">\(P(\Omega) = 1\)</span></li>
+<li><span class="arithmatex">\(\forall A,\ P(A) \geq 0\)</span></li>
+<li>Si <span class="arithmatex">\(A \cap B = \varnothing\)</span> : <span class="arithmatex">\(P(A \cup B) = P(A) + P(B)\)</span></li>
+</ol>
+</div>
+<h3 id="13-proprietes-a-savoir-redemontrer_1">1.3 Propriétés (à savoir redémontrer)<a class="headerlink" href="#13-proprietes-a-savoir-redemontrer_1" title="Lien direct vers cette section">&para;</a></h3>
+<ul>
+<li><span class="arithmatex">\(P(\varnothing) = 0\)</span></li>
+<li><span class="arithmatex">\(P(\overline{A}) = 1 - P(A)\)</span></li>
+<li><span class="arithmatex">\(0 \leq P(A) \leq 1\)</span></li>
+<li><span class="arithmatex">\(A \subset B \Rightarrow P(A) \leq P(B)\)</span> et <span class="arithmatex">\(P(B \setminus A) = P(B) - P(A)\)</span></li>
+<li><span class="arithmatex">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span> (formule des probabilités)</li>
+</ul>
+<hr />
+<h2 id="2-equiprobabilite_1">2. Équiprobabilité<a class="headerlink" href="#2-equiprobabilite_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Quand toutes les issues élémentaires ont <strong>la même probabilité</strong> <span class="arithmatex">\(1/|\Omega|\)</span>, on parle d'<strong>équiprobabilité</strong> (ou loi uniforme).</p>
+<div class="retenir">
+<p><strong>Formule magique en équiprobabilité</strong></p>
+<div class="arithmatex">\[ P(A) = \frac{|A|}{|\Omega|} = \frac{\text{cas favorables}}{\text{cas possibles}} \]</div>
+<p>Tout devient un problème de <strong>dénombrement</strong>.</p>
+</div>
+<p><strong>Exemple</strong> : dans un jeu de 32 cartes, tirage de 5 cartes. Probabilité d'avoir 4 trèfles ?</p>
+<p><span class="arithmatex">\(|\Omega| = \binom{32}{5}\)</span> (mains possibles).
+<span class="arithmatex">\(|A| = \binom{8}{4} \times \binom{24}{1}\)</span> (4 trèfles parmi 8, et 1 autre carte parmi 24 non-trèfles).</p>
+<p><span class="arithmatex">\(P(A) = \dfrac{\binom{8}{4}\binom{24}{1}}{\binom{32}{5}}\)</span>.</p>
+<hr />
+<h2 id="3-probabilites-conditionnelles_1">3. Probabilités conditionnelles<a class="headerlink" href="#3-probabilites-conditionnelles_1" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="31-definition_1">3.1 Définition<a class="headerlink" href="#31-definition_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Si <span class="arithmatex">\(P(B) &gt; 0\)</span>, la <strong>probabilité de <span class="arithmatex">\(A\)</span> sachant <span class="arithmatex">\(B\)</span></strong> est :</p>
+<div class="arithmatex">\[ P(A \mid B) = \frac{P(A \cap B)}{P(B)} \]</div>
+<p><strong>Intuition</strong> : on se met "à l'intérieur de <span class="arithmatex">\(B\)</span>" et on calcule la proportion de <span class="arithmatex">\(B\)</span> qui est aussi dans <span class="arithmatex">\(A\)</span>.</p>
+<h3 id="32-formule-des-probabilites-composees_1">3.2 Formule des probabilités composées<a class="headerlink" href="#32-formule-des-probabilites-composees_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ P(A \cap B) = P(A \mid B) \cdot P(B) = P(B \mid A) \cdot P(A) \]</div>
+<h3 id="33-formule-des-probabilites-totales_1">3.3 Formule des probabilités totales<a class="headerlink" href="#33-formule-des-probabilites-totales_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Si <span class="arithmatex">\(\{B_1, B_2, \dots, B_n\}\)</span> est une <strong>partition</strong> de <span class="arithmatex">\(\Omega\)</span> (chaque <span class="arithmatex">\(B_i\)</span> disjoint, recouvrant tout, de probabilité <span class="arithmatex">\(&gt; 0\)</span>) :</p>
+<div class="retenir">
+<p><strong>Probabilités totales</strong></p>
+<div class="arithmatex">\[ P(A) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i) \]</div>
+<p>Très utilisé avec une <strong>partition à 2 éléments</strong> : <span class="arithmatex">\(\{B, \overline{B}\}\)</span>.
+$<span class="arithmatex">\(P(A) = P(A \mid B) P(B) + P(A \mid \overline{B}) P(\overline{B})\)</span>$</p>
+</div>
+<h3 id="34-formule-de-bayes_1">3.4 Formule de Bayes<a class="headerlink" href="#34-formule-de-bayes_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>C'est la formule de <strong>retournement</strong> : on connaît <span class="arithmatex">\(P(B \mid A)\)</span>, on veut <span class="arithmatex">\(P(A \mid B)\)</span>.</p>
+<div class="retenir">
+<p><strong>Bayes</strong></p>
+<div class="arithmatex">\[ P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)} \]</div>
+<p>Souvent on calcule <span class="arithmatex">\(P(B)\)</span> avec les probabilités totales en bas.</p>
+</div>
+<h3 id="35-independance_1">3.5 Indépendance<a class="headerlink" href="#35-independance_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Deux événements <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> sont <strong>indépendants</strong> si :</p>
+<div class="arithmatex">\[ P(A \cap B) = P(A) \cdot P(B) \]</div>
+<p>Équivalent (si <span class="arithmatex">\(P(B) &gt; 0\)</span>) à : <span class="arithmatex">\(P(A \mid B) = P(A)\)</span> — savoir que <span class="arithmatex">\(B\)</span> s'est produit ne change pas la proba de <span class="arithmatex">\(A\)</span>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Indépendant ≠ Incompatible !</p>
+<ul>
+<li><strong>Incompatibles</strong> : <span class="arithmatex">\(A \cap B = \varnothing\)</span>, donc <span class="arithmatex">\(P(A \cap B) = 0\)</span>.</li>
+<li><strong>Indépendants</strong> : <span class="arithmatex">\(P(A \cap B) = P(A) P(B)\)</span>.</li>
+</ul>
+<p>Si <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> sont incompatibles <strong>et</strong> <span class="arithmatex">\(P(A), P(B) &gt; 0\)</span>, alors ils ne sont <strong>PAS indépendants</strong> (car <span class="arithmatex">\(0 \neq P(A) P(B)\)</span>).</p>
+</div>
+<hr />
+<h2 id="4-variables-aleatoires-finies_1">4. Variables aléatoires finies<a class="headerlink" href="#4-variables-aleatoires-finies_1" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="41-definition_1">4.1 Définition<a class="headerlink" href="#41-definition_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Une <strong>variable aléatoire</strong> (VA) <span class="arithmatex">\(X\)</span> est une <strong>fonction</strong> <span class="arithmatex">\(X : \Omega \to \mathbb{R}\)</span> qui à chaque issue associe une valeur numérique.</p>
+<p>L'ensemble des valeurs prises est noté <span class="arithmatex">\(X(\Omega) = \{x_1, x_2, \dots, x_n\}\)</span>.</p>
+<p><strong>Exemple</strong> : dé à 6 faces. <span class="arithmatex">\(X\)</span> = "valeur obtenue". <span class="arithmatex">\(X(\Omega) = \{1, 2, 3, 4, 5, 6\}\)</span>.</p>
+<h3 id="42-loi-de-x_1">4.2 Loi de <span class="arithmatex">\(X\)</span><a class="headerlink" href="#42-loi-de-x_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>La <strong>loi</strong> de <span class="arithmatex">\(X\)</span> = liste des <span class="arithmatex">\(P(X = x_i)\)</span> pour chaque <span class="arithmatex">\(x_i \in X(\Omega)\)</span>.</p>
+<p>Vérification : <span class="arithmatex">\(\sum_i P(X = x_i) = 1\)</span>.</p>
+<h3 id="43-esperance_1">4.3 Espérance<a class="headerlink" href="#43-esperance_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>L'<strong>espérance</strong> = la moyenne pondérée des valeurs :</p>
+<div class="arithmatex">\[ \mathbb{E}(X) = \sum_{i} x_i \cdot P(X = x_i) \]</div>
+<p><strong>Intuition</strong> : si on répète l'expérience plein de fois, la moyenne des <span class="arithmatex">\(X\)</span> tend vers <span class="arithmatex">\(\mathbb{E}(X)\)</span>.</p>
+<h3 id="44-variance-et-ecart-type_1">4.4 Variance et écart-type<a class="headerlink" href="#44-variance-et-ecart-type_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ \mathbb{V}(X) = \mathbb{E}\big[(X - \mathbb{E}(X))^2\big] = \mathbb{E}(X^2) - \mathbb{E}(X)^2 \]</div>
+<p>(La seconde formule est la <strong>formule de König–Huygens</strong>, plus simple à calculer.)</p>
+<p>L'écart-type est <span class="arithmatex">\(\sigma(X) = \sqrt{\mathbb{V}(X)}\)</span>.</p>
+<p><strong>Intuition</strong> : variance = à quel point les valeurs sont <strong>étalées</strong> autour de la moyenne.</p>
+<h3 id="45-linearite_1">4.5 Linéarité<a class="headerlink" href="#45-linearite_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="retenir">
+<p><strong>Pour <span class="arithmatex">\(a, b \in \mathbb{R}\)</span> :</strong></p>
+<ul>
+<li><span class="arithmatex">\(\mathbb{E}(aX + b) = a\mathbb{E}(X) + b\)</span></li>
+<li><span class="arithmatex">\(\mathbb{V}(aX + b) = a^2 \mathbb{V}(X)\)</span></li>
+<li>Pour deux VA <span class="arithmatex">\(X, Y\)</span> : <span class="arithmatex">\(\mathbb{E}(X + Y) = \mathbb{E}(X) + \mathbb{E}(Y)\)</span> (<strong>toujours vrai</strong>)</li>
+<li>Si <span class="arithmatex">\(X\)</span> et <span class="arithmatex">\(Y\)</span> sont <strong>indépendantes</strong> : <span class="arithmatex">\(\mathbb{V}(X + Y) = \mathbb{V}(X) + \mathbb{V}(Y)\)</span></li>
+</ul>
+</div>
+<hr />
+<h2 id="5-lois-usuelles-a-connaitre_1">5. Lois usuelles à connaître<a class="headerlink" href="#5-lois-usuelles-a-connaitre_1" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="51-loi-uniforme-sur-1-n_1">5.1 Loi uniforme sur <span class="arithmatex">\([\![1, n]\!]\)</span><a class="headerlink" href="#51-loi-uniforme-sur-1-n_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(P(X = k) = \dfrac{1}{n}\)</span> pour <span class="arithmatex">\(k \in [\![1, n]\!]\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(\mathbb{E}(X) = \dfrac{n+1}{2}\)</span></li>
+<li><span class="arithmatex">\(\mathbb{V}(X) = \dfrac{n^2 - 1}{12}\)</span></li>
+</ul>
+<h3 id="52-loi-de-bernoulli-mathcalbp_1">5.2 Loi de Bernoulli <span class="arithmatex">\(\mathcal{B}(p)\)</span><a class="headerlink" href="#52-loi-de-bernoulli-mathcalbp_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(X\)</span> vaut 1 (succès) avec proba <span class="arithmatex">\(p\)</span>, 0 (échec) avec proba <span class="arithmatex">\(1 - p\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(\mathbb{E}(X) = p\)</span></li>
+<li><span class="arithmatex">\(\mathbb{V}(X) = p(1 - p)\)</span></li>
+</ul>
+<p><strong>Quand l'utiliser</strong> : tout phénomène à <strong>deux issues</strong> (succès/échec).</p>
+<h3 id="53-loi-binomiale-mathcalbn-p_1">5.3 Loi binomiale <span class="arithmatex">\(\mathcal{B}(n, p)\)</span><a class="headerlink" href="#53-loi-binomiale-mathcalbn-p_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(X\)</span> = nombre de <strong>succès</strong> sur <span class="arithmatex">\(n\)</span> répétitions <strong>indépendantes</strong> d'une Bernoulli.</p>
+<div class="arithmatex">\[ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k \in [\![0, n]\!] \]</div>
+<ul>
+<li><span class="arithmatex">\(\mathbb{E}(X) = np\)</span></li>
+<li><span class="arithmatex">\(\mathbb{V}(X) = np(1 - p)\)</span></li>
+</ul>
+<p><strong>Quand l'utiliser</strong> : "on répète <span class="arithmatex">\(n\)</span> fois la même expérience à 2 issues, comptons les succès".</p>
+<h3 id="54-loi-hypergeometrique-en-bonus_1">5.4 Loi hypergéométrique (en bonus)<a class="headerlink" href="#54-loi-hypergeometrique-en-bonus_1" title="Lien direct vers cette section">&para;</a></h3>
+<p><span class="arithmatex">\(X\)</span> = nombre de "bonnes" boules tirées dans un tirage <strong>simultané</strong> de <span class="arithmatex">\(k\)</span> parmi <span class="arithmatex">\(n\)</span>, sachant qu'il y a <span class="arithmatex">\(a\)</span> bonnes parmi les <span class="arithmatex">\(n\)</span>.</p>
+<div class="arithmatex">\[ P(X = j) = \frac{\binom{a}{j} \binom{n-a}{k-j}}{\binom{n}{k}} \]</div>
+<p>(Pratique au poker, au loto, etc.)</p>
+<hr />
+<h2 id="6-pieges-classiques_1">6. Pièges classiques<a class="headerlink" href="#6-pieges-classiques_1" title="Lien direct vers cette section">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">À surveiller</p>
+<ol>
+<li>
+<p><strong>Indépendant ≠ Incompatible</strong> (déjà dit, mais c'est LE piège).</p>
+</li>
+<li>
+<p><strong>Proba toujours dans <span class="arithmatex">\([0, 1]\)</span></strong> : si tu trouves un résultat <span class="arithmatex">\(&gt; 1\)</span> ou <span class="arithmatex">\(&lt; 0\)</span>, c'est faux.</p>
+</li>
+<li>
+<p><strong>Avec ou sans remise</strong> ? Si avec remise : binomiale. Si simultané : hypergéométrique.</p>
+</li>
+<li>
+<p><strong>Bien choisir l'univers</strong> <span class="arithmatex">\(\Omega\)</span> : si tu confonds "tirage ordonné" et "tirage simultané", tu vas mélanger numérateur et dénominateur.</p>
+</li>
+<li>
+<p><strong>Sachant</strong> : <span class="arithmatex">\(P(A \mid B) \neq P(B \mid A)\)</span> en général ! Bayes existe précisément pour les relier.</p>
+</li>
+</ol>
+</div>
+<hr />
+<h2 id="va-tentrainer_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Va t'entraîner<a class="headerlink" href="#va-tentrainer_1" title="Lien direct vers cette section">&para;</a></h2>
+<ol>
+<li><a href="../2_exos_modelisation/">Exos — Modélisation</a> : décrire <span class="arithmatex">\(\Omega\)</span> et les axiomes</li>
+<li><a href="../3_exos_equiprobabilite/">Exos — Équiprobabilité</a> : cartes, dés, urnes</li>
+<li><a href="../4_exos_conditionnelles/">Exos — Conditionnelles</a> : arbres, totales, Bayes</li>
+<li><a href="../5_exos_va_lois/">Exos — Variables aléatoires</a> : loi, espérance, variance, lois usuelles</li>
+<li><a href="../6_exos_examen/">Exos — Style examen</a><blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
 </ol>
 
 

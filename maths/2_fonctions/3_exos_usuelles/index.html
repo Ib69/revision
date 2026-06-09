@@ -2252,6 +2252,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="exercices-fonctions-usuelles">Exercices — Fonctions usuelles<a class="headerlink" href="#exercices-fonctions-usuelles" title="Lien direct vers cette section">&para;</a></h1>
 <blockquote>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours utile : <a href="../1_cours/">Fonctions — sections 3 et 5</a>, notamment <strong>arctan</strong>.</p>
@@ -2560,7 +2561,331 @@ $$ \arctan'(y) = \frac{1}{1 + y^2}. $$</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Redémontrer <span class="arithmatex">\(\arctan'(y) = \dfrac{1}{1+y^2}\)</span></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Citer plusieurs couples de fonctions réciproques</li>
 </ul>
+<h1 id="suite-exercices-style-examen"><a href="../4_exos_examen/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : exercices style examen</a><a class="headerlink" href="#suite-exercices-style-examen" title="Lien direct vers cette section">&para;</a></h1>
+<h1 id="exercices-fonctions-usuelles_1">Exercices — Fonctions usuelles<a class="headerlink" href="#exercices-fonctions-usuelles_1" title="Lien direct vers cette section">&para;</a></h1>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours utile : <a href="../1_cours/">Fonctions — sections 3 et 5</a>, notamment <strong>arctan</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="exercice-1-injsurjbij-de-x-mapsto-x2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 7v2h2v8h2V7zm2-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 1 — Inj/surj/bij de <span class="arithmatex">\(x \mapsto x^2\)</span><a class="headerlink" href="#exercice-1-injsurjbij-de-x-mapsto-x2_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p>Étudie l'injectivité et la surjectivité de <span class="arithmatex">\(f : x \mapsto x^2\)</span> dans les 4 cas :</p>
+<p>a) <span class="arithmatex">\(E = \mathbb{R}\)</span> et <span class="arithmatex">\(F = \mathbb{R}\)</span>
+b) <span class="arithmatex">\(E = \mathbb{R}\)</span> et <span class="arithmatex">\(F = \mathbb{R}_+\)</span>
+c) <span class="arithmatex">\(E = \mathbb{R}_+\)</span> et <span class="arithmatex">\(F = \mathbb{R}\)</span>
+d) <span class="arithmatex">\(E = \mathbb{R}_+\)</span> et <span class="arithmatex">\(F = \mathbb{R}_+\)</span></p>
+<details class="success">
+<summary>Voir la correction</summary>
+<table>
+<thead>
+<tr>
+<th>Cas</th>
+<th>Départ</th>
+<th>Arrivée</th>
+<th>Inj ?</th>
+<th>Surj ?</th>
+<th>Bij ?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td><span class="arithmatex">\(\mathbb{R}\)</span></td>
+<td><span class="arithmatex">\(\mathbb{R}\)</span></td>
+<td>❌ (<span class="arithmatex">\(f(-1)=f(1)\)</span>)</td>
+<td>❌ (<span class="arithmatex">\(-1\)</span> non atteint)</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>b</td>
+<td><span class="arithmatex">\(\mathbb{R}\)</span></td>
+<td><span class="arithmatex">\(\mathbb{R}_+\)</span></td>
+<td>❌ (<span class="arithmatex">\(f(-1)=f(1)\)</span>)</td>
+<td>✅ (<span class="arithmatex">\(\sqrt{y}\)</span>)</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>c</td>
+<td><span class="arithmatex">\(\mathbb{R}_+\)</span></td>
+<td><span class="arithmatex">\(\mathbb{R}\)</span></td>
+<td>✅ (croissante sur <span class="arithmatex">\(\mathbb{R}_+\)</span>)</td>
+<td>❌ (<span class="arithmatex">\(-1\)</span> non atteint)</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>d</td>
+<td><span class="arithmatex">\(\mathbb{R}_+\)</span></td>
+<td><span class="arithmatex">\(\mathbb{R}_+\)</span></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Réflexe</strong> : pour rendre <span class="arithmatex">\(f\)</span> bijective, on <strong>restreint</strong> ce qu'il faut.</p>
+</details>
+<hr />
+<h2 id="exercice-2-construire-injnon-surj-surjnon-inj_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v2h4v2h-2a2 2 0 0 0-2 2v4h6v-2h-4v-2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 2 — Construire inj/non-surj, surj/non-inj<a class="headerlink" href="#exercice-2-construire-injnon-surj-surjnon-inj_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p><strong>1.</strong> Construis une fonction <strong>injective</strong> de <span class="arithmatex">\([\![1, 4]\!]\)</span> vers <span class="arithmatex">\([\![1, 5]\!]\)</span>. Peut-elle être surjective ? Pourquoi ?</p>
+<p><strong>2.</strong> Construis une fonction <strong>surjective</strong> de <span class="arithmatex">\([\![1, 4]\!]\)</span> vers <span class="arithmatex">\([\![1, 3]\!]\)</span>. Peut-elle être injective ? Pourquoi ?</p>
+<p><strong>3.</strong> Construis une fonction <strong>bijective</strong> de <span class="arithmatex">\([\![1, 4]\!]\)</span> vers <span class="arithmatex">\([\![1, 4]\!]\)</span>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Injective : <span class="arithmatex">\(f(1) = 1, f(2) = 2, f(3) = 3, f(4) = 4\)</span>.
+Surjective ? Non — il y a 4 éléments à gauche et 5 à droite, donc 5 n'aura aucun antécédent.
+<strong>Règle</strong> : injective et surjective de <span class="arithmatex">\(E\)</span> vers <span class="arithmatex">\(F\)</span> finis ⟹ <span class="arithmatex">\(|E| = |F|\)</span>.</p>
+<p><strong>2.</strong> Surjective : <span class="arithmatex">\(f(1) = 1, f(2) = 2, f(3) = 3, f(4) = 1\)</span>.
+Injective ? Non — il y a 4 éléments à gauche pour 3 à droite, donc au moins deux ont la même image (principe des tiroirs).</p>
+<p><strong>3.</strong> Bijective : <span class="arithmatex">\(f(1) = 2, f(2) = 4, f(3) = 1, f(4) = 3\)</span> (n'importe quelle permutation marche).</p>
+</details>
+<hr />
+<h2 id="exercice-3-choisir-i-et-j-pour-ajuster_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 15v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5V9a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 3 — Choisir <span class="arithmatex">\(I\)</span> et <span class="arithmatex">\(J\)</span> pour ajuster<a class="headerlink" href="#exercice-3-choisir-i-et-j-pour-ajuster_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Soient <span class="arithmatex">\(I\)</span> et <span class="arithmatex">\(J\)</span> deux intervalles de <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+<p><strong>1.</strong> Donne <span class="arithmatex">\(I, J\)</span> tels que <span class="arithmatex">\(f : I \to J\)</span> soit <strong>injective et non surjective</strong>, pour :
+   a) <span class="arithmatex">\(f(x) = \cos(x)\)</span>
+   b) <span class="arithmatex">\(f(x) = |x|\)</span></p>
+<p><strong>2.</strong> Donne <span class="arithmatex">\(I, J\)</span> tels que <span class="arithmatex">\(f : I \to J\)</span> soit <strong>surjective et non injective</strong>, pour les mêmes fonctions.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1. Injective, non surjective.</strong></p>
+<p>a) <span class="arithmatex">\(\cos\)</span> est injective sur <span class="arithmatex">\([0, \pi]\)</span> (strictement décroissante). <span class="arithmatex">\(\cos([0, \pi]) = [-1, 1]\)</span>.
+   Pour qu'elle ne soit pas surjective, on prend une arrivée plus grande : <span class="arithmatex">\(J = [-1, 2]\)</span>.
+   Donc <span class="arithmatex">\(I = [0, \pi]\)</span>, <span class="arithmatex">\(J = [-1, 2]\)</span>.</p>
+<p>b) <span class="arithmatex">\(|\cdot|\)</span> est injective sur <span class="arithmatex">\(\mathbb{R}_+\)</span>. Pour non surjective : <span class="arithmatex">\(J = [0, +\infty[ \cup \{...\}\)</span>.
+   Plus simple : <span class="arithmatex">\(I = [0, 1]\)</span>, <span class="arithmatex">\(J = [0, 5]\)</span>.</p>
+<p><strong>2. Surjective, non injective.</strong></p>
+<p>a) <span class="arithmatex">\(\cos(\mathbb{R}) = [-1, 1]\)</span>. Donc <span class="arithmatex">\(I = \mathbb{R}\)</span>, <span class="arithmatex">\(J = [-1, 1]\)</span>.
+   Non injective car périodique.</p>
+<p>b) <span class="arithmatex">\(|\cdot|\)</span> va de <span class="arithmatex">\(\mathbb{R}\)</span> sur <span class="arithmatex">\(\mathbb{R}_+\)</span>. Donc <span class="arithmatex">\(I = \mathbb{R}\)</span>, <span class="arithmatex">\(J = \mathbb{R}_+\)</span>.
+   Non injective car <span class="arithmatex">\(|-x| = |x|\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-4-tableau-dimages-et-antecedents-pour-expsinln_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v4h2V7h-2v4h-2V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 4 — Tableau d'images et antécédents pour exp/sin/ln<a class="headerlink" href="#exercice-4-tableau-dimages-et-antecedents-pour-expsinln_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Complète le tableau suivant. <strong>Conseil</strong> : dessine les graphes au brouillon.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="arithmatex">\(\exp : \mathbb{R} \to \mathbb{R}\)</span></th>
+<th><span class="arithmatex">\(\sin : [-\pi, \pi] \to \mathbb{R}\)</span></th>
+<th><span class="arithmatex">\(\ln : ]0, +\infty[ \to \mathbb{R}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(\{0\})\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(]0, \pi])\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f^{-1}(\{0\})\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f^{-1}(\{1\})\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f^{-1}(]-\infty, 0])\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<details class="success">
+<summary>Voir la correction</summary>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="arithmatex">\(\exp\)</span></th>
+<th><span class="arithmatex">\(\sin\)</span> sur <span class="arithmatex">\([-\pi, \pi]\)</span></th>
+<th><span class="arithmatex">\(\ln\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(\{0\})\)</span></td>
+<td><span class="arithmatex">\(\{1\}\)</span></td>
+<td><span class="arithmatex">\(\{0\}\)</span></td>
+<td>non défini (<span class="arithmatex">\(0 \notin\)</span> domaine)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(]0, \pi])\)</span></td>
+<td><span class="arithmatex">\(]1, e^\pi]\)</span></td>
+<td><span class="arithmatex">\([0, 1]\)</span></td>
+<td><span class="arithmatex">\(]-\infty, \ln \pi]\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f^{-1}(\{0\})\)</span></td>
+<td><span class="arithmatex">\(\varnothing\)</span> (exp <span class="arithmatex">\(&gt; 0\)</span>)</td>
+<td><span class="arithmatex">\(\{-\pi, 0, \pi\}\)</span></td>
+<td><span class="arithmatex">\(\{1\}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f^{-1}(\{1\})\)</span></td>
+<td><span class="arithmatex">\(\{0\}\)</span></td>
+<td><span class="arithmatex">\(\{\pi/2\}\)</span></td>
+<td><span class="arithmatex">\(\{e\}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f^{-1}(]-\infty, 0])\)</span></td>
+<td><span class="arithmatex">\(\varnothing\)</span></td>
+<td><span class="arithmatex">\([-\pi, 0] \cup \{\pi\}\)</span></td>
+<td><span class="arithmatex">\(]0, 1]\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cas pénibles à comprendre</strong>
+- <span class="arithmatex">\(\sin\)</span> sur <span class="arithmatex">\([-\pi, \pi]\)</span> s'annule en <span class="arithmatex">\(-\pi, 0, \pi\)</span> : 3 antécédents pour 0.
+- <span class="arithmatex">\(\sin([-\pi, 0])\)</span> est <span class="arithmatex">\([-1, 0]\)</span> (et <span class="arithmatex">\(\sin(\pi) = 0\)</span> aussi), donc l'antécédent de <span class="arithmatex">\(]-\infty, 0]\)</span> contient <span class="arithmatex">\([-\pi, 0]\)</span> <strong>et</strong> le point <span class="arithmatex">\(\pi\)</span> isolé.</p>
+</details>
+<hr />
+<h2 id="exercice-5-calculs-dimages-directesreciproques-sur-fonctions-usuelles_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v2H9v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 5 — Calculs d'images directes/réciproques sur fonctions usuelles<a class="headerlink" href="#exercice-5-calculs-dimages-directesreciproques-sur-fonctions-usuelles_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Soient <span class="arithmatex">\(f, g, h\)</span> définies par <span class="arithmatex">\(f(x) = e^x\)</span>, <span class="arithmatex">\(g(x) = x^2\)</span> (sur <span class="arithmatex">\(\mathbb{R}\)</span>) et <span class="arithmatex">\(h(x) = \sin(x)\)</span> (sur <span class="arithmatex">\([-\pi, \pi]\)</span>).</p>
+<p><strong>1.</strong> Détermine :
+   a) <span class="arithmatex">\(f(\mathbb{R})\)</span>
+   b) <span class="arithmatex">\(f^{-1}(\{0\})\)</span></p>
+<p><strong>2.</strong> Détermine :
+   a) <span class="arithmatex">\(g([-1, 4])\)</span>
+   b) <span class="arithmatex">\(g^{-1}([-1, 4])\)</span></p>
+<p><strong>3.</strong> Détermine :
+   a) <span class="arithmatex">\(h([-\pi, \pi])\)</span>
+   b) <span class="arithmatex">\(h([0, \pi/2])\)</span>
+   c) <span class="arithmatex">\(h^{-1}([0, 1])\)</span>
+   d) <span class="arithmatex">\(h^{-1}([1, 2])\)</span>
+   e) <span class="arithmatex">\(h^{-1}([3, 4])\)</span></p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong></p>
+<p>a) <span class="arithmatex">\(f(\mathbb{R}) = ]0, +\infty[\)</span> (exp est strictement positive)</p>
+<p>b) <span class="arithmatex">\(f^{-1}(\{0\}) = \varnothing\)</span> (rien ne tombe sur 0)</p>
+<p><strong>2.</strong></p>
+<p>a) <span class="arithmatex">\(g\)</span> croît sur <span class="arithmatex">\([0, 4]\)</span> et <span class="arithmatex">\(g(-1) = 1, g(0) = 0, g(4) = 16\)</span>. Donc <span class="arithmatex">\(g([-1, 4]) = [0, 16]\)</span>.</p>
+<p>b) On cherche <span class="arithmatex">\(x\)</span> avec <span class="arithmatex">\(-1 \leq x^2 \leq 4\)</span>. La gauche est toujours vraie (<span class="arithmatex">\(x^2 \geq 0\)</span>).
+   Reste <span class="arithmatex">\(x^2 \leq 4\)</span> ⟺ <span class="arithmatex">\(-2 \leq x \leq 2\)</span>. Donc <span class="arithmatex">\(g^{-1}([-1, 4]) = [-2, 2]\)</span>.</p>
+<p><strong>3.</strong></p>
+<p>a) <span class="arithmatex">\(h([-\pi, \pi]) = [-1, 1]\)</span> (atteint tout son intervalle image).</p>
+<p>b) <span class="arithmatex">\(h([0, \pi/2]) = [0, 1]\)</span> (<span class="arithmatex">\(\sin\)</span> croît de 0 à 1).</p>
+<p>c) <span class="arithmatex">\(h^{-1}([0, 1])\)</span> : où <span class="arithmatex">\(\sin(x) \in [0, 1]\)</span> sur <span class="arithmatex">\([-\pi, \pi]\)</span> ? Réponse : <span class="arithmatex">\([0, \pi]\)</span>.</p>
+<p>d) <span class="arithmatex">\(h^{-1}([1, 2])\)</span> : où <span class="arithmatex">\(\sin(x) \geq 1\)</span> sur <span class="arithmatex">\([-\pi, \pi]\)</span> ? Seulement <span class="arithmatex">\(x = \pi/2\)</span>. Donc <span class="arithmatex">\(\{\pi/2\}\)</span>.</p>
+<p>e) <span class="arithmatex">\(h^{-1}([3, 4])\)</span> = <span class="arithmatex">\(\varnothing\)</span> (<span class="arithmatex">\(\sin \leq 1\)</span> partout).</p>
+</details>
+<hr />
+<h2 id="exercice-6-la-fonction-arctan_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm0 6h2v2h-2zm1-11a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 6 — La fonction <span class="arithmatex">\(\arctan\)</span><a class="headerlink" href="#exercice-6-la-fonction-arctan_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-dur">🔴 Niveau examen</span></p>
+<p><strong>1.</strong> Pourquoi <span class="arithmatex">\(\tan\)</span> est bijective de <span class="arithmatex">\(]-\pi/2, \pi/2[\)</span> vers <span class="arithmatex">\(\mathbb{R}\)</span> ?</p>
+<p><strong>2.</strong> Sa réciproque s'appelle <span class="arithmatex">\(\arctan\)</span>.
+   a) Dessine son allure (asymptotes, point d'inflexion).
+   b) Démontre que pour tout <span class="arithmatex">\(y \in \mathbb{R}\)</span>, <span class="arithmatex">\(\arctan'(y) = \dfrac{1}{1 + y^2}\)</span>.
+   c) Remplis le tableau :</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(\alpha\)</span></th>
+<th><span class="arithmatex">\(0\)</span></th>
+<th><span class="arithmatex">\(\pi/3\)</span></th>
+<th><span class="arithmatex">\(-\pi/4\)</span></th>
+<th></th>
+<th><span class="arithmatex">\(\arctan(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\tan(\alpha)\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span class="arithmatex">\(x\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Cases vides additionnelles : <span class="arithmatex">\(\tan(\alpha) = 1\)</span>, <span class="arithmatex">\(\tan(\alpha) = -\sqrt{3}\)</span>, <span class="arithmatex">\(\tan(\alpha) = 1/\sqrt{3}\)</span> → trouver <span class="arithmatex">\(\alpha\)</span>.</p>
+<p><strong>3.</strong> Donne d'autres couples de fonctions usuelles réciproques.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Sur <span class="arithmatex">\(]-\pi/2, \pi/2[\)</span>, <span class="arithmatex">\(\tan\)</span> est <strong>strictement croissante</strong> (sa dérivée <span class="arithmatex">\(1/\cos^2\)</span> est <span class="arithmatex">\(&gt;0\)</span>), et atteint <strong>tous</strong> les réels (limites <span class="arithmatex">\(-\infty\)</span> et <span class="arithmatex">\(+\infty\)</span> aux bornes). C'est donc une bijection continue de <span class="arithmatex">\(]-\pi/2, \pi/2[\)</span> vers <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+<p><strong>2.</strong></p>
+<p>a) Allure : courbe en "S" couché, passant par l'origine, avec asymptotes horizontales <span class="arithmatex">\(y = \pm \pi/2\)</span>, strictement croissante.</p>
+<p>b) On part de <span class="arithmatex">\(\tan(\arctan(y)) = y\)</span> pour tout <span class="arithmatex">\(y\)</span>. On dérive (composition) :
+$$ (1 + \tan^2(\arctan(y))) \cdot \arctan'(y) = 1. $$
+Or <span class="arithmatex">\(\tan(\arctan(y)) = y\)</span>, donc <span class="arithmatex">\(1 + \tan^2(\arctan(y)) = 1 + y^2\)</span>.
+D'où :
+$$ \arctan'(y) = \frac{1}{1 + y^2}. $$</p>
+<p>c) Tableau :</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(\alpha\)</span></th>
+<th><span class="arithmatex">\(0\)</span></th>
+<th><span class="arithmatex">\(\pi/3\)</span></th>
+<th><span class="arithmatex">\(-\pi/4\)</span></th>
+<th><span class="arithmatex">\(\pi/4\)</span></th>
+<th><span class="arithmatex">\(-\pi/3\)</span></th>
+<th><span class="arithmatex">\(\pi/6\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\tan(\alpha)\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(\sqrt{3}\)</span></td>
+<td><span class="arithmatex">\(-1\)</span></td>
+<td><span class="arithmatex">\(1\)</span></td>
+<td><span class="arithmatex">\(-\sqrt{3}\)</span></td>
+<td><span class="arithmatex">\(1/\sqrt{3}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>À connaître par cœur : <span class="arithmatex">\(\arctan(1) = \pi/4\)</span>, <span class="arithmatex">\(\arctan(\sqrt{3}) = \pi/3\)</span>, <span class="arithmatex">\(\arctan(1/\sqrt{3}) = \pi/6\)</span>.</p>
+<p><strong>3.</strong> Autres réciproques usuelles :
+- <span class="arithmatex">\(\exp \leftrightarrow \ln\)</span>
+- <span class="arithmatex">\(x \mapsto x^2\)</span> (sur <span class="arithmatex">\(\mathbb{R}_+\)</span>) <span class="arithmatex">\(\leftrightarrow x \mapsto \sqrt{x}\)</span>
+- <span class="arithmatex">\(\sin\)</span> (sur <span class="arithmatex">\([-\pi/2, \pi/2]\)</span>) <span class="arithmatex">\(\leftrightarrow \arcsin\)</span>
+- <span class="arithmatex">\(\cos\)</span> (sur <span class="arithmatex">\([0, \pi]\)</span>) <span class="arithmatex">\(\leftrightarrow \arccos\)</span></p>
+</details>
+<hr />
+<h2 id="ce-que-tu-dois-savoir-faire-apres-cette-page_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg></span> Ce que tu dois savoir faire après cette page<a class="headerlink" href="#ce-que-tu-dois-savoir-faire-apres-cette-page_1" title="Lien direct vers cette section">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Discuter inj/surj/bij d'une fonction selon ses ensembles</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Calculer <span class="arithmatex">\(f(A)\)</span>, <span class="arithmatex">\(f^{-1}(B)\)</span> pour <span class="arithmatex">\(\exp, \ln, \sin, \cos\)</span> sur des intervalles</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Connaître par cœur le tableau de valeurs de <span class="arithmatex">\(\arctan\)</span></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Redémontrer <span class="arithmatex">\(\arctan'(y) = \dfrac{1}{1+y^2}\)</span></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Citer plusieurs couples de fonctions réciproques</li>
+</ul>
 <p><a href="../4_exos_examen/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : exercices style examen</a></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 
 
 

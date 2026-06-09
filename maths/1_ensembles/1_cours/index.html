@@ -2530,6 +2530,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="cours-ensembles">Cours — Ensembles<a class="headerlink" href="#cours-ensembles" title="Lien direct vers cette section">&para;</a></h1>
 <h2 id="pourquoi-on-etudie-ca"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca" title="Lien direct vers cette section">&para;</a></h2>
 <p>Un <strong>ensemble</strong>, c'est juste un <strong>paquet d'objets</strong>. Une liste de gens dans une classe, les nombres pairs, les lettres de l'alphabet, les fonctions paires... tout ça, ce sont des ensembles.</p>
@@ -2690,7 +2691,186 @@ Exemple : <span class="arithmatex">\((1, 2) \in \{1,2\} \times \{2,3\}\)</span> 
 <ol>
 <li><a href="../2_exos_bases/">Exos — Bases</a> : appartenance, inclusion, écriture des ensembles</li>
 <li><a href="../3_exos_operations/">Exos — Opérations</a> : <span class="arithmatex">\(\cup\)</span>, <span class="arithmatex">\(\cap\)</span>, <span class="arithmatex">\(\setminus\)</span>, <span class="arithmatex">\(\times\)</span>, cardinaux</li>
-<li><a href="../4_exos_examen/">Exos — Style examen</a> : sujets du même niveau que les examens B3</li>
+<li>
+<h1 id="exos-style-examen-sujets-du-meme-niveau-que-les-examens-b3"><a href="../4_exos_examen/">Exos — Style examen</a> : sujets du même niveau que les examens B3<a class="headerlink" href="#exos-style-examen-sujets-du-meme-niveau-que-les-examens-b3" title="Lien direct vers cette section">&para;</a></h1>
+</li>
+</ol>
+<h1 id="cours-ensembles_1">Cours — Ensembles<a class="headerlink" href="#cours-ensembles_1" title="Lien direct vers cette section">&para;</a></h1>
+<h2 id="pourquoi-on-etudie-ca_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg></span> Pourquoi on étudie ça ?<a class="headerlink" href="#pourquoi-on-etudie-ca_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Un <strong>ensemble</strong>, c'est juste un <strong>paquet d'objets</strong>. Une liste de gens dans une classe, les nombres pairs, les lettres de l'alphabet, les fonctions paires... tout ça, ce sont des ensembles.</p>
+<p>Les ensembles, c'est le <strong>vocabulaire</strong> des maths. Avant de parler de fonctions, de probas, de matrices, il faut savoir dire :</p>
+<ul>
+<li>"tel objet <strong>appartient</strong> à tel paquet"</li>
+<li>"tel paquet est <strong>inclus</strong> dans tel autre paquet"</li>
+<li>"voici l'<strong>union</strong>, l'<strong>intersection</strong> de deux paquets"</li>
+</ul>
+<p>Tant que ces mots ne sont pas posés, tout le reste glisse.</p>
+<hr />
+<h2 id="1-vocabulaire-de-base_1">1. Vocabulaire de base<a class="headerlink" href="#1-vocabulaire-de-base_1" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="11-appartenance-inclusion_1">1.1 Appartenance, inclusion<a class="headerlink" href="#11-appartenance-inclusion_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>Un <strong>ensemble</strong> <span class="arithmatex">\(E\)</span> est une collection d'objets, appelés ses <strong>éléments</strong>.</p>
+<ul>
+<li>Si <span class="arithmatex">\(x\)</span> est un élément de <span class="arithmatex">\(E\)</span>, on écrit <span class="arithmatex">\(x \in E\)</span> ("<span class="arithmatex">\(x\)</span> appartient à <span class="arithmatex">\(E\)</span>").</li>
+<li>Sinon, <span class="arithmatex">\(x \notin E\)</span>.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p><span class="arithmatex">\(E = \{1, 2, 3\}\)</span>. Alors <span class="arithmatex">\(2 \in E\)</span>, mais <span class="arithmatex">\(5 \notin E\)</span>.</p>
+</div>
+<p>Un ensemble <span class="arithmatex">\(A\)</span> est <strong>inclus</strong> dans un ensemble <span class="arithmatex">\(B\)</span> si <strong>tous les éléments de <span class="arithmatex">\(A\)</span> sont aussi dans <span class="arithmatex">\(B\)</span></strong>. On note <span class="arithmatex">\(A \subset B\)</span>.</p>
+<div class="arithmatex">\[ A \subset B \iff \forall x,\ (x \in A \Rightarrow x \in B) \]</div>
+<div class="admonition warning">
+<p class="admonition-title">Ne confonds pas <span class="arithmatex">\(\in\)</span> et <span class="arithmatex">\(\subset\)</span> !</p>
+<ul>
+<li><span class="arithmatex">\(\in\)</span> relie <strong>un élément</strong> à un <strong>ensemble</strong>. Ex : <span class="arithmatex">\(3 \in \{1,2,3\}\)</span>.</li>
+<li><span class="arithmatex">\(\subset\)</span> relie <strong>un ensemble</strong> à un <strong>ensemble</strong>. Ex : <span class="arithmatex">\(\{3\} \subset \{1,2,3\}\)</span>.</li>
+</ul>
+<p>Donc <span class="arithmatex">\(3 \in \{1,2,3\}\)</span> ✅ mais <span class="arithmatex">\(3 \subset \{1,2,3\}\)</span> ❌ (3 n'est pas un ensemble).
+Et <span class="arithmatex">\(\{3\} \in \{1,2,3\}\)</span> ❌ mais <span class="arithmatex">\(\{3\} \subset \{1,2,3\}\)</span> ✅.</p>
+</div>
+<h3 id="12-egalite-de-deux-ensembles_1">1.2 Égalité de deux ensembles<a class="headerlink" href="#12-egalite-de-deux-ensembles_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ A = B \iff A \subset B \text{ et } B \subset A \]</div>
+<p><strong>Méthode standard pour démontrer <span class="arithmatex">\(A = B\)</span></strong> : on montre les deux inclusions, l'une après l'autre.</p>
+<h3 id="13-lensemble-vide_1">1.3 L'ensemble vide<a class="headerlink" href="#13-lensemble-vide_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>L'ensemble vide <span class="arithmatex">\(\varnothing\)</span> n'a aucun élément. Il est <strong>inclus dans n'importe quel ensemble</strong> (<span class="arithmatex">\(\varnothing \subset E\)</span> pour tout <span class="arithmatex">\(E\)</span>).</p>
+<hr />
+<h2 id="2-comment-decrire-un-ensemble_1">2. Comment décrire un ensemble<a class="headerlink" href="#2-comment-decrire-un-ensemble_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Il y a <strong>3 façons</strong> d'écrire un ensemble. Tu dois les connaître toutes les trois.</p>
+<table>
+<thead>
+<tr>
+<th>Méthode</th>
+<th>Comment</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Extension</strong></td>
+<td>On liste tous les éléments</td>
+<td><span class="arithmatex">\(\{1, 3, 5, 7, 9\}\)</span></td>
+</tr>
+<tr>
+<td><strong>Compréhension</strong></td>
+<td>"ensemble des <span class="arithmatex">\(x\)</span> tels que..."</td>
+<td><span class="arithmatex">\(\{n \in \mathbb{N},\ n \text{ impair},\ n &lt; 10\}\)</span></td>
+</tr>
+<tr>
+<td><strong>Paramétrique</strong></td>
+<td>"ensemble des <span class="arithmatex">\(f(k)\)</span> quand <span class="arithmatex">\(k\)</span> varie..."</td>
+<td><span class="arithmatex">\(\{2k+1,\ k \in \{0,1,2,3,4\}\}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">À retenir</p>
+<ul>
+<li><strong>Extension</strong> = tu listes. Pratique pour des petits ensembles.</li>
+<li><strong>Compréhension</strong> = tu donnes une <strong>condition</strong> que doivent vérifier les éléments.</li>
+<li><strong>Paramétrique</strong> = tu donnes une <strong>formule</strong> qui génère les éléments quand un paramètre varie.</li>
+</ul>
+</div>
+<hr />
+<h2 id="3-operations-sur-les-ensembles_1">3. Opérations sur les ensembles<a class="headerlink" href="#3-operations-sur-les-ensembles_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Soient <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> deux ensembles, vivant dans un même <strong>référentiel</strong> <span class="arithmatex">\(\Omega\)</span> (l'univers).</p>
+<h3 id="31-union_1">3.1 Union<a class="headerlink" href="#31-union_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ A \cup B = \{x,\ x \in A \text{ ou } x \in B\} \]</div>
+<p>"Les éléments qui sont dans <span class="arithmatex">\(A\)</span>, dans <span class="arithmatex">\(B\)</span>, ou dans les deux."</p>
+<h3 id="32-intersection_1">3.2 Intersection<a class="headerlink" href="#32-intersection_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ A \cap B = \{x,\ x \in A \text{ et } x \in B\} \]</div>
+<p>"Les éléments qui sont dans <span class="arithmatex">\(A\)</span> <strong>et</strong> dans <span class="arithmatex">\(B\)</span>."</p>
+<p>Si <span class="arithmatex">\(A \cap B = \varnothing\)</span>, on dit que <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> sont <strong>disjoints</strong> (rien en commun).</p>
+<h3 id="33-complementaire_1">3.3 Complémentaire<a class="headerlink" href="#33-complementaire_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ \overline{A} = \{x \in \Omega,\ x \notin A\} \]</div>
+<p>"Tout ce qui n'est pas dans <span class="arithmatex">\(A\)</span> (en restant dans <span class="arithmatex">\(\Omega\)</span>)."</p>
+<h3 id="34-difference_1">3.4 Différence<a class="headerlink" href="#34-difference_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ A \setminus B = A \cap \overline{B} = \{x,\ x \in A \text{ et } x \notin B\} \]</div>
+<h3 id="35-produit-cartesien_1">3.5 Produit cartésien<a class="headerlink" href="#35-produit-cartesien_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ A \times B = \{(a, b),\ a \in A,\ b \in B\} \]</div>
+<p>C'est l'ensemble des <strong>couples ordonnés</strong> <span class="arithmatex">\((a, b)\)</span> où <span class="arithmatex">\(a\)</span> vient de <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(b\)</span> vient de <span class="arithmatex">\(B\)</span>.</p>
+<div class="admonition warning">
+<p class="admonition-title">L'ordre compte !</p>
+<p>En général <span class="arithmatex">\(A \times B \neq B \times A\)</span>.
+Exemple : <span class="arithmatex">\((1, 2) \in \{1,2\} \times \{2,3\}\)</span> mais <span class="arithmatex">\((1, 2) \notin \{2,3\} \times \{1,2\}\)</span> (car le premier élément doit être dans <span class="arithmatex">\(\{2,3\}\)</span>).</p>
+</div>
+<h3 id="36-ensemble-des-parties_1">3.6 Ensemble des parties<a class="headerlink" href="#36-ensemble-des-parties_1" title="Lien direct vers cette section">&para;</a></h3>
+<div class="arithmatex">\[ \mathcal{P}(E) = \{A,\ A \subset E\} \]</div>
+<p>C'est <strong>l'ensemble de tous les sous-ensembles</strong> de <span class="arithmatex">\(E\)</span> (y compris <span class="arithmatex">\(\varnothing\)</span> et <span class="arithmatex">\(E\)</span> lui-même).</p>
+<div class="admonition example">
+<p class="admonition-title">Exemple</p>
+<p>Si <span class="arithmatex">\(E = \{1, 2\}\)</span>, alors <span class="arithmatex">\(\mathcal{P}(E) = \big\{ \varnothing,\ \{1\},\ \{2\},\ \{1, 2\} \big\}\)</span>.</p>
+<p><span class="arithmatex">\(\mathcal{P}(E)\)</span> contient <span class="arithmatex">\(4\)</span> éléments, qui sont <strong>eux-mêmes des ensembles</strong>.</p>
+</div>
+<hr />
+<h2 id="4-cardinal-dun-ensemble-fini_1">4. Cardinal d'un ensemble fini<a class="headerlink" href="#4-cardinal-dun-ensemble-fini_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Le <strong>cardinal</strong> d'un ensemble fini <span class="arithmatex">\(E\)</span>, noté <span class="arithmatex">\(\text{Card}(E)\)</span>, <span class="arithmatex">\(|E|\)</span> ou <span class="arithmatex">\(\#E\)</span>, c'est juste son <strong>nombre d'éléments</strong>.</p>
+<div class="retenir">
+<p><strong>À retenir — les formules de cardinaux</strong></p>
+<ul>
+<li><span class="arithmatex">\(|A \cup B| = |A| + |B| - |A \cap B|\)</span></li>
+<li>Si <span class="arithmatex">\(A \cap B = \varnothing\)</span> : <span class="arithmatex">\(|A \sqcup B| = |A| + |B|\)</span></li>
+<li><span class="arithmatex">\(|A \times B| = |A| \times |B|\)</span></li>
+<li><span class="arithmatex">\(|\mathcal{P}(E)| = 2^{|E|}\)</span></li>
+<li><strong>Formule du crible (3 ensembles)</strong> :
+  $<span class="arithmatex">\(|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|\)</span>$</li>
+</ul>
+</div>
+<h3 id="mini-exemple_1">Mini-exemple<a class="headerlink" href="#mini-exemple_1" title="Lien direct vers cette section">&para;</a></h3>
+<p>40 étudiants, 35 parlent anglais, 20 parlent espagnol, tous parlent au moins une des deux. Combien parlent les deux ?</p>
+<p><span class="arithmatex">\(|A \cup E| = 40\)</span>, <span class="arithmatex">\(|A| = 35\)</span>, <span class="arithmatex">\(|E| = 20\)</span>.
+<span class="arithmatex">\(|A \cap E| = |A| + |E| - |A \cup E| = 35 + 20 - 40 = 15\)</span>.</p>
+<hr />
+<h2 id="5-partition_1">5. Partition<a class="headerlink" href="#5-partition_1" title="Lien direct vers cette section">&para;</a></h2>
+<p>Une <strong>partition</strong> d'un ensemble <span class="arithmatex">\(E\)</span>, c'est une <strong>découpe</strong> de <span class="arithmatex">\(E\)</span> en sous-ensembles <span class="arithmatex">\(A_1, A_2, \dots, A_n\)</span> tels que :</p>
+<ol>
+<li>Chacun est non vide : <span class="arithmatex">\(A_i \neq \varnothing\)</span></li>
+<li>Ils sont <strong>deux à deux disjoints</strong> : <span class="arithmatex">\(A_i \cap A_j = \varnothing\)</span> pour <span class="arithmatex">\(i \neq j\)</span></li>
+<li>Leur union recouvre tout : <span class="arithmatex">\(A_1 \cup A_2 \cup \dots \cup A_n = E\)</span></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Image mentale</p>
+<p>Imagine que tu coupes une pizza : chaque part est non vide, les parts ne se chevauchent pas, et ensemble elles font toute la pizza. Ça, c'est une partition.</p>
+</div>
+<hr />
+<h2 id="6-pieges-classiques_1">6. Pièges classiques<a class="headerlink" href="#6-pieges-classiques_1" title="Lien direct vers cette section">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Pièges à éviter</p>
+<ol>
+<li>
+<p><strong><span class="arithmatex">\(\in\)</span> vs <span class="arithmatex">\(\subset\)</span></strong> : c'est LA confusion #1. Demande-toi toujours : "à gauche, c'est un élément ou un ensemble ?"</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\varnothing\)</span> vs <span class="arithmatex">\(\{\varnothing\}\)</span></strong> : <span class="arithmatex">\(\varnothing\)</span> n'a aucun élément, mais <span class="arithmatex">\(\{\varnothing\}\)</span> en a <strong>un</strong> (qui est l'ensemble vide). Donc <span class="arithmatex">\(|\{\varnothing\}| = 1\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(A \times B \neq B \times A\)</span></strong> : les couples sont ordonnés.</p>
+</li>
+<li>
+<p><strong>Cardinal de <span class="arithmatex">\(\mathcal{P}(E)\)</span> = <span class="arithmatex">\(2^n\)</span></strong>, pas <span class="arithmatex">\(n^2\)</span> ni <span class="arithmatex">\(n!\)</span>.</p>
+</li>
+</ol>
+</div>
+<hr />
+<h2 id="va-tentrainer_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Va t'entraîner<a class="headerlink" href="#va-tentrainer_1" title="Lien direct vers cette section">&para;</a></h2>
+<ol>
+<li><a href="../2_exos_bases/">Exos — Bases</a> : appartenance, inclusion, écriture des ensembles</li>
+<li><a href="../3_exos_operations/">Exos — Opérations</a> : <span class="arithmatex">\(\cup\)</span>, <span class="arithmatex">\(\cap\)</span>, <span class="arithmatex">\(\setminus\)</span>, <span class="arithmatex">\(\times\)</span>, cardinaux</li>
+<li><a href="../4_exos_examen/">Exos — Style examen</a> : sujets du même niveau que les examens B3<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
 </ol>
 
 

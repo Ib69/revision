@@ -2252,6 +2252,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="exercices-pascal-et-newton">Exercices — Pascal et Newton<a class="headerlink" href="#exercices-pascal-et-newton" title="Lien direct vers cette section">&para;</a></h1>
 <blockquote>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours : <a href="../1_cours/#5-triangle-de-pascal-et-formule-de-pascal">Triangle de Pascal et Binôme de Newton</a>.</p>
@@ -2374,7 +2375,145 @@ Réponse plus simple : <span class="arithmatex">\(k \cdot n!\)</span> = nombre d
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Reconnaître <span class="arithmatex">\(2^n\)</span>, <span class="arithmatex">\(3^n\)</span>, etc. dans les sommes <span class="arithmatex">\(\sum \binom{n}{k} x^k y^{n-k}\)</span></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Donner un problème combinatoire pour une expression donnée</li>
 </ul>
+<h1 id="suite-exercices-style-examen"><a href="../5_exos_examen/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : exercices style examen</a><a class="headerlink" href="#suite-exercices-style-examen" title="Lien direct vers cette section">&para;</a></h1>
+<h1 id="exercices-pascal-et-newton_1">Exercices — Pascal et Newton<a class="headerlink" href="#exercices-pascal-et-newton_1" title="Lien direct vers cette section">&para;</a></h1>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours : <a href="../1_cours/#5-triangle-de-pascal-et-formule-de-pascal">Triangle de Pascal et Binôme de Newton</a>.</p>
+</blockquote>
+<hr />
+<h2 id="exercice-1-symetrie-des-combinaisons_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 7v2h2v8h2V7zm2-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 1 — Symétrie des combinaisons<a class="headerlink" href="#exercice-1-symetrie-des-combinaisons_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p>Pour <span class="arithmatex">\(n \in \mathbb{N}^*\)</span> et <span class="arithmatex">\(k \in [\![0, n]\!]\)</span>, compare le nombre de façons de choisir <span class="arithmatex">\(k\)</span> éléments dans un ensemble à <span class="arithmatex">\(n\)</span> éléments, et celui de choisir <span class="arithmatex">\(n - k\)</span> éléments.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>Réponse</strong> : ces deux nombres sont <strong>égaux</strong> :</p>
+<div class="arithmatex">\[ \binom{n}{k} = \binom{n}{n-k}. \]</div>
+<p><strong>Intuition</strong> : choisir les <span class="arithmatex">\(k\)</span> éléments à <strong>garder</strong> revient à choisir les <span class="arithmatex">\(n-k\)</span> à <strong>éliminer</strong>. Bijection naturelle entre les deux types de choix.</p>
+<p><strong>Vérification par formule</strong> :
+$$ \binom{n}{n-k} = \frac{n!}{(n-k)! \cdot k!} = \binom{n}{k}. $$ ✅</p>
+</details>
+<hr />
+<h2 id="exercice-2-formule-de-pascal-combinatoire_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v2h4v2h-2a2 2 0 0 0-2 2v4h6v-2h-4v-2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 2 — Formule de Pascal (combinatoire)<a class="headerlink" href="#exercice-2-formule-de-pascal-combinatoire_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p>Dans une urne, <span class="arithmatex">\(n\)</span> boules numérotées 1 à <span class="arithmatex">\(n\)</span>. On tire simultanément <span class="arithmatex">\(k\)</span> boules.</p>
+<p>a) Nombre de tirages.
+b) Tirages contenant la boule 1.
+c) Tirages ne contenant pas la boule 1.
+d) En déduire <span class="arithmatex">\(\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}\)</span>.
+e) Redémontrer cette relation <strong>par le calcul</strong>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p>a) <span class="arithmatex">\(\binom{n}{k}\)</span>.</p>
+<p>b) On fixe la boule 1, on choisit <span class="arithmatex">\(k-1\)</span> parmi les <span class="arithmatex">\(n-1\)</span> restantes : <span class="arithmatex">\(\binom{n-1}{k-1}\)</span>.</p>
+<p>c) On exclut la boule 1, on choisit <span class="arithmatex">\(k\)</span> parmi les <span class="arithmatex">\(n-1\)</span> restantes : <span class="arithmatex">\(\binom{n-1}{k}\)</span>.</p>
+<p>d) Tout tirage est soit dans b), soit dans c), de manière <strong>disjointe</strong>. Donc</p>
+<div class="arithmatex">\[ \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}. \]</div>
+<p>e) Calcul :
+\begin{aligned}
+\binom{n-1}{k-1} + \binom{n-1}{k} &amp;= \frac{(n-1)!}{(k-1)!(n-k)!} + \frac{(n-1)!}{k!(n-k-1)!} \
+&amp;= \frac{k \cdot (n-1)!}{k!(n-k)!} + \frac{(n-k) \cdot (n-1)!}{k!(n-k)!} \
+&amp;= \frac{(n-1)! \cdot (k + n - k)}{k!(n-k)!} = \frac{n!}{k!(n-k)!} = \binom{n}{k}.
+\end{aligned}</p>
+<p>✅</p>
+</details>
+<hr />
+<h2 id="exercice-3-formule-du-binome-de-newton_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 15v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5V9a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 3 — Formule du binôme de Newton<a class="headerlink" href="#exercice-3-formule-du-binome-de-newton_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p><strong>1.</strong> Pour <span class="arithmatex">\((x, y) \in \mathbb{R}^2\)</span> et <span class="arithmatex">\(n \in \mathbb{N}\)</span>, démontre :</p>
+<div class="arithmatex">\[ (x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^k y^{n-k}. \]</div>
+<p>Propose au moins <strong>deux</strong> justifications (combinatoire et par récurrence).</p>
+<p><strong>2.</strong> Développe <span class="arithmatex">\((x + y)^4\)</span> et <span class="arithmatex">\((a - b)^5\)</span> avec le triangle de Pascal.</p>
+<p><strong>3.</strong> Calcule <span class="arithmatex">\(\sum_{k=0}^{n} \binom{n}{k}\)</span>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Deux justifications.</p>
+<p><strong>Justification combinatoire</strong>. On développe <span class="arithmatex">\((x+y)^n = (x+y)(x+y)\cdots(x+y)\)</span>. Chaque terme du développement correspond à un choix : dans chaque facteur, on prend <span class="arithmatex">\(x\)</span> ou <span class="arithmatex">\(y\)</span>.
+Pour obtenir <span class="arithmatex">\(x^k y^{n-k}\)</span>, on choisit <span class="arithmatex">\(k\)</span> facteurs (parmi <span class="arithmatex">\(n\)</span>) qui donneront un <span class="arithmatex">\(x\)</span>, les autres donneront un <span class="arithmatex">\(y\)</span>. Il y a <span class="arithmatex">\(\binom{n}{k}\)</span> tels choix.
+Donc le coefficient de <span class="arithmatex">\(x^k y^{n-k}\)</span> est <span class="arithmatex">\(\binom{n}{k}\)</span>.</p>
+<p><strong>Justification par récurrence sur <span class="arithmatex">\(n\)</span></strong>. Vraie pour <span class="arithmatex">\(n = 0\)</span>. Si c'est vrai au rang <span class="arithmatex">\(n\)</span>, on multiplie par <span class="arithmatex">\((x+y)\)</span> et on utilise la formule de Pascal pour regrouper les termes.</p>
+<p><strong>2.</strong> Coefficients pour <span class="arithmatex">\(n = 4\)</span> : <span class="arithmatex">\(1, 4, 6, 4, 1\)</span>.
+$<span class="arithmatex">\((x+y)^4 = x^4 + 4x^3y + 6x^2y^2 + 4xy^3 + y^4.\)</span>$</p>
+<p>Pour <span class="arithmatex">\(n = 5\)</span> avec <span class="arithmatex">\(b\)</span> négatif : signes alternés.
+Coefficients : <span class="arithmatex">\(1, 5, 10, 10, 5, 1\)</span>.
+$<span class="arithmatex">\((a-b)^5 = a^5 - 5a^4 b + 10 a^3 b^2 - 10 a^2 b^3 + 5 a b^4 - b^5.\)</span>$</p>
+<p><strong>3.</strong> En posant <span class="arithmatex">\(x = y = 1\)</span> dans Newton :
+$$ \sum_{k=0}^{n} \binom{n}{k} = (1 + 1)^n = 2^n. $$</p>
+<p><strong>Interprétation</strong> : <span class="arithmatex">\(2^n\)</span> = nombre total de sous-ensembles, et <span class="arithmatex">\(\binom{n}{k}\)</span> = nombre de sous-ensembles de taille <span class="arithmatex">\(k\)</span>. La somme par taille = total.</p>
+</details>
+<hr />
+<h2 id="exercice-4-somme-avec-coefficient-2k_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v4h2V7h-2v4h-2V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 4 — Somme avec coefficient <span class="arithmatex">\(2^k\)</span><a class="headerlink" href="#exercice-4-somme-avec-coefficient-2k_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Calcule <span class="arithmatex">\(S = \displaystyle\sum_{k=0}^{n} 2^k \binom{n}{k}\)</span>.</p>
+<p>Puis trouve un <strong>problème combinatoire</strong> dont la réponse est <span class="arithmatex">\(S\)</span>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>Calcul</strong>. On pose <span class="arithmatex">\(x = 2\)</span> et <span class="arithmatex">\(y = 1\)</span> dans Newton :
+$$ (2 + 1)^n = \sum_{k=0}^{n} \binom{n}{k} 2^k 1^{n-k} = \sum_{k=0}^{n} 2^k \binom{n}{k}. $$
+Donc <span class="arithmatex">\(S = 3^n\)</span>.</p>
+<p><strong>Problème associé</strong>. <span class="arithmatex">\(3^n\)</span> = nombre de fonctions de <span class="arithmatex">\([\![1, n]\!]\)</span> vers <span class="arithmatex">\(\{a, b, c\}\)</span> (un alphabet à 3 lettres).
+Autrement dit : <span class="arithmatex">\(3^n\)</span> = nombre de mots de longueur <span class="arithmatex">\(n\)</span> sur un alphabet de 3 lettres.</p>
+<p><strong>Lecture combinatoire de la somme</strong> : on partitionne ces mots selon le nombre <span class="arithmatex">\(k\)</span> de lettres "<span class="arithmatex">\(a\)</span>" qu'ils contiennent. Pour chaque <span class="arithmatex">\(k\)</span> : <span class="arithmatex">\(\binom{n}{k}\)</span> positions choisies pour les <span class="arithmatex">\(a\)</span>, et <span class="arithmatex">\(2^k\)</span> choix pour les positions restantes (parmi <span class="arithmatex">\(\{b, c\}\)</span>). Erreur dans cette lecture — corrigeons : pour les positions <strong>restantes</strong> (au nombre de <span class="arithmatex">\(n - k\)</span>), il y a <span class="arithmatex">\(2^{n-k}\)</span> choix.</p>
+<p>Donc la lecture exacte est <span class="arithmatex">\(\sum_k \binom{n}{k} 2^{n-k}\)</span> — qui par symétrie de Pascal vaut aussi <span class="arithmatex">\(\sum_k \binom{n}{k} 2^k\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-5-coloriage-de-cases_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v2H9v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 5 — Coloriage de cases<a class="headerlink" href="#exercice-5-coloriage-de-cases_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>(Style examen 2026 ex 3)</p>
+<p>Justine dessine <span class="arithmatex">\(n\)</span> cases sur une feuille. Elle a deux feutres (bleu, rouge). Elle veut former un "ruban".</p>
+<p><strong>Choix 1</strong> : colorier les <span class="arithmatex">\(n\)</span> cases une par une (bleu ou rouge à chaque fois).</p>
+<p><strong>Choix 2</strong> : choisir <span class="arithmatex">\(k\)</span> cases à colorier en bleu (le reste en rouge), pour <span class="arithmatex">\(k = 0, 1, \dots, n\)</span>, en envisageant <strong>tous les cas</strong>.</p>
+<p><strong>1.</strong> Combien de rubans avec le choix 1 ?
+<strong>2.</strong> Combien avec le choix 2 ?
+<strong>3.</strong> Quelle égalité en déduire ?
+<strong>4.</strong> Redémontrer l'égalité avec Newton.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Choix 1 : 2 couleurs pour chaque case, donc <span class="arithmatex">\(2^n\)</span> rubans.</p>
+<p><strong>2.</strong> Choix 2 : pour <span class="arithmatex">\(k\)</span> fixé, <span class="arithmatex">\(\binom{n}{k}\)</span> façons. En sommant : <span class="arithmatex">\(\sum_{k=0}^{n} \binom{n}{k}\)</span>.</p>
+<p><strong>3.</strong> Comme les deux choix décrivent <strong>la même chose</strong> :</p>
+<div class="arithmatex">\[ 2^n = \sum_{k=0}^{n} \binom{n}{k}. \]</div>
+<p><strong>4.</strong> Newton avec <span class="arithmatex">\(x = y = 1\)</span> : <span class="arithmatex">\((1+1)^n = \sum_{k=0}^n \binom{n}{k} 1^k 1^{n-k} = \sum_{k=0}^n \binom{n}{k}\)</span>. ✅</p>
+</details>
+<hr />
+<h2 id="exercice-6-problemes-inverses_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm0 6h2v2h-2zm1-11a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 6 — Problèmes inversés<a class="headerlink" href="#exercice-6-problemes-inverses_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-dur">🔴 Niveau examen</span></p>
+<p>Pour chaque quantité ci-dessous, propose un problème de dénombrement dont la réponse est cette quantité.</p>
+<p>a) <span class="arithmatex">\(2^n\)</span>
+b) <span class="arithmatex">\(\sum_{k=0}^{n} \binom{n}{k}\)</span>
+c) <span class="arithmatex">\(k \cdot n!\)</span></p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p>a) <span class="arithmatex">\(2^n\)</span> : nombre de sous-ensembles d'un ensemble à <span class="arithmatex">\(n\)</span> éléments. Ou : nombre de mots binaires de longueur <span class="arithmatex">\(n\)</span>.</p>
+<p>b) <span class="arithmatex">\(\sum_{k=0}^{n} \binom{n}{k}\)</span> : nombre total de sous-ensembles, en sommant par taille. (= <span class="arithmatex">\(2^n\)</span>).</p>
+<p>c) <span class="arithmatex">\(k \cdot n!\)</span> : nombre de permutations de <span class="arithmatex">\(n+k\)</span> objets dont <span class="arithmatex">\(k\)</span> sont indistinguables ? Difficile.
+Réponse plus simple : <span class="arithmatex">\(k \cdot n!\)</span> = nombre de <strong>listes ordonnées de <span class="arithmatex">\(n+1\)</span> éléments</strong> où le dernier est dans <span class="arithmatex">\(\{1, \dots, k\}\)</span> et les <span class="arithmatex">\(n\)</span> premiers forment une permutation d'un ensemble à <span class="arithmatex">\(n\)</span> éléments.</p>
+<p>Ou : "le nombre de permutations de <span class="arithmatex">\(n\)</span> objets, avec un choix supplémentaire parmi <span class="arithmatex">\(k\)</span> couleurs pour un objet distingué". Toujours possible de trouver une interprétation.</p>
+</details>
+<hr />
+<h2 id="recap_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg></span> Récap<a class="headerlink" href="#recap_1" title="Lien direct vers cette section">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Symétrie <span class="arithmatex">\(\binom{n}{k} = \binom{n}{n-k}\)</span></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Formule de Pascal — démonstration combinatoire <strong>et</strong> par calcul</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Binôme de Newton — démonstration combinatoire <strong>et</strong> par récurrence</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Reconnaître <span class="arithmatex">\(2^n\)</span>, <span class="arithmatex">\(3^n\)</span>, etc. dans les sommes <span class="arithmatex">\(\sum \binom{n}{k} x^k y^{n-k}\)</span></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Donner un problème combinatoire pour une expression donnée</li>
+</ul>
 <p><a href="../5_exos_examen/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : exercices style examen</a></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 
 
 

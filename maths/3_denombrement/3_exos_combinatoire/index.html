@@ -2296,6 +2296,7 @@
 
 
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h1 id="exercices-combinatoire">Exercices — Combinatoire<a class="headerlink" href="#exercices-combinatoire" title="Lien direct vers cette section">&para;</a></h1>
 <blockquote>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours : <a href="../1_cours/#2-principe-multiplicatif-la-regle-de-base">Principe multiplicatif + tirages — sections 2, 3 et 4</a>.</p>
@@ -2459,7 +2460,186 @@ Cas B = <span class="arithmatex">\(18 \times 18 = 324\)</span>.</p>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Démonstration combinatoire de la formule de Pascal</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Découper un problème complexe en cas disjoints</li>
 </ul>
+<h1 id="suite-pascal-et-newton"><a href="../4_exos_binome/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : Pascal et Newton</a><a class="headerlink" href="#suite-pascal-et-newton" title="Lien direct vers cette section">&para;</a></h1>
+<h1 id="exercices-combinatoire_1">Exercices — Combinatoire<a class="headerlink" href="#exercices-combinatoire_1" title="Lien direct vers cette section">&para;</a></h1>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours : <a href="../1_cours/#2-principe-multiplicatif-la-regle-de-base">Principe multiplicatif + tirages — sections 2, 3 et 4</a>.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span> <strong>Le réflexe à acquérir</strong> : avant de calculer, demande-toi <strong>(1) ordre ?</strong> <strong>(2) répétition ?</strong> — puis applique la formule du tableau.</p>
+</blockquote>
+<hr />
+<h2 id="exercice-1-les-4-types-de-tirage_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 7v2h2v8h2V7zm2-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 1 — Les 4 types de tirage<a class="headerlink" href="#exercice-1-les-4-types-de-tirage_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p>On dispose d'un sac de <span class="arithmatex">\(n\)</span> billes numérotées de 1 à <span class="arithmatex">\(n\)</span>.</p>
+<p><strong>1.</strong> On tire <strong>successivement avec remise</strong> <span class="arithmatex">\(k\)</span> billes. Combien de tirages possibles ?</p>
+<p><strong>2.</strong> On tire <strong>successivement sans remise</strong> <strong>les <span class="arithmatex">\(n\)</span> billes</strong>. Combien de tirages ?</p>
+<p><strong>3.</strong> On tire <strong>successivement sans remise</strong> <span class="arithmatex">\(k\)</span> billes (<span class="arithmatex">\(k \leq n\)</span>). Combien de tirages ?</p>
+<p><strong>4.</strong> On tire <strong>simultanément</strong> <span class="arithmatex">\(k\)</span> billes. Combien de tirages possibles ?</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Successif avec remise : à chaque tirage, <span class="arithmatex">\(n\)</span> choix indépendants. <strong>Total : <span class="arithmatex">\(n^k\)</span></strong>.</p>
+<p><strong>2.</strong> Successif sans remise de toutes les billes = <strong>permutation</strong>. <strong>Total : <span class="arithmatex">\(n!\)</span></strong>.</p>
+<p><strong>3.</strong> Arrangement de <span class="arithmatex">\(k\)</span> parmi <span class="arithmatex">\(n\)</span> : <span class="arithmatex">\(A_n^k = \dfrac{n!}{(n-k)!}\)</span>.</p>
+<p><strong>4.</strong> Simultané = combinaison : <span class="arithmatex">\(\binom{n}{k} = \dfrac{n!}{k!(n-k)!}\)</span>.</p>
+<p><strong>Lien à retenir</strong> : <span class="arithmatex">\(A_n^k = k! \cdot \binom{n}{k}\)</span> — la différence entre "ordonné" et "non ordonné" est un facteur <span class="arithmatex">\(k!\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-2-anagrammes-et-ordre-de-passage_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v2h4v2h-2a2 2 0 0 0-2 2v4h6v-2h-4v-2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 2 — Anagrammes et ordre de passage<a class="headerlink" href="#exercice-2-anagrammes-et-ordre-de-passage_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-facile">🟢 Facile</span></p>
+<p><strong>1.</strong> Combien d'anagrammes du mot <strong>voiture</strong> ?
+<strong>2.</strong> Combien d'anagrammes du mot <strong>saperlipopette</strong> ?
+<strong>3.</strong> Combien de façons de faire passer 5 étudiants au tableau, parmi 30, en spécifiant l'ordre ?
+<strong>4.</strong> Combien de façons de faire passer <strong>tous</strong> les 30 étudiants au tableau, dans un ordre quelconque ?
+<strong>5.</strong> Et si parmi ces 30, <strong>les deux qui dorment</strong> doivent être appelés deux fois ?</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> "voiture" = 7 lettres toutes distinctes. Anagrammes : <span class="arithmatex">\(7! = 5040\)</span>.</p>
+<p><strong>2.</strong> "saperlipopette" = 14 lettres. Comptons : s(1), a(1), p(3), e(3), r(1), l(1), i(1), o(1), t(2). Total : <span class="arithmatex">\(1+1+3+3+1+1+1+1+2 = 14\)</span> ✓.
+Anagrammes : <span class="arithmatex">\(\dfrac{14!}{3! \cdot 3! \cdot 2!} = \dfrac{14!}{72}\)</span>.</p>
+<p><strong>3.</strong> Choisir + ordonner 5 parmi 30 : arrangement <span class="arithmatex">\(A_{30}^{5} = 30 \times 29 \times 28 \times 27 \times 26\)</span>.</p>
+<p><strong>4.</strong> Permutation de 30 étudiants : <span class="arithmatex">\(30!\)</span>.</p>
+<p><strong>5.</strong> On a 30 étudiants distincts mais 2 ont la même fonction "à appeler deux fois" : ça donne une séquence de 32 passages, mais avec deux paires d'étudiants identiques.
+Sur 32 places, le nombre de séquences = <span class="arithmatex">\(\dfrac{32!}{2! \cdot 2!} = \dfrac{32!}{4}\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-3-selection-dequipe-de-foot_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 15v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5V9a2 2 0 0 0-2-2H9v2h4v2h-2v2h2v2H9v2h4a2 2 0 0 0 2-2M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 3 — Sélection d'équipe de foot<a class="headerlink" href="#exercice-3-selection-dequipe-de-foot_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>24 joueurs disponibles, 11 postes à pourvoir (gardien, défenseurs, etc.).</p>
+<p><strong>1.</strong> Tous les joueurs peuvent jouer à tous les postes. La sélection ne spécifie que <strong>qui</strong> sont les 11 sur le terrain (peu importe le poste). Combien de sélections ?</p>
+<p><strong>2.</strong> Tous les joueurs peuvent jouer partout. La sélection spécifie <strong>qui</strong> ET <strong>à quel poste</strong>. Combien ?</p>
+<p><strong>3.</strong> Maintenant, parmi les 24 joueurs, <strong>3 sont gardiens uniquement</strong>, les 21 autres peuvent tout faire <strong>sauf gardien</strong>.
+   a) Reprendre la question 1.
+   b) Reprendre la question 2.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> On choisit 11 joueurs parmi 24, sans ordre : <span class="arithmatex">\(\binom{24}{11}\)</span>.</p>
+<p><strong>2.</strong> On choisit 11 joueurs <strong>et leur poste</strong> = arrangement : <span class="arithmatex">\(A_{24}^{11} = \dfrac{24!}{13!}\)</span>.</p>
+<p><strong>3.</strong></p>
+<p>a) Le gardien doit venir des 3 gardiens : <span class="arithmatex">\(3\)</span> choix. Les 10 autres viennent des 21 non-gardiens : <span class="arithmatex">\(\binom{21}{10}\)</span>. Total : <span class="arithmatex">\(3 \times \binom{21}{10}\)</span>.</p>
+<p>b) Le gardien : 3 choix. Pour les 10 autres postes, arrangement des 21 non-gardiens : <span class="arithmatex">\(A_{21}^{10}\)</span>. Total : <span class="arithmatex">\(3 \times A_{21}^{10}\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-4-bureau-dassociation_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v4h2V7h-2v4h-2V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 4 — Bureau d'association<a class="headerlink" href="#exercice-4-bureau-dassociation_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>100 adhérents. Bureau composé : 1 président, 1 trésorier, 8 autres membres (postes différenciés ou pas).</p>
+<p><strong>1.</strong> Nombre de bureaux possibles, sans contrainte ?</p>
+<p><strong>2.</strong> Maintenant 50 femmes et 50 hommes. On veut : si président → trésorière, si présidente → trésorier. Et parmi les 8 autres : 4 femmes et 4 hommes.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Président : 100 choix. Trésorier : 99. Les 8 autres : <span class="arithmatex">\(\binom{98}{8}\)</span> (sans ordre entre eux).
+Total : <span class="arithmatex">\(100 \times 99 \times \binom{98}{8}\)</span>.</p>
+<p><strong>2.</strong> Deux cas symétriques :
+- Président homme (50 choix) → trésorière femme (50 choix).
+- Présidente femme (50) → trésorier homme (50).</p>
+<p>Dans les deux cas, il reste à choisir 4 femmes parmi 49 et 4 hommes parmi 49 : <span class="arithmatex">\(\binom{49}{4}^2\)</span>.</p>
+<p>Total : <span class="arithmatex">\(2 \times 50 \times 50 \times \binom{49}{4}^2 = 5000 \times \binom{49}{4}^2\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-5-cadenas-a-4-chiffres_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v6h4v2H9v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 5 — Cadenas à 4 chiffres<a class="headerlink" href="#exercice-5-cadenas-a-4-chiffres_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Un cadenas a un code à 4 chiffres (0 à 9).</p>
+<p><strong>1. Sans contrainte sur la répétition</strong> :
+   a) Nombre de codes possibles ?
+   b) Codes se terminant par un chiffre pair ?
+   c) Codes contenant <strong>au moins une fois</strong> le chiffre 2 ?</p>
+<p><strong>2. Avec 4 chiffres distincts</strong> :
+   a) Nombre de codes ?
+   b) Se terminant par un chiffre pair ?
+   c) Contenant le chiffre 2 ?</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Successif avec remise (4 fois parmi 10).</p>
+<p>a) <span class="arithmatex">\(10^4 = 10\,000\)</span>.</p>
+<p>b) Dernier chiffre dans <span class="arithmatex">\(\{0, 2, 4, 6, 8\}\)</span> : 5 choix. Trois autres : <span class="arithmatex">\(10^3\)</span> chacun. Total : <span class="arithmatex">\(5 \times 10^3 = 5000\)</span>.</p>
+<p>c) <strong>Complémentaire</strong> : codes <strong>sans</strong> le 2. Chaque chiffre dans <span class="arithmatex">\(\{0,1,3,4,5,6,7,8,9\}\)</span> : <span class="arithmatex">\(9^4 = 6561\)</span>.
+   Donc avec au moins un 2 : <span class="arithmatex">\(10\,000 - 6561 = 3439\)</span>.</p>
+<p><strong>2.</strong> Successif sans remise (arrangements <span class="arithmatex">\(A_{10}^4\)</span>).</p>
+<p>a) <span class="arithmatex">\(A_{10}^4 = 10 \times 9 \times 8 \times 7 = 5040\)</span>.</p>
+<p>b) Dernier chiffre pair : 5 choix. Reste à choisir 3 chiffres distincts parmi les 9 restants, dans l'ordre : <span class="arithmatex">\(A_9^3 = 9 \times 8 \times 7 = 504\)</span>. Total : <span class="arithmatex">\(5 \times 504 = 2520\)</span>.</p>
+<p>c) Avec le 2 : on compte total - sans le 2.
+   Sans le 2 : on choisit 4 chiffres distincts parmi 9 dans l'ordre : <span class="arithmatex">\(A_9^4 = 9 \times 8 \times 7 \times 6 = 3024\)</span>.
+   Avec le 2 : <span class="arithmatex">\(5040 - 3024 = 2016\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-6-etagere-de-revision_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7zm0 6h2v2h-2zm1-11a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 6 — Étagère de révision<a class="headerlink" href="#exercice-6-etagere-de-revision_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Étagère avec 4 livres d'algo, 6 livres de maths, 3 livres de physique. Les livres sont <strong>groupés par matière</strong>. Combien d'ordres de rangement possibles ?</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>Étape 1 — choisir l'ordre des "blocs" de matière</strong> : 3 matières, donc <span class="arithmatex">\(3! = 6\)</span> ordres.</p>
+<p><strong>Étape 2 — à l'intérieur de chaque bloc</strong> :
+- Algo : <span class="arithmatex">\(4!\)</span> ordres
+- Maths : <span class="arithmatex">\(6!\)</span>
+- Physique : <span class="arithmatex">\(3!\)</span></p>
+<p><strong>Total</strong> : <span class="arithmatex">\(3! \times 4! \times 6! \times 3! = 6 \times 24 \times 720 \times 6 = 622\,080\)</span>.</p>
+</details>
+<hr />
+<h2 id="exercice-7-tirage-de-boules-numerotees_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11 17 4-8V7H9v2h4l-4 8zm1-15a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 7 — Tirage de boules numérotées<a class="headerlink" href="#exercice-7-tirage-de-boules-numerotees_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-moyen">🟡 Moyen</span></p>
+<p>Urne avec <span class="arithmatex">\(n\)</span> boules numérotées 1 à <span class="arithmatex">\(n\)</span>. On tire simultanément <span class="arithmatex">\(k\)</span> boules.</p>
+<p>a) Nombre de tirages possibles.
+b) Nombre de tirages contenant la boule 1.
+c) Nombre de tirages <strong>ne contenant pas</strong> la boule 1.
+d) En déduire la <strong>relation de Pascal</strong> : <span class="arithmatex">\(\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}\)</span>.</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p>a) <span class="arithmatex">\(\binom{n}{k}\)</span>.</p>
+<p>b) On force la boule 1 dans le tirage. Il reste à choisir <span class="arithmatex">\(k - 1\)</span> boules parmi les <span class="arithmatex">\(n - 1\)</span> restantes : <span class="arithmatex">\(\binom{n-1}{k-1}\)</span>.</p>
+<p>c) On exclut la boule 1. On choisit <span class="arithmatex">\(k\)</span> parmi les <span class="arithmatex">\(n - 1\)</span> restantes : <span class="arithmatex">\(\binom{n-1}{k}\)</span>.</p>
+<p>d) Tout tirage est soit "contient la boule 1", soit "ne la contient pas" — c'est une partition.</p>
+<div class="arithmatex">\[ \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k} \]</div>
+<p>C'est la <strong>formule de Pascal</strong>, démontrée ici <strong>combinatoirement</strong>.</p>
+</details>
+<hr />
+<h2 id="exercice-8-groupe-de-responsables_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 13h2v2h-2zm0-4h2v2h-2zm0 8h2a2 2 0 0 0 2-2v-1.5a1.5 1.5 0 0 0-1.5-1.5 1.5 1.5 0 0 0 1.5-1.5V9a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v1.5a1.5 1.5 0 0 0 1.5 1.5A1.5 1.5 0 0 0 9 13.5V15a2 2 0 0 0 2 2m1-15a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Exercice 8 — Groupe de responsables<a class="headerlink" href="#exercice-8-groupe-de-responsables_1" title="Lien direct vers cette section">&para;</a></h2>
+<p><span class="diff diff-dur">🔴 Niveau examen</span></p>
+<p>(Travail personnel obligatoire du TD2 — typique d'examen)</p>
+<p>Classe de 20 élèves : 12 garçons, 8 filles. On forme un groupe de 4 responsables : un chef, un sous-chef, deux assistants (qui assistent indifféremment chef ou sous-chef).</p>
+<p><strong>1.</strong> Combien de groupes possibles, sans contrainte ?</p>
+<p><strong>2.</strong> Chef = fille, sous-chef = garçon, parmi les assistants : une fille et un garçon. Combien ?</p>
+<p><strong>3.</strong> Marie sera la chef. Combien ?</p>
+<p><strong>4.</strong> Si Marie est chef, alors Pierre veut être dans le groupe. Combien ?</p>
+<details class="success">
+<summary>Voir la correction</summary>
+<p><strong>1.</strong> Chef : 20 choix. Sous-chef : 19. Assistants (2 sans distinction d'ordre entre eux) : <span class="arithmatex">\(\binom{18}{2}\)</span>.
+Total : <span class="arithmatex">\(20 \times 19 \times \binom{18}{2} = 20 \times 19 \times 153 = 58\,140\)</span>.</p>
+<p><strong>2.</strong> Chef fille : 8. Sous-chef garçon : 12. Assistant fille : 7 (il en reste 7). Assistant garçon : 11.
+Mais les deux assistants ne sont pas distingués entre eux, et là on choisit une fille et un garçon (distincts par sexe donc déjà différenciés).
+Total : <span class="arithmatex">\(8 \times 12 \times 7 \times 11 = 7392\)</span>.</p>
+<p><strong>3.</strong> Chef = Marie (fixé). Sous-chef : 19 choix. Assistants : <span class="arithmatex">\(\binom{18}{2} = 153\)</span>.
+Total : <span class="arithmatex">\(19 \times 153 = 2907\)</span>.</p>
+<p><strong>4.</strong> Chef = Marie. Pierre dans le groupe, <strong>soit</strong> sous-chef, <strong>soit</strong> assistant.</p>
+<p>Cas A — Pierre sous-chef : assistants = <span class="arithmatex">\(\binom{18}{2} = 153\)</span>.
+Cas B — Pierre assistant : sous-chef = 18 choix (pas Marie, pas Pierre), autre assistant = 17.
+Mais ici les deux assistants ne sont pas ordonnés, alors on compte directement les paires d'assistants contenant Pierre :
+"Pierre + un autre" = 18 choix (les autres assistants possibles).
+Cas B = <span class="arithmatex">\(18 \times 18 = 324\)</span>.</p>
+<p>Total : <span class="arithmatex">\(153 + 324 = 477\)</span>.</p>
+</details>
+<hr />
+<h2 id="recap_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg></span> Récap<a class="headerlink" href="#recap_1" title="Lien direct vers cette section">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Tableau des 4 types de tirage maîtrisé</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Anagrammes avec lettres répétées</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> "Au moins un X" → passer au complémentaire</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Démonstration combinatoire de la formule de Pascal</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Découper un problème complexe en cas disjoints</li>
+</ul>
 <p><a href="../4_exos_binome/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : Pascal et Newton</a></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>7e8bd14 (Site révisions EPITA (maths + algo + archi))</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 
 
 
