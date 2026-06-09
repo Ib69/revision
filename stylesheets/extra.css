@@ -1,0 +1,366 @@
+/* ====================================================================== */
+/*  Mise en page : maximiser l'espace pour le cours                       */
+/* ====================================================================== */
+
+/* Grille beaucoup plus large (au lieu de ~61rem par défaut) */
+.md-grid {
+  max-width: 88rem;
+}
+
+/* Barre latérale gauche : plus étroite, et **rétractable** au survol */
+.md-sidebar--primary {
+  width: 3rem;
+  transition: width 0.25s ease;
+  overflow: hidden;
+}
+.md-sidebar--primary:hover,
+.md-sidebar--primary:focus-within {
+  width: 14rem;
+  overflow: visible;
+  background: var(--md-default-bg-color);
+  z-index: 5;
+  box-shadow: 4px 0 12px rgba(0,0,0,0.08);
+}
+
+/* Tant que la sidebar gauche est rétractée, on masque le texte des liens */
+.md-sidebar--primary:not(:hover):not(:focus-within) .md-nav__title,
+.md-sidebar--primary:not(:hover):not(:focus-within) .md-nav__link {
+  white-space: nowrap;
+  opacity: 0.35;
+}
+
+/* Petit indicateur visuel "≡" sur la sidebar repliée */
+.md-sidebar--primary::before {
+  content: "≡";
+  position: absolute;
+  top: 0.6rem;
+  left: 0.9rem;
+  font-size: 1.4rem;
+  color: var(--md-primary-fg-color);
+  pointer-events: none;
+  opacity: 0.8;
+}
+.md-sidebar--primary:hover::before,
+.md-sidebar--primary:focus-within::before {
+  opacity: 0;
+}
+
+/* Barre latérale droite (sommaire) : masquée par défaut, accessible au survol */
+.md-sidebar--secondary {
+  width: 0.6rem;
+  transition: width 0.25s ease;
+  overflow: hidden;
+}
+.md-sidebar--secondary:hover,
+.md-sidebar--secondary:focus-within {
+  width: 12rem;
+  overflow: visible;
+  background: var(--md-default-bg-color);
+  z-index: 5;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.08);
+}
+
+/* La zone de contenu central prend toute la place restante */
+.md-content {
+  max-width: none;
+}
+.md-content__inner {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 1.2rem;
+}
+
+/* Sur mobile, on garde le comportement par défaut (sidebars en drawer) */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary,
+  .md-sidebar--secondary { width: auto; }
+  .md-sidebar--primary::before { display: none; }
+}
+
+/* ====================================================================== */
+
+/* ===== Badges de difficulté ===== */
+.diff {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  border-radius: 1em;
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+.diff-facile { background: #d4f4dd; color: #1b6f3a; }
+.diff-moyen  { background: #fff3c4; color: #8a6d00; }
+.diff-dur    { background: #ffd6d6; color: #9b1c1c; }
+
+[data-md-color-scheme="slate"] .diff-facile { background: #1f4a30; color: #b3e8c4; }
+[data-md-color-scheme="slate"] .diff-moyen  { background: #4a3d00; color: #ffe28a; }
+[data-md-color-scheme="slate"] .diff-dur    { background: #4a1c1c; color: #ffb3b3; }
+
+/* ===== Encadré "À retenir" ===== */
+.retenir {
+  border-left: 4px solid var(--md-accent-fg-color);
+  background: rgba(233, 30, 99, 0.05);
+  padding: 1em 1.2em;
+  border-radius: 0.3em;
+  margin: 1.2em 0;
+}
+.retenir > p:first-child {
+  font-weight: 700;
+  margin-top: 0;
+  color: var(--md-accent-fg-color);
+}
+
+/* ===== Encadré "Méthode pas-à-pas" ===== */
+.methode {
+  border: 2px dashed var(--md-primary-fg-color);
+  padding: 1em 1.2em;
+  border-radius: 0.4em;
+  background: rgba(63, 81, 181, 0.04);
+  margin: 1.2em 0;
+}
+.methode > p:first-child {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* ===== Tableau plus lisible ===== */
+.md-typeset table:not([class]) {
+  font-size: 0.85em;
+}
+
+/* ===== KaTeX : un poil plus grand ===== */
+.katex { font-size: 1.05em; }
+.katex-display { margin: 1em 0; }
+
+/* ===== Cartes de la page d'accueil ===== */
+.md-typeset .grid.cards > :is(ul, ol) > li,
+.md-typeset .grid > .card {
+  border-radius: 0.5rem;
+}
+
+/* ===== Espacement des admonitions "success" pour les corrections ===== */
+.md-typeset details.success summary {
+  font-weight: 600;
+}
+
+/* ====================================================================== */
+/*  Schémas de circuits (Archi) — SVG propres                             */
+/* ====================================================================== */
+
+.circuit-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem auto;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 8px;
+  background: var(--md-code-bg-color);
+}
+.circuit-figure svg {
+  max-width: 100%;
+  height: auto;
+  /* le SVG hérite de la couleur du texte → compatible clair/sombre */
+  color: var(--md-default-fg-color);
+}
+.circuit-figure figcaption {
+  font-size: 0.82rem;
+  font-style: italic;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* Rangée de plusieurs schémas côte à côte */
+.circuit-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+.circuit-row .circuit-figure {
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+/* Encadré "analogie" avec une couleur chaude distincte */
+.analogie {
+  border-left: 4px solid #f9a825;
+  background: rgba(249, 168, 37, 0.08);
+  padding: 1em 1.2em;
+  border-radius: 0.3em;
+  margin: 1.2em 0;
+}
+.analogie > p:first-child {
+  font-weight: 700;
+  margin-top: 0;
+  color: #e08600;
+}
+[data-md-color-scheme="slate"] .analogie > p:first-child { color: #ffca5f; }
+
+/* Encadré "moyen mnémotechnique" */
+.memo {
+  border-left: 4px solid #43a047;
+  background: rgba(67, 160, 71, 0.08);
+  padding: 1em 1.2em;
+  border-radius: 0.3em;
+  margin: 1.2em 0;
+}
+.memo > p:first-child {
+  font-weight: 700;
+  margin-top: 0;
+  color: #2e7d32;
+}
+[data-md-color-scheme="slate"] .memo > p:first-child { color: #a5d6a7; }
+
+/* ====================================================================== */
+/*  Zones de code interactives (Algo)                                     */
+/* ====================================================================== */
+
+.code-exercise {
+  border: 2px solid var(--md-primary-fg-color);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  background: var(--md-code-bg-color);
+}
+.exercise-prompt {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+/* CodeMirror container — remplace le textarea */
+.CodeMirror {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  font-size: 0.84rem !important;
+  line-height: 1.55 !important;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 4px;
+}
+.CodeMirror-focused {
+  border-color: var(--md-accent-fg-color) !important;
+  outline: 2px solid var(--md-accent-fg-color) !important;
+}
+.CodeMirror-scroll { min-height: 80px; }
+/* numéros de lignes : un poil plus pâles */
+.CodeMirror-linenumber { opacity: 0.6; }
+
+/* ligne active surlignée (thème clair) */
+.CodeMirror-activeline-background {
+  background: rgba(63, 81, 181, 0.07) !important;
+}
+/* ligne active (thème sombre Dracula) */
+[data-md-color-scheme="slate"] .CodeMirror-activeline-background {
+  background: rgba(255,255,255, 0.06) !important;
+}
+
+/* menu d'autocomplete */
+.CodeMirror-hints {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.CodeMirror-hint-active {
+  background: var(--md-primary-fg-color) !important;
+  color: #fff !important;
+}
+
+/* ── Poignée de redimensionnement ──────────────────────────────────────── */
+.cm-resize-handle {
+  height: 11px;
+  background: var(--md-default-fg-color--lightest);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  cursor: ns-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: background 0.15s;
+}
+.cm-resize-handle:hover,
+.cm-resize-handle.dragging {
+  background: var(--md-primary-fg-color);
+  opacity: 0.25;
+}
+.cm-resize-dots {
+  display: block;
+  width: 32px;
+  height: 3px;
+  border-top: 1.5px solid var(--md-default-fg-color--light);
+  border-bottom: 1.5px solid var(--md-default-fg-color--light);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* le textarea original reste caché (CM le gère) */
+.code-input { display: none; }
+.exercise-btns {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.run-btn, .reset-btn {
+  padding: 0.45rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.run-btn {
+  color: #fff;
+  background: var(--md-primary-fg-color);
+}
+.reset-btn {
+  color: var(--md-default-fg-color);
+  background: var(--md-default-fg-color--lightest);
+}
+.run-btn:hover, .reset-btn:hover { opacity: 0.85; }
+.run-btn:disabled { opacity: 0.5; cursor: wait; }
+.save-indicator {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  align-self: center;
+  transition: opacity 0.4s;
+  font-weight: 500;
+}
+.save-indicator.saved   { color: #2e7d32; background: #e8f5e9; }
+.save-indicator.modified { color: #e65100; background: #fff3e0; }
+[data-md-color-scheme="slate"] .save-indicator.saved    { color: #a5d6a7; background: #1b3a1b; }
+[data-md-color-scheme="slate"] .save-indicator.modified { color: #ffcc80; background: #3e2a00; }
+
+.code-output {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  display: none;
+}
+.code-output.success {
+  display: block;
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  color: #1b5e20;
+}
+.code-output.error {
+  display: block;
+  background: #ffebee;
+  border-left: 4px solid #f44336;
+  color: #b71c1c;
+}
+[data-md-color-scheme="slate"] .code-output.success {
+  background: #1b3a1b; color: #a5d6a7;
+}
+[data-md-color-scheme="slate"] .code-output.error {
+  background: #3e1a1a; color: #ef9a9a;
+}

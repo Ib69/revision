@@ -1,0 +1,2872 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site personnel de révisions pour les cours de l'EPITA (S2 PA)">
+      
+      
+        <meta name="author" content="Jibril Smaili">
+      
+      
+      
+        <link rel="prev" href="../1_intro/">
+      
+      
+        <link rel="next" href="../../2_compteurs/1_cours/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Cours complet - Révisions EPITA — Jibril</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cours-complet-logique-sequentielle-chapitre-1" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../.." title="Révisions EPITA — Jibril" class="md-header__button md-logo" aria-label="Révisions EPITA — Jibril" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Révisions EPITA — Jibril
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cours complet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../maths/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Mathématiques
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../algo/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Algorithmique
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Révisions EPITA — Jibril" class="md-nav__button md-logo" aria-label="Révisions EPITA — Jibril" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Révisions EPITA — Jibril
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../maths/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathématiques
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mathématiques
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Ensembles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Ensembles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/1_ensembles/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/1_ensembles/2_exos_bases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Bases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/1_ensembles/3_exos_operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Opérations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/1_ensembles/4_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Fonctions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Fonctions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/2_fonctions/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/2_fonctions/2_exos_graphes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Graphes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/2_fonctions/3_exos_usuelles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Usuelles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/2_fonctions/4_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Dénombrement
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. Dénombrement
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/3_denombrement/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/3_denombrement/2_exos_cardinaux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Cardinaux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/3_denombrement/3_exos_combinatoire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Combinatoire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/3_denombrement/4_exos_binome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Binôme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/3_denombrement/5_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Probabilités
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. Probabilités
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/4_probabilites/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/4_probabilites/2_exos_modelisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Modélisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/4_probabilites/3_exos_equiprobabilite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Équiprobabilité
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/4_probabilites/4_exos_conditionnelles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Conditionnelles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/4_probabilites/5_exos_va_lois/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Variables aléatoires
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/4_probabilites/6_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Examens blancs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5. Examens blancs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/5_examens_blancs/sujet_2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sujet 2024
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/5_examens_blancs/sujet_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sujet 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../algo/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithmique
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algorithmique
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Récursion
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Récursion
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../algo/1_recursion/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Arbres Binaires
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Arbres Binaires
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../algo/2_arbres_binaires/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Bascules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Bascules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours complet
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours complet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-rappel-express" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Rappel express
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-bascule-rs-asynchrone-la-memoire-qui-nait-du-bouclage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La bascule RS asynchrone : la mémoire qui naît du bouclage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La bascule RS asynchrone : la mémoire qui naît du bouclage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#construction-avec-deux-portes-non-ou" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Construction avec deux portes NON-OU
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-version-non-et-active-a-letat-bas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La version NON-ET (active à l'état bas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chronogramme-la-rs-est-asynchrone-elle-reagit-tout-de-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chronogramme — la RS est asynchrone (elle réagit tout de suite)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-la-synchronisation-ajouter-une-horloge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. La synchronisation : ajouter une horloge
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. La synchronisation : ajouter une horloge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-synchronisee-sur-etat-avec-une-entree-enable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        a) Synchronisée sur état (avec une entrée Enable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-synchronisee-sur-front-montant-ou-descendant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        b) Synchronisée sur front (montant ou descendant)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-synchronisee-sur-impulsion-maitre-esclave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        c) Synchronisée sur impulsion (maître-esclave)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-la-bascule-d-construite-a-partir-dune-rs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. La bascule D — construite à partir d'une RS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-la-bascule-jk-la-rs-qui-recupere-letat-interdit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. La bascule JK — la RS qui récupère l'état interdit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-preset-et-clear-le-forcage-asynchrone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Preset et Clear — le forçage asynchrone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recap-chapitre-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Récap — Chapitre 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Compteurs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Compteurs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_compteurs/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Spécial Examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-rappel-express" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Rappel express
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-bascule-rs-asynchrone-la-memoire-qui-nait-du-bouclage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La bascule RS asynchrone : la mémoire qui naît du bouclage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La bascule RS asynchrone : la mémoire qui naît du bouclage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#construction-avec-deux-portes-non-ou" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Construction avec deux portes NON-OU
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-version-non-et-active-a-letat-bas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La version NON-ET (active à l'état bas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chronogramme-la-rs-est-asynchrone-elle-reagit-tout-de-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chronogramme — la RS est asynchrone (elle réagit tout de suite)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-la-synchronisation-ajouter-une-horloge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. La synchronisation : ajouter une horloge
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. La synchronisation : ajouter une horloge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-synchronisee-sur-etat-avec-une-entree-enable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        a) Synchronisée sur état (avec une entrée Enable)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-synchronisee-sur-front-montant-ou-descendant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        b) Synchronisée sur front (montant ou descendant)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-synchronisee-sur-impulsion-maitre-esclave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        c) Synchronisée sur impulsion (maître-esclave)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-la-bascule-d-construite-a-partir-dune-rs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. La bascule D — construite à partir d'une RS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-la-bascule-jk-la-rs-qui-recupere-letat-interdit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. La bascule JK — la RS qui récupère l'état interdit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-preset-et-clear-le-forcage-asynchrone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Preset et Clear — le forçage asynchrone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recap-chapitre-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Récap — Chapitre 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cours-complet-logique-sequentielle-chapitre-1">Cours complet — Logique séquentielle (Chapitre 1)<a class="headerlink" href="#cours-complet-logique-sequentielle-chapitre-1" title="Lien direct vers cette section">&para;</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Ce que cette page ajoute à l'introduction</p>
+<p>L'<a href="../1_intro/">introduction</a> t'a expliqué <strong>ce que font</strong> les bascules (la lampe à mémoire). Ici on va voir <strong>comment elles sont construites</strong> et <strong>pourquoi</strong> elles se souviennent. C'est le niveau « sous le capot » — utile pour comprendre les chronogrammes et ne plus jamais être surpris à l'examen.</p>
+</div>
+<hr />
+<h2 id="1-rappel-express">1. Rappel express<a class="headerlink" href="#1-rappel-express" title="Lien direct vers cette section">&para;</a></h2>
+<p>Un circuit <strong>séquentiel</strong> = un circuit <strong>combinatoire</strong> dont on <strong>reboucle</strong> une partie de la sortie vers l'entrée. Ce bouclage crée la <strong>mémoire</strong>. La plus petite cellule de mémoire = la <strong>bascule</strong> (1 bit).</p>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Si ces mots ne te parlent pas, relis <a href="../1_intro/#1-le-probleme-de-depart-comment-un-circuit-se-souvient">l'introduction</a> avant de continuer.</p>
+</blockquote>
+<hr />
+<h2 id="2-la-bascule-rs-asynchrone-la-memoire-qui-nait-du-bouclage">2. La bascule RS asynchrone : la mémoire qui naît du bouclage<a class="headerlink" href="#2-la-bascule-rs-asynchrone-la-memoire-qui-nait-du-bouclage" title="Lien direct vers cette section">&para;</a></h2>
+<h3 id="construction-avec-deux-portes-non-ou">Construction avec deux portes NON-OU<a class="headerlink" href="#construction-avec-deux-portes-non-ou" title="Lien direct vers cette section">&para;</a></h3>
+<p>On prend <strong>deux portes NON-OU</strong> (NOR) et on <strong>croise</strong> leurs sorties vers les entrées de l'autre. C'est ce <strong>croisement</strong> qui crée la mémoire.</p>
+<figure class="circuit-figure">
+<svg viewBox="0 0 330 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bascule RS construite avec deux portes NON-OU croisées">
+  <rect x="160" y="28" width="64" height="44" rx="4" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="192" y="55" text-anchor="middle" font-size="14" fill="currentColor">&#8805;1</text>
+  <rect x="160" y="104" width="64" height="44" rx="4" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="192" y="131" text-anchor="middle" font-size="14" fill="currentColor">&#8805;1</text>
+  <text x="78" y="44" text-anchor="end" font-size="13" fill="#c62828">R</text>
+  <line x1="84" y1="40" x2="160" y2="40" stroke="currentColor" stroke-width="2"/>
+  <text x="78" y="140" text-anchor="end" font-size="13" fill="#2e7d32">S</text>
+  <line x1="84" y1="136" x2="160" y2="136" stroke="currentColor" stroke-width="2"/>
+  <circle cx="230" cy="50" r="6" fill="var(--md-code-bg-color)" stroke="currentColor" stroke-width="2"/>
+  <line x1="236" y1="50" x2="306" y2="50" stroke="currentColor" stroke-width="2"/>
+  <text x="312" y="55" font-size="13" fill="currentColor">Q</text>
+  <circle cx="230" cy="126" r="6" fill="var(--md-code-bg-color)" stroke="currentColor" stroke-width="2"/>
+  <line x1="236" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="2"/>
+  <text x="312" y="131" font-size="13" fill="currentColor">Q</text>
+  <line x1="300" y1="46" x2="312" y2="46" stroke="currentColor" stroke-width="1.6"/>
+  <circle cx="270" cy="50" r="2.5" fill="currentColor"/>
+  <polyline points="270,50 270,116 160,116" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="252" cy="126" r="2.5" fill="currentColor"/>
+  <polyline points="252,126 252,60 160,60" fill="none" stroke="currentColor" stroke-width="2"/>
+</svg>
+
+<figcaption>Bascule RS active à l'état haut : deux portes NON-OU (« ≥1 » + bulle) dont les sorties sont croisées vers les entrées. La sortie de chaque porte revient nourrir l'autre → bouclage → mémoire.</figcaption>
+</figure>
+<p><strong>Pourquoi ça mémorise ?</strong> Rappel d'une règle de la porte NON-OU : <em>si l'une de ses entrées vaut 1, sa sortie vaut 0, quoi qu'il arrive sur l'autre entrée.</em> Déroulons :</p>
+<ul>
+<li><strong>S = 1, R = 0</strong> → la porte du bas est forcée → on obtient <strong>Q = 1</strong> (mise à 1, <em>set</em>).</li>
+<li><strong>R = 1, S = 0</strong> → la porte du haut est forcée → <strong>Q = 0</strong> (mise à 0, <em>reset</em>).</li>
+<li><strong>R = S = 0</strong> → aucune porte n'est forcée : chacune <strong>recopie ce qui était déjà là</strong> grâce au croisement → <strong>Q ne change pas</strong> (état mémoire). C'est là qu'est la magie du bouclage.</li>
+<li><strong>R = S = 1</strong> → les deux portes sont forcées à 0 en même temps : <strong>incohérent</strong> → état <strong>interdit</strong>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">R</th>
+<th style="text-align: center;">S</th>
+<th style="text-align: center;">Q</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">q</td>
+<td>état mémoire</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td>mise à 1 (set)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td>mise à 0 (reset)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">✗</td>
+<td>interdit</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Pourquoi l'état interdit est dangereux (au-delà de l'incohérence)</p>
+<p>Si on quitte l'état interdit (R et S repassent à 0 « en même temps »), la sortie devient <strong>imprévisible</strong> : en pratique les deux signaux ne changent jamais exactement au même instant, et le résultat dépend de quelle porte réagit en premier. Conclusion : <strong>on n'utilise JAMAIS R = S = 1</strong>.</p>
+</div>
+<h3 id="la-version-non-et-active-a-letat-bas">La version NON-ET (active à l'état bas)<a class="headerlink" href="#la-version-non-et-active-a-letat-bas" title="Lien direct vers cette section">&para;</a></h3>
+<p>On peut faire la <strong>même chose avec deux portes NON-ET</strong> (NAND). Le circuit fonctionne « à l'envers » : les entrées sont alors <strong>actives à l'état bas</strong> (c'est un 0 qui déclenche l'action). On la note <span class="arithmatex">\(\overline{R}\overline{S}\)</span>, et on la reconnaît à des <strong>bulles sur les entrées</strong>.</p>
+<div class="memo">
+<p><strong>Repère 🧠</strong></p>
+<ul>
+<li>Deux <strong>NON-OU</strong> (≥1) croisées → RS <strong>active à l'état haut</strong> (un <strong>1</strong> commande).</li>
+<li>Deux <strong>NON-ET</strong> (&amp;) croisées → RS <strong>active à l'état bas</strong> (un <strong>0</strong> commande, bulles sur les entrées).</li>
+</ul>
+</div>
+<h3 id="chronogramme-la-rs-est-asynchrone-elle-reagit-tout-de-suite">Chronogramme — la RS est <em>asynchrone</em> (elle réagit tout de suite)<a class="headerlink" href="#chronogramme-la-rs-est-asynchrone-elle-reagit-tout-de-suite" title="Lien direct vers cette section">&para;</a></h3>
+<p>Sans horloge, la sortie réagit <strong>instantanément</strong> à chaque changement des entrées :</p>
+<figure class="circuit-figure">
+<svg viewBox="0 0 410 158" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chronogramme d'une bascule RS asynchrone">
+  <g stroke="currentColor" stroke-width="1" opacity="0.25" stroke-dasharray="3,3">
+    <line x1="60" y1="8" x2="60" y2="148"/>
+    <line x1="160" y1="8" x2="160" y2="148"/>
+    <line x1="240" y1="8" x2="240" y2="148"/>
+    <line x1="320" y1="8" x2="320" y2="148"/>
+  </g>
+  <text x="24" y="70" text-anchor="end" font-size="13" fill="#2e7d32">S</text>
+  <polyline points="20,74 60,74 60,58 100,58 100,74 240,74 240,58 300,58 300,74 390,74" fill="none" stroke="#43a047" stroke-width="2.5"/>
+  <text x="24" y="104" text-anchor="end" font-size="13" fill="#c62828">R</text>
+  <polyline points="20,108 160,108 160,88 200,88 200,108 320,108 320,88 360,88 360,108 390,108" fill="none" stroke="#e53935" stroke-width="2.5"/>
+  <text x="24" y="138" text-anchor="end" font-size="13" fill="currentColor">Q</text>
+  <polyline points="20,142 60,142 60,122 160,122 160,142 240,142 240,122 320,122 320,142 390,142" fill="none" stroke="#1e88e5" stroke-width="2.5"/>
+</svg>
+
+<figcaption>RS asynchrone : dès que S=1, Q monte (set) ; dès que R=1, Q descend (reset) ; quand S=R=0, Q garde sa valeur (mémoire). Aucune horloge : la réaction est immédiate.</figcaption>
+</figure>
+<hr />
+<h2 id="3-la-synchronisation-ajouter-une-horloge">3. La synchronisation : ajouter une horloge<a class="headerlink" href="#3-la-synchronisation-ajouter-une-horloge" title="Lien direct vers cette section">&para;</a></h2>
+<p>Le défaut de la RS asynchrone : elle réagit <strong>à n'importe quel moment</strong>. Dans un ordinateur on veut que tout change <strong>en rythme</strong>. On ajoute donc une <strong>horloge</strong> (C) qui décide <strong>quand</strong> la bascule a le droit de changer.</p>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Cours lié : <a href="../1_intro/#4-lhorloge-le-chef-dorchestre">l'horloge &amp; les fronts</a> · <a href="../1_intro/#5-les-4-facons-de-synchroniser-une-bascule">les 4 modes de synchronisation</a>.</p>
+</blockquote>
+<h3 id="a-synchronisee-sur-etat-avec-une-entree-enable">a) Synchronisée sur état (avec une entrée <em>Enable</em>)<a class="headerlink" href="#a-synchronisee-sur-etat-avec-une-entree-enable" title="Lien direct vers cette section">&para;</a></h3>
+<p>On place <strong>deux portes ET</strong> devant la bascule RS : elles ne laissent passer R et S <strong>que lorsque</strong> l'entrée d'activation E vaut 1.</p>
+<figure class="circuit-figure">
+<svg viewBox="0 0 360 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bascule RS synchronisée sur état avec entrée Enable">
+  <rect x="120" y="26" width="52" height="40" rx="4" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="146" y="51" text-anchor="middle" font-size="14" fill="currentColor">&amp;</text>
+  <rect x="120" y="110" width="52" height="40" rx="4" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="146" y="135" text-anchor="middle" font-size="14" fill="currentColor">&amp;</text>
+  <text x="30" y="40" text-anchor="end" font-size="13" fill="#c62828">R</text>
+  <line x1="36" y1="36" x2="120" y2="36" stroke="currentColor" stroke-width="2"/>
+  <text x="30" y="140" text-anchor="end" font-size="13" fill="#2e7d32">S</text>
+  <line x1="36" y1="140" x2="120" y2="140" stroke="currentColor" stroke-width="2"/>
+  <text x="30" y="92" text-anchor="end" font-size="13" fill="currentColor">E</text>
+  <line x1="36" y1="88" x2="90" y2="88" stroke="currentColor" stroke-width="2"/>
+  <circle cx="90" cy="88" r="2.5" fill="currentColor"/>
+  <polyline points="90,88 90,56 120,56" fill="none" stroke="currentColor" stroke-width="2"/>
+  <polyline points="90,88 90,120 120,120" fill="none" stroke="currentColor" stroke-width="2"/>
+  <rect x="240" y="50" width="64" height="76" rx="5" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="250" y="74" font-size="12" fill="currentColor">R</text>
+  <text x="250" y="116" font-size="12" fill="currentColor">S</text>
+  <line x1="172" y1="46" x2="240" y2="68" stroke="currentColor" stroke-width="2"/>
+  <line x1="172" y1="130" x2="240" y2="108" stroke="currentColor" stroke-width="2"/>
+  <line x1="304" y1="68" x2="338" y2="68" stroke="currentColor" stroke-width="2"/>
+  <text x="320" y="62" text-anchor="middle" font-size="12" fill="currentColor">Q</text>
+</svg>
+
+<figcaption>RS synchronisée sur état : les portes ET « ouvrent la porte » à R et S uniquement quand E = 1. Quand E = 0, la bascule est figée (état mémoire), quelles que soient R et S.</figcaption>
+</figure>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">E</th>
+<th style="text-align: center;">R</th>
+<th style="text-align: center;">S</th>
+<th>Comportement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">Φ</td>
+<td>mémoire (figée)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td>mémoire</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td>set (Q=1)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td>reset (Q=0)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td>interdit</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Inconvénient :</strong> tant que E = 1, <strong>tout</strong> changement de R/S passe. On voudrait ne réagir qu'à un <strong>instant précis</strong> → la synchro sur <strong>front</strong>.</p>
+<h3 id="b-synchronisee-sur-front-montant-ou-descendant">b) Synchronisée sur front (montant ou descendant)<a class="headerlink" href="#b-synchronisee-sur-front-montant-ou-descendant" title="Lien direct vers cette section">&para;</a></h3>
+<p>Astuce de conception : on fabrique une <strong>toute petite impulsion</strong> à l'instant du front. En envoyant l'horloge C dans un <strong>inverseur</strong> puis dans une porte ET avec C elle-même, le minuscule <strong>retard</strong> de l'inverseur fait qu'à l'instant du front, <span class="arithmatex">\(C\)</span> et <span class="arithmatex">\(\overline{C}\)</span> valent <strong>1 en même temps</strong> pendant quelques nanosecondes → une impulsion ultra-brève qui n'autorise le changement <strong>qu'au front</strong>.</p>
+<div class="memo">
+<p><strong>Repère visuel 🧠</strong></p>
+<ul>
+<li><strong>Triangle</strong> sur l'entrée d'horloge → <strong>front montant</strong>.</li>
+<li><strong>Triangle + bulle</strong> → <strong>front descendant</strong>.</li>
+</ul>
+</div>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Tu as déjà les chronogrammes vérifiés des bascules <strong>RS</strong>, <strong>D</strong> et <strong>JK</strong> sur front montant dans <a href="../1_intro/#6-pourquoi-plusieurs-bascules-rs-d-jk-t">l'introduction, section 6</a>. Va les revoir : ce sont exactement ceux qui tombent à l'examen.</p>
+</blockquote>
+<h3 id="c-synchronisee-sur-impulsion-maitre-esclave">c) Synchronisée sur impulsion (maître-esclave)<a class="headerlink" href="#c-synchronisee-sur-impulsion-maitre-esclave" title="Lien direct vers cette section">&para;</a></h3>
+<p>On met <strong>deux bascules en série</strong> : la première (le <strong>maître</strong>) capture les entrées au <strong>front montant</strong>, la seconde (l'<strong>esclave</strong>) recopie le résultat au <strong>front descendant</strong>.</p>
+<figure class="circuit-figure">
+<svg viewBox="0 0 380 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bascule maître-esclave : deux bascules en série">
+  <rect x="70" y="35" width="90" height="76" rx="5" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="115" y="28" text-anchor="middle" font-size="11" fill="currentColor">MAÎTRE</text>
+  <text x="115" y="78" text-anchor="middle" font-size="11" fill="currentColor">front &#8593;</text>
+  <rect x="230" y="35" width="90" height="76" rx="5" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="275" y="28" text-anchor="middle" font-size="11" fill="currentColor">ESCLAVE</text>
+  <text x="275" y="78" text-anchor="middle" font-size="11" fill="currentColor">front &#8595;</text>
+  <line x1="20" y1="60" x2="70" y2="60" stroke="currentColor" stroke-width="2"/>
+  <text x="14" y="64" text-anchor="end" font-size="12" fill="currentColor">S,R</text>
+  <line x1="160" y1="73" x2="230" y2="73" stroke="currentColor" stroke-width="2"/>
+  <line x1="320" y1="73" x2="360" y2="73" stroke="currentColor" stroke-width="2"/>
+  <text x="366" y="77" font-size="12" fill="currentColor">Q</text>
+  <line x1="40" y1="130" x2="115" y2="130" stroke="currentColor" stroke-width="2"/>
+  <text x="34" y="134" text-anchor="end" font-size="12" fill="currentColor">C</text>
+  <circle cx="115" cy="130" r="2.5" fill="currentColor"/>
+  <line x1="115" y1="130" x2="115" y2="111" stroke="currentColor" stroke-width="2"/>
+  <polyline points="115,130 275,130 275,111" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="275" cy="105" r="6" fill="var(--md-code-bg-color)" stroke="currentColor" stroke-width="2"/>
+</svg>
+
+<figcaption>Maître-esclave : le maître lit les entrées au front montant, l'esclave applique au front descendant (sa bulle sur l'horloge). La sortie Q ne change donc qu'à la fin de l'impulsion d'horloge.</figcaption>
+</figure>
+<div class="analogie">
+<p><strong>Analogie 📸</strong></p>
+<p>C'est un <strong>appareil photo</strong> : tu <strong>déclenches</strong> (front montant → le maître capture l'instant), mais <strong>l'image ne s'affiche</strong> qu'au front descendant (l'esclave la révèle). Avantage : la sortie ne bouge jamais pendant qu'on la lit.</p>
+</div>
+<hr />
+<h2 id="4-la-bascule-d-construite-a-partir-dune-rs">4. La bascule D — construite à partir d'une RS<a class="headerlink" href="#4-la-bascule-d-construite-a-partir-dune-rs" title="Lien direct vers cette section">&para;</a></h2>
+<p>Pour supprimer l'état interdit <strong>et</strong> n'avoir qu'<strong>une seule entrée</strong>, on relie R et S par un <strong>inverseur</strong> : on pose <span class="arithmatex">\(S = D\)</span> et <span class="arithmatex">\(R = \overline{D}\)</span>. Comme ça, R et S sont <strong>toujours opposés</strong> → jamais R = S = 1.</p>
+<figure class="circuit-figure">
+<svg viewBox="0 0 340 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bascule D construite à partir d'une RS">
+  <text x="20" y="60" text-anchor="end" font-size="13" fill="currentColor">D</text>
+  <line x1="26" y1="56" x2="70" y2="56" stroke="currentColor" stroke-width="2"/>
+  <circle cx="70" cy="56" r="2.5" fill="currentColor"/>
+  <line x1="70" y1="56" x2="150" y2="56" stroke="currentColor" stroke-width="2"/>
+  <text x="118" y="50" text-anchor="middle" font-size="11" fill="currentColor">S</text>
+  <polyline points="70,56 70,104 95,104" fill="none" stroke="currentColor" stroke-width="2"/>
+  <rect x="95" y="92" width="34" height="24" rx="3" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="112" y="109" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <circle cx="135" cy="104" r="5" fill="var(--md-code-bg-color)" stroke="currentColor" stroke-width="2"/>
+  <line x1="140" y1="104" x2="150" y2="104" stroke="currentColor" stroke-width="2"/>
+  <text x="138" y="126" text-anchor="middle" font-size="11" fill="currentColor">R</text>
+  <rect x="150" y="34" width="70" height="84" rx="5" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="2"/>
+  <text x="160" y="60" font-size="12" fill="currentColor">S</text>
+  <text x="160" y="104" font-size="12" fill="currentColor">R</text>
+  <line x1="220" y1="56" x2="300" y2="56" stroke="currentColor" stroke-width="2"/>
+  <text x="306" y="60" font-size="12" fill="currentColor">Q</text>
+</svg>
+
+<figcaption>Bascule D : une seule entrée D, recopiée vers S, et son inverse vers R. Résultat : Q = D (à chaque instant autorisé par l'horloge), et plus jamais d'état interdit.</figcaption>
+</figure>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">E (ou front)</th>
+<th style="text-align: center;">D</th>
+<th style="text-align: center;">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">inactif</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">q (mémoire)</td>
+</tr>
+<tr>
+<td style="text-align: center;">actif</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">actif</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Chronogramme vérifié de la bascule <strong>D</strong> sur front montant : <a href="../1_intro/#la-bascule-d-la-photocopieuse">section 6 de l'intro</a>.</p>
+</blockquote>
+<hr />
+<h2 id="5-la-bascule-jk-la-rs-qui-recupere-letat-interdit">5. La bascule JK — la RS qui récupère l'état interdit<a class="headerlink" href="#5-la-bascule-jk-la-rs-qui-recupere-letat-interdit" title="Lien direct vers cette section">&para;</a></h2>
+<p>On part d'une RS et on <strong>reboucle les sorties</strong> vers les entrées : <span class="arithmatex">\(S = J \cdot \overline{Q}\)</span> et <span class="arithmatex">\(R = K \cdot Q\)</span>. Conséquence : quand <span class="arithmatex">\(J = K = 1\)</span>, le bouclage fait que la bascule <strong>bascule</strong> au lieu d'être interdite.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">J</th>
+<th style="text-align: center;">K</th>
+<th style="text-align: center;"><span class="arithmatex">\(Q^{+}\)</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">q</td>
+<td>mémoire</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td>reset</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td>set</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="arithmatex">\(\overline{q}\)</span></td>
+<td><strong>basculement</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="memo">
+<p><strong>Mémo 🧠</strong> — <strong>J</strong> = « J'allume » (set, →1) · <strong>K</strong> = « Kill » (reset, →0) · <strong>J = K = 1</strong> = bascule.</p>
+</div>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> Chronogramme vérifié de la bascule <strong>JK</strong> : <a href="../1_intro/#la-bascule-jk-la-rs-sans-etat-interdit">section 6 de l'intro</a>. Et la <strong>bascule T</strong> (JK avec J = K = 1) = <a href="../1_intro/#la-bascule-t-la-machine-a-diviser-par-deux">le diviseur ÷2</a>, brique des compteurs.</p>
+</blockquote>
+<hr />
+<h2 id="6-preset-et-clear-le-forcage-asynchrone">6. Preset et Clear — le forçage asynchrone<a class="headerlink" href="#6-preset-et-clear-le-forcage-asynchrone" title="Lien direct vers cette section">&para;</a></h2>
+<p>Les bascules réelles (D, JK) ont souvent <strong>deux entrées en plus</strong>, <strong>prioritaires</strong> et <strong>asynchrones</strong> (elles agissent <strong>immédiatement</strong>, sans attendre l'horloge) :</p>
+<ul>
+<li><strong>Preset</strong> (ou <em>Set</em>) → force <strong>Q = 1</strong> tout de suite.</li>
+<li><strong>Clear</strong> (ou <em>Reset</em>) → force <strong>Q = 0</strong> tout de suite.</li>
+</ul>
+<p>Elles sont souvent <strong>actives à l'état bas</strong> (une <strong>bulle</strong> sur le symbole) : c'est un <strong>0</strong> qui déclenche le forçage. En fonctionnement normal, on les laisse <strong>désactivées</strong> (à 1).</p>
+<div class="retenir">
+<p><strong>À retenir</strong></p>
+<ul>
+<li><strong>Preset / Clear = prioritaires sur tout</strong> (horloge, J/K, D). Elles servent à <strong>initialiser</strong> une bascule (mettre un compteur à 0 au démarrage, par exemple).</li>
+<li>Ne jamais activer <strong>Preset et Clear en même temps</strong> (mettre à 1 ET à 0 → interdit).</li>
+<li>On les retrouvera au <strong>chapitre 2</strong> pour tronquer les compteurs (modulo m).</li>
+</ul>
+</div>
+<hr />
+<h2 id="recap-chapitre-1">Récap — Chapitre 1<a class="headerlink" href="#recap-chapitre-1" title="Lien direct vers cette section">&para;</a></h2>
+<div class="retenir">
+<p><strong>L'essentiel</strong></p>
+<ol>
+<li><strong>Bouclage = mémoire.</strong> Deux portes NON-OU (ou NON-ET) croisées → bascule <strong>RS</strong>.</li>
+<li><strong>RS</strong> : set (S=1), reset (R=1), mémoire (0,0), <strong>interdit</strong> (1,1).</li>
+<li><strong>Synchroniser</strong> = ajouter une horloge : sur <strong>état</strong> (E), sur <strong>front</strong> (▷ / ▷○), sur <strong>impulsion</strong> (maître-esclave 📸).</li>
+<li><strong>D</strong> = RS avec <span class="arithmatex">\(R = \overline{S}\)</span> → une entrée, <span class="arithmatex">\(Q = D\)</span>, plus d'interdit.</li>
+<li><strong>JK</strong> = RS rebouclée → <span class="arithmatex">\(J=K=1\)</span> donne le <strong>basculement</strong> (plus d'interdit).</li>
+<li><strong>Preset/Clear</strong> = forçage <strong>asynchrone prioritaire</strong> (Q→1 / Q→0 immédiat).</li>
+</ol>
+</div>
+<p><a href="../../2_compteurs/1_cours/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15z"/></svg></span> Suite : Chapitre 2 — Les compteurs</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../1_intro/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Introduction">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../2_compteurs/1_cours/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Cours">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Cours
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="../../../javascripts/pyodide-runner.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

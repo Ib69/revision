@@ -1,0 +1,3021 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site personnel de révisions pour les cours de l'EPITA (S2 PA)">
+      
+      
+        <meta name="author" content="Jibril Smaili">
+      
+      
+      
+        <link rel="prev" href="../2_compteurs/1_cours/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Exos — Spécial Examen - Révisions EPITA — Jibril</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exercices-special-examen" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="Révisions EPITA — Jibril" class="md-header__button md-logo" aria-label="Révisions EPITA — Jibril" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Révisions EPITA — Jibril
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exos — Spécial Examen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="pink"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../maths/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Mathématiques
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../algo/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Algorithmique
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Révisions EPITA — Jibril" class="md-nav__button md-logo" aria-label="Révisions EPITA — Jibril" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Révisions EPITA — Jibril
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../maths/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathématiques
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mathématiques
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Ensembles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Ensembles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/1_ensembles/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/1_ensembles/2_exos_bases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Bases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/1_ensembles/3_exos_operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Opérations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/1_ensembles/4_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Fonctions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Fonctions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/2_fonctions/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/2_fonctions/2_exos_graphes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Graphes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/2_fonctions/3_exos_usuelles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Usuelles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/2_fonctions/4_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Dénombrement
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. Dénombrement
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/3_denombrement/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/3_denombrement/2_exos_cardinaux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Cardinaux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/3_denombrement/3_exos_combinatoire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Combinatoire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/3_denombrement/4_exos_binome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Binôme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/3_denombrement/5_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Probabilités
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. Probabilités
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/4_probabilites/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/4_probabilites/2_exos_modelisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Modélisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/4_probabilites/3_exos_equiprobabilite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Équiprobabilité
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/4_probabilites/4_exos_conditionnelles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Conditionnelles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/4_probabilites/5_exos_va_lois/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Variables aléatoires
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/4_probabilites/6_exos_examen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Style examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Examens blancs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5. Examens blancs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/5_examens_blancs/sujet_2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sujet 2024
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maths/5_examens_blancs/sujet_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sujet 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../algo/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithmique
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algorithmique
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Récursion
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Récursion
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algo/1_recursion/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Arbres Binaires
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Arbres Binaires
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algo/2_arbres_binaires/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Bascules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Bascules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_bascules/1_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_bascules/2_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours complet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Compteurs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Compteurs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_compteurs/1_cours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Spécial Examen
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exos — Spécial Examen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-1-compteur-synchrone-modulo-5-bascules-jk-niveau-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 1 — Compteur synchrone modulo 5 (bascules JK) 🔴 Niveau examen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-2-le-meme-compteur-mais-en-bascules-d-niveau-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 2 — Le MÊME compteur, mais en bascules D 🔴 Niveau examen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-3-cabler-un-compteur-asynchrone-modulo-12-moyen-dur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 3 — Câbler un compteur asynchrone modulo 12 🟡 Moyen-dur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-4-reconnaitre-un-montage-moyen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 4 — Reconnaître un montage 🟡 Moyen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-5-chronogramme-dun-montage-a-bascules-d-moyen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 5 — Chronogramme d'un montage à bascules D 🟡 Moyen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-6-chronogrammes-les-4-modes-de-synchronisation-plus-accessible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 6 — Chronogrammes : les 4 modes de synchronisation 🟢 Plus accessible
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-7-les-reflexes-de-base-echauffement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 7 — Les réflexes de base 🟢 Échauffement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tu-as-fini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tu as fini ?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-1-compteur-synchrone-modulo-5-bascules-jk-niveau-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 1 — Compteur synchrone modulo 5 (bascules JK) 🔴 Niveau examen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-2-le-meme-compteur-mais-en-bascules-d-niveau-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 2 — Le MÊME compteur, mais en bascules D 🔴 Niveau examen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-3-cabler-un-compteur-asynchrone-modulo-12-moyen-dur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 3 — Câbler un compteur asynchrone modulo 12 🟡 Moyen-dur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-4-reconnaitre-un-montage-moyen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 4 — Reconnaître un montage 🟡 Moyen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-5-chronogramme-dun-montage-a-bascules-d-moyen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 5 — Chronogramme d'un montage à bascules D 🟡 Moyen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-6-chronogrammes-les-4-modes-de-synchronisation-plus-accessible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 6 — Chronogrammes : les 4 modes de synchronisation 🟢 Plus accessible
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-7-les-reflexes-de-base-echauffement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice 7 — Les réflexes de base 🟢 Échauffement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tu-as-fini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tu as fini ?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="exercices-special-examen">Exercices — Spécial Examen<a class="headerlink" href="#exercices-special-examen" title="Lien direct vers cette section">&para;</a></h1>
+<p>Cette page couvre <strong>les 4 types d'exercices</strong> de l'examen B3, rangés <strong>du plus dur au plus facile</strong>. Si tu maîtrises les 7 exos ci-dessous, tu maîtrises l'examen.</p>
+<p>À chaque exo : un <strong>badge de difficulté</strong>, le <strong>cours lié</strong> (clique pour réviser la notion), l'énoncé, puis une <strong>correction détaillée</strong> qui t'explique la méthode pas-à-pas.</p>
+<table>
+<thead>
+<tr>
+<th>Exo</th>
+<th>Type d'exam</th>
+<th>Compétence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>Ex 2 (~6 pts)</td>
+<td>Compteur synchrone <strong>JK</strong></td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Ex 3 (~4 pts)</td>
+<td>Compteur synchrone <strong>D</strong></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Ex 4 (~3 pts)</td>
+<td><strong>Câbler</strong> un compteur asynchrone modulo m</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>Ex 4 (~3 pts)</td>
+<td><strong>Reconnaître</strong> un montage</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Ex 1 (~7 pts)</td>
+<td><strong>Chronogramme</strong> d'un montage</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>Ex 1 (~7 pts)</td>
+<td><strong>Chronogramme</strong> de bascules (modes de synchro)</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>base</td>
+<td>Tables de vérité &amp; réflexes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Rappel express — les 2 tables de transition (à connaître par cœur)</p>
+<p>Pour concevoir un <strong>compteur synchrone</strong>, on part de la séquence voulue et on se demande, pour chaque bit, <strong>comment piloter l'entrée de la bascule pour obtenir la bonne transition</strong>. C'est le rôle des <strong>tables de transition</strong> :</p>
+<p><strong>Bascule JK</strong> — <code>Φ</code> = « peu importe » (0 ou 1) :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Q(t) → Q(t+1)</th>
+<th style="text-align: center;">J</th>
+<th style="text-align: center;">K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0 → 0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+</tr>
+<tr>
+<td style="text-align: center;">0 → 1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Φ</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 → 0</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 → 1</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bascule D</strong> — trivial, car <code>D = Q(t+1)</code> :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Q(t) → Q(t+1)</th>
+<th style="text-align: center;">D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0 → 0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">0 → 1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 → 0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1 → 1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<p>Les <code>Φ</code> sont tes <strong>meilleurs amis</strong> : ils permettent de simplifier énormément les tableaux de Karnaugh.</p>
+</div>
+<hr />
+<h2 id="exercice-1-compteur-synchrone-modulo-5-bascules-jk-niveau-examen">Exercice 1 — Compteur synchrone modulo 5 (bascules JK) <span class="diff diff-dur">🔴 Niveau examen</span><a class="headerlink" href="#exercice-1-compteur-synchrone-modulo-5-bascules-jk-niveau-examen" title="Lien direct vers cette section">&para;</a></h2>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> <strong>Cours lié :</strong> <a href="../1_bascules/1_intro/#la-bascule-jk-la-rs-sans-etat-interdit">La bascule JK</a> · rappel des tables de transition ci-dessus.</p>
+</blockquote>
+<p>On veut un <strong>compteur synchrone modulo 5</strong> (il compte <code>0 → 1 → 2 → 3 → 4 → 0 …</code>) avec des <strong>bascules JK synchronisées sur front montant</strong>. Les sorties sont <span class="arithmatex">\(Q_2 Q_1 Q_0\)</span> (poids fort → poids faible).</p>
+<p><strong>1.</strong> Écris la séquence en binaire, puis remplis le tableau des entrées <span class="arithmatex">\(J_2 K_2 J_1 K_1 J_0 K_0\)</span>.</p>
+<p><strong>2.</strong> Donne les expressions les plus simplifiées (tableaux de Karnaugh, <strong>les états 5, 6, 7 sont des <code>Φ</code></strong>).</p>
+<details class="success">
+<summary>Voir la correction détaillée</summary>
+<p><strong>Étape 1 — la séquence et les transitions</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(Q_2\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(Q_1\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(Q_0\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(J_2\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(K_2\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(J_1\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(K_1\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(J_0\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(K_0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Φ</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Φ</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">Φ</td>
+</tr>
+</tbody>
+</table>
+<p><em>(Lecture d'une ligne : on regarde l'état actuel et l'état suivant dans la séquence, puis on applique la table de transition JK pour chaque bit.)</em></p>
+<p><strong>Étape 2 — simplification (Karnaugh, avec Φ aux états 5, 6, 7)</strong></p>
+<ul>
+<li><span class="arithmatex">\(J_0 = \overline{Q_2}\)</span>  ·  <span class="arithmatex">\(K_0 = 1\)</span></li>
+<li><span class="arithmatex">\(J_1 = Q_0\)</span>  ·  <span class="arithmatex">\(K_1 = Q_0\)</span></li>
+<li><span class="arithmatex">\(J_2 = Q_1 \cdot Q_0\)</span>  ·  <span class="arithmatex">\(K_2 = 1\)</span></li>
+</ul>
+<p><strong>Vérification rapide (super important — fais-le toujours)</strong> : on simule depuis 000.</p>
+<table>
+<thead>
+<tr>
+<th>État</th>
+<th><span class="arithmatex">\(J_0K_0\)</span></th>
+<th><span class="arithmatex">\(J_1K_1\)</span></th>
+<th><span class="arithmatex">\(J_2K_2\)</span></th>
+<th>→ état suivant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000</td>
+<td>1,1 bascule</td>
+<td>0,0 mémoire</td>
+<td>0,1 reset</td>
+<td><strong>001</strong> ✓</td>
+</tr>
+<tr>
+<td>001</td>
+<td>1,1 bascule</td>
+<td>1,1 bascule</td>
+<td>0,1 reset</td>
+<td><strong>010</strong> ✓</td>
+</tr>
+<tr>
+<td>010</td>
+<td>1,1 bascule</td>
+<td>0,0 mémoire</td>
+<td>0,1 reset</td>
+<td><strong>011</strong> ✓</td>
+</tr>
+<tr>
+<td>011</td>
+<td>1,1 bascule</td>
+<td>1,1 bascule</td>
+<td>1,1 bascule</td>
+<td><strong>100</strong> ✓</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0,1 reset</td>
+<td>0,0 mémoire</td>
+<td>0,1 reset</td>
+<td><strong>000</strong> ✓</td>
+</tr>
+</tbody>
+</table>
+<p>Le cycle boucle bien sur 5 états. 🎯</p>
+<div class="admonition tip">
+<p class="admonition-title">La méthode en 4 temps (vraie pour TOUS les compteurs synchrones)</p>
+<ol>
+<li><strong>Écris la séquence</strong> en binaire.</li>
+<li>Pour chaque bit, déduis <span class="arithmatex">\(J/K\)</span> (ou <span class="arithmatex">\(D\)</span>) avec la <strong>table de transition</strong>.</li>
+<li><strong>Karnaugh</strong> chaque entrée (profite des <code>Φ</code> des états inutilisés !).</li>
+<li><strong>Simule</strong> ta solution pour vérifier que le cycle boucle.</li>
+</ol>
+</div>
+</details>
+<hr />
+<h2 id="exercice-2-le-meme-compteur-mais-en-bascules-d-niveau-examen">Exercice 2 — Le MÊME compteur, mais en bascules D <span class="diff diff-dur">🔴 Niveau examen</span><a class="headerlink" href="#exercice-2-le-meme-compteur-mais-en-bascules-d-niveau-examen" title="Lien direct vers cette section">&para;</a></h2>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> <strong>Cours lié :</strong> <a href="../1_bascules/1_intro/#la-bascule-d-la-photocopieuse">La bascule D</a> · rappel des tables de transition ci-dessus.</p>
+</blockquote>
+<p>On refait <strong>exactement le même compteur modulo 5</strong> (<code>0 → 1 → 2 → 3 → 4 → 0</code>), mais cette fois avec des <strong>bascules D</strong>. Compare avec l'exo 1 : tu verras que la partie « table de transition » est <strong>triviale</strong> pour les D (puisque <span class="arithmatex">\(D = Q^{+}\)</span>), mais la simplification Karnaugh reste à faire.</p>
+<p><strong>1.</strong> Remplis le tableau <span class="arithmatex">\(D_2 D_1 D_0\)</span>. <strong>2.</strong> Donne les expressions simplifiées <strong>sans utiliser le OU EXCLUSIF</strong> (interdit à l'examen).</p>
+<details class="success">
+<summary>Voir la correction détaillée</summary>
+<p><strong>Étape 1 — le tableau (rappel : $D = $ la valeur de Q à l'état suivant)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(Q_2\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(Q_1\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(Q_0\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(D_2\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(D_1\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(D_0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><em>(Chaque colonne <span class="arithmatex">\(D\)</span> est juste la colonne <span class="arithmatex">\(Q\)</span> correspondante de la ligne <strong>suivante</strong>.)</em></p>
+<p><strong>Étape 2 — simplification (Karnaugh, états 5, 6, 7 = <code>Φ</code>)</strong></p>
+<ul>
+<li><span class="arithmatex">\(D_0 = \overline{Q_2} \cdot \overline{Q_0}\)</span></li>
+<li><span class="arithmatex">\(D_1 = \overline{Q_1}\cdot Q_0 + Q_1 \cdot \overline{Q_0}\)</span>  <em>(c'est <span class="arithmatex">\(Q_1 \oplus Q_0\)</span>, mais on l'écrit en somme de produits car le XOR est interdit)</em></li>
+<li><span class="arithmatex">\(D_2 = Q_1 \cdot Q_0\)</span></li>
+</ul>
+<p><strong>Vérification par simulation</strong> (rappel : avec une bascule D, <span class="arithmatex">\(Q^{+} = D\)</span>) :</p>
+<table>
+<thead>
+<tr>
+<th>État</th>
+<th><span class="arithmatex">\(D_2 D_1 D_0\)</span></th>
+<th>→ état suivant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000</td>
+<td>0 0 1</td>
+<td><strong>001</strong> ✓</td>
+</tr>
+<tr>
+<td>001</td>
+<td>0 1 0</td>
+<td><strong>010</strong> ✓</td>
+</tr>
+<tr>
+<td>010</td>
+<td>0 1 1</td>
+<td><strong>011</strong> ✓</td>
+</tr>
+<tr>
+<td>011</td>
+<td>1 0 0</td>
+<td><strong>100</strong> ✓</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0 0 0</td>
+<td><strong>000</strong> ✓</td>
+</tr>
+</tbody>
+</table>
+<p>Le cycle modulo 5 est correct. 🎯</p>
+<div class="admonition info">
+<p class="admonition-title">À retenir : D vs JK</p>
+<ul>
+<li><strong>D</strong> : table de transition triviale (<span class="arithmatex">\(D = Q^{+}\)</span>), donc plus rapide à remplir, mais souvent <strong>un peu plus de portes</strong> après Karnaugh.</li>
+<li><strong>JK</strong> : table de transition à connaître, mais les nombreux <code>Φ</code> donnent souvent des <strong>expressions plus simples</strong>.</li>
+</ul>
+</div>
+</details>
+<hr />
+<h2 id="exercice-3-cabler-un-compteur-asynchrone-modulo-12-moyen-dur">Exercice 3 — Câbler un compteur asynchrone modulo 12 <span class="diff diff-moyen">🟡 Moyen-dur</span><a class="headerlink" href="#exercice-3-cabler-un-compteur-asynchrone-modulo-12-moyen-dur" title="Lien direct vers cette section">&para;</a></h2>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> <strong>Cours lié :</strong> <a href="../1_bascules/1_intro/#la-bascule-t-la-machine-a-diviser-par-deux">La bascule T (diviseur ÷2)</a> · <a href="../1_bascules/1_intro/#4-lhorloge-le-chef-dorchestre">L'horloge &amp; les fronts</a> · <a href="../1_bascules/1_intro/#3-le-symbole-quon-dessine-et-la-sortie-q">Le symbole &amp; la bulle</a>.</p>
+</blockquote>
+<p>On dispose de <strong>4 bascules JK synchronisées sur front montant</strong>, avec entrées asynchrones <code>Preset</code> et <code>Clear</code> (actives à l'état bas). <strong>Câble un compteur asynchrone modulo 12</strong> (il compte <code>0 → 11</code> puis repart à <code>0</code>).</p>
+<details class="success">
+<summary>Voir la correction détaillée</summary>
+<p><strong>Méthode en 2 temps : (A) faire un compteur complet, (B) tronquer au bon modulo.</strong></p>
+<p><strong>A. Le compteur asynchrone (modulo 16) :</strong></p>
+<ol>
+<li>Câble chaque bascule en <strong>mode T</strong> (basculement) : <span class="arithmatex">\(J = K = 1\)</span> en permanence.</li>
+<li><strong>Mise en cascade</strong> : la sortie d'une bascule pilote l'<strong>horloge</strong> de la suivante.</li>
+<li>Comme les bascules sont sur <strong>front montant</strong> et qu'un compteur a besoin de basculer sur le <strong>front descendant</strong> de la sortie précédente : on relie <span class="arithmatex">\(\overline{Q}\)</span> (la sortie barrée) à l'horloge suivante.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Repère « bulles » (cours, section 3)</p>
+<ul>
+<li><strong>Compteur</strong> = il faut <strong>1 seule bulle</strong> sur le fil sortie → horloge suivante.</li>
+<li><strong>Décompteur</strong> = <strong>0 ou 2 bulles</strong> sur ce fil.</li>
+</ul>
+<p>Ici, bascules front montant (triangle sans bulle) + on prend <span class="arithmatex">\(\overline{Q}\)</span> (1 bulle) = <strong>1 bulle au total</strong> → bien un <strong>compteur</strong>. ✓</p>
+</div>
+<p><strong>B. Tronquer à modulo 12 :</strong></p>
+<p>Un compteur modulo 12 compte de <strong>0 à 11</strong>. Il faut <strong>détecter la valeur 12</strong> et <strong>remettre à 0</strong> (Clear).</p>
+<ul>
+<li><span class="arithmatex">\(12 = 1100_2\)</span>, soit <span class="arithmatex">\(Q_3 = 1\)</span> et <span class="arithmatex">\(Q_2 = 1\)</span>.</li>
+<li>Entre 0 et 11, est-ce que <span class="arithmatex">\(Q_2\)</span> et <span class="arithmatex">\(Q_3\)</span> valent 1 <strong>en même temps</strong> ? Non (le max, <span class="arithmatex">\(11 = 1011\)</span>, a <span class="arithmatex">\(Q_3=1\)</span> mais <span class="arithmatex">\(Q_2=0\)</span>). Donc « <span class="arithmatex">\(Q_2 \cdot Q_3\)</span> » n'arrive <strong>que</strong> sur 12.</li>
+<li>On branche <span class="arithmatex">\(Q_2\)</span> et <span class="arithmatex">\(Q_3\)</span> sur une porte <strong>NON-ET</strong>. Sa sortie <span class="arithmatex">\(M\)</span> passe à <strong>0</strong> pile quand on atteint 12.</li>
+<li>On relie <span class="arithmatex">\(M\)</span> aux entrées <strong>Clear</strong> de <strong>toutes</strong> les bascules.</li>
+</ul>
+<p><strong>Ce qui se passe :</strong> dès que le compteur atteint 12, <span class="arithmatex">\(M = 0\)</span> → Clear actif → toutes les sorties forcées à <strong>0</strong>. La valeur 12 n'apparaît qu'une fraction de nanoseconde, immédiatement remplacée par 0. <span class="arithmatex">\(M\)</span> repasse à 1 et le comptage reprend. Résultat : la séquence est <strong>0, 1, …, 11, 0, 1, …</strong> → <strong>modulo 12</strong>. 🎯</p>
+<div class="admonition note">
+<p class="admonition-title">Variante décompteur</p>
+<p>Pour un <strong>décompteur</strong> modulo m : on détecte la valeur <strong>15</strong> (<code>1111</code>) et on la remplace par <strong>m − 1</strong>, en utilisant à la fois <code>Clear</code> (pour les bits à 0) et <code>Preset</code> (pour les bits à 1). Le reste de la logique est identique.</p>
+</div>
+</details>
+<hr />
+<h2 id="exercice-4-reconnaitre-un-montage-moyen">Exercice 4 — Reconnaître un montage <span class="diff diff-moyen">🟡 Moyen</span><a class="headerlink" href="#exercice-4-reconnaitre-un-montage-moyen" title="Lien direct vers cette section">&para;</a></h2>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> <strong>Cours lié :</strong> <a href="../1_bascules/1_intro/#7-comment-les-differencier-en-un-coup-dil">Comment différencier les bascules</a> · <a href="../1_bascules/1_intro/#la-bascule-t-la-machine-a-diviser-par-deux">La bascule T</a>.</p>
+</blockquote>
+<p>On te donne le montage suivant : <strong>4 bascules JK</strong>, toutes avec <span class="arithmatex">\(J = K = 1\)</span>, <strong>synchronisées sur front descendant</strong> (triangle + bulle), et la sortie <strong><span class="arithmatex">\(Q\)</span></strong> de chaque bascule est reliée à l'<strong>horloge</strong> de la bascule suivante.</p>
+<p>Donne les <strong>3 caractéristiques</strong> : (a) compteur ou décompteur ? (b) synchrone ou asynchrone ? &copy; modulo ?</p>
+<details class="success">
+<summary>Voir la correction détaillée</summary>
+<p>On répond aux 3 questions méthodiquement :</p>
+<p><strong>(b) Synchrone ou asynchrone ?</strong> Les bascules ne partagent <strong>pas</strong> la même horloge : chacune est cadencée par la sortie de la précédente. → <strong>Asynchrone</strong>.</p>
+<p><strong>(a) Compteur ou décompteur ?</strong> On compte les <strong>bulles</strong> sur le fil sortie → horloge suivante :</p>
+<ul>
+<li>bascule sur <strong>front descendant</strong> = 1 bulle (sur l'entrée d'horloge),</li>
+<li>on prend la sortie <strong><span class="arithmatex">\(Q\)</span></strong> (sans bulle) = 0 bulle,</li>
+<li><strong>total = 1 bulle</strong>.</li>
+</ul>
+<p>1 bulle → <strong>compteur</strong> (rappel cours : compteur = 1 bulle, décompteur = 0 ou 2). </p>
+<p><em>Autre façon de le voir :</em> une bascule front descendant déclenche quand son horloge passe de 1→0, c'est-à-dire sur le <strong>front descendant de <span class="arithmatex">\(Q\)</span></strong> de la précédente → c'est la définition d'un compteur.</p>
+<p><strong>&copy; Modulo ?</strong> Aucune porte de détection (pas de NON-ET sur les sorties) → cycle <strong>complet</strong> sur 4 bits → <strong>modulo 16</strong>.</p>
+<p><strong>Réponse : compteur asynchrone modulo 16.</strong> 🎯</p>
+<div class="admonition tip">
+<p class="admonition-title">Réflexe examen</p>
+<p>Pour CE type de question, déroule toujours : <strong>(1)</strong> horloge commune ? (synchrone/asynchrone) → <strong>(2)</strong> compte les bulles (compteur/décompteur) → <strong>(3)</strong> une porte de détection ? (modulo complet ou tronqué).</p>
+</div>
+</details>
+<hr />
+<h2 id="exercice-5-chronogramme-dun-montage-a-bascules-d-moyen">Exercice 5 — Chronogramme d'un montage à bascules D <span class="diff diff-moyen">🟡 Moyen</span><a class="headerlink" href="#exercice-5-chronogramme-dun-montage-a-bascules-d-moyen" title="Lien direct vers cette section">&para;</a></h2>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> <strong>Cours lié :</strong> <a href="../1_bascules/1_intro/#la-bascule-d-la-photocopieuse">La bascule D</a> · <a href="../1_bascules/1_intro/#4-lhorloge-le-chef-dorchestre">L'horloge &amp; les fronts</a>.</p>
+</blockquote>
+<p>Soit <strong>2 bascules D synchronisées sur front montant</strong>, montées en <strong>cascade</strong> : l'entrée <span class="arithmatex">\(D_0\)</span> reçoit un signal <span class="arithmatex">\(E\)</span>, la sortie <span class="arithmatex">\(Q_0\)</span> alimente <span class="arithmatex">\(D_1\)</span> (<span class="arithmatex">\(D_1 = Q_0\)</span>), et on observe <span class="arithmatex">\(Q_0\)</span> et <span class="arithmatex">\(Q_1\)</span>.</p>
+<p>L'entrée <span class="arithmatex">\(E\)</span> vaut, période par période : <code>1, 0, 1, 1, 0</code>. Les deux bascules partent à 0. Donne <span class="arithmatex">\(Q_0\)</span> et <span class="arithmatex">\(Q_1\)</span> à chaque front montant.</p>
+<details class="success">
+<summary>Voir la correction détaillée</summary>
+<p><strong>Principe :</strong> à chaque front montant, <span class="arithmatex">\(Q_0\)</span> copie <span class="arithmatex">\(E\)</span> (qui vaut <span class="arithmatex">\(D_0\)</span>), et <span class="arithmatex">\(Q_1\)</span> copie l'<strong>ancienne</strong> valeur de <span class="arithmatex">\(Q_0\)</span> (car <span class="arithmatex">\(D_1 = Q_0\)</span>). C'est un <strong>registre à décalage</strong> : l'information avance d'un cran à chaque top.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Front n°</th>
+<th style="text-align: center;"><span class="arithmatex">\(E\)</span> (= <span class="arithmatex">\(D_0\)</span>)</th>
+<th style="text-align: center;"><span class="arithmatex">\(Q_0\)</span> après</th>
+<th style="text-align: center;"><span class="arithmatex">\(Q_1\)</span> après (= ancien <span class="arithmatex">\(Q_0\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">départ</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<p>On voit le signal <span class="arithmatex">\(E\)</span> <strong>se décaler</strong> : ce qui entre dans <span class="arithmatex">\(Q_0\)</span> se retrouve dans <span class="arithmatex">\(Q_1\)</span> au top suivant. 🎯</p>
+<div class="admonition tip">
+<p class="admonition-title">Le piège classique des montages en cascade</p>
+<p><span class="arithmatex">\(Q_1\)</span> copie l'<strong>ancienne</strong> valeur de <span class="arithmatex">\(Q_0\)</span> (celle <strong>juste avant</strong> le front), pas la nouvelle. Tout change « en même temps » sur le front : chaque bascule lit l'entrée <strong>telle qu'elle était avant</strong> le top. Calcule toujours <strong>toutes</strong> les nouvelles sorties à partir des <strong>anciennes</strong> valeurs.</p>
+</div>
+</details>
+<hr />
+<h2 id="exercice-6-chronogrammes-les-4-modes-de-synchronisation-plus-accessible">Exercice 6 — Chronogrammes : les 4 modes de synchronisation <span class="diff diff-facile">🟢 Plus accessible</span><a class="headerlink" href="#exercice-6-chronogrammes-les-4-modes-de-synchronisation-plus-accessible" title="Lien direct vers cette section">&para;</a></h2>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> <strong>Cours lié :</strong> <a href="../1_bascules/1_intro/#5-les-4-facons-de-synchroniser-une-bascule">Les 4 façons de synchroniser</a> · <a href="../1_bascules/1_intro/#2-limage-qui-marche-pour-tout-la-lampe-a-memoire">La lampe à mémoire (RS)</a>.</p>
+</blockquote>
+<p>C'est <strong>le</strong> réflexe de l'Exercice 1 de l'examen. On donne les mêmes entrées à une <strong>bascule RS</strong> et on demande <span class="arithmatex">\(Q\)</span> selon le mode de synchro.</p>
+<p>Le signal d'horloge <span class="arithmatex">\(C\)</span> fait 4 impulsions. Les entrées valent, période par période :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Période</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(S\)</span></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(R\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(Q\)</span> part à 0. Donne <span class="arithmatex">\(Q\)</span> pour : <strong>(a)</strong> synchro sur <strong>état haut</strong>, <strong>(b)</strong> sur <strong>front montant</strong>, <strong>&copy;</strong> sur <strong>front descendant</strong>.</p>
+<details class="success">
+<summary>Voir la correction détaillée</summary>
+<p>On applique la table RS — <code>S=1</code>→met à 1, <code>R=1</code>→met à 0, <code>S=R=0</code>→<strong>mémoire</strong> — mais <strong>seulement aux instants autorisés</strong> par le mode.</p>
+<p><strong>(a) Sur état haut</strong> — la bascule écoute <strong>pendant toute la durée où <span class="arithmatex">\(C = 1\)</span>.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Période</th>
+<th style="text-align: center;"><span class="arithmatex">\(S,R\)</span></th>
+<th>Action pendant <span class="arithmatex">\(C=1\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(Q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1,0</td>
+<td>set</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0,0</td>
+<td>mémoire</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0,1</td>
+<td>reset</td>
+<td style="text-align: center;"><strong>0</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1,0</td>
+<td>set</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(b) Sur front montant</strong> — la bascule lit les entrées <strong>uniquement à l'instant 0→1 de <span class="arithmatex">\(C\)</span></strong> (début de chaque période). Ici les entrées sont stables pendant la période, donc on obtient le <strong>même résultat</strong> que (a) : $Q = $ <strong>1, 1, 0, 1</strong>.</p>
+<p><strong>&copy; Sur front descendant</strong> — la bascule lit <strong>à l'instant 1→0 de <span class="arithmatex">\(C\)</span></strong> (fin de période). Le résultat est décalé d'un demi-temps mais, les entrées étant stables, on lit les mêmes valeurs : <span class="arithmatex">\(Q\)</span> devient 1 (fin P1), reste 1 (fin P2), passe 0 (fin P3), passe 1 (fin P4).</p>
+<div class="admonition warning">
+<p class="admonition-title">Ce qui FAIT la différence à l'examen</p>
+<p>Le mode compte vraiment quand les <strong>entrées changent au milieu d'une période</strong>. Exemple : si <span class="arithmatex">\(S\)</span> fait une impulsion brève <strong>pendant</strong> que <span class="arithmatex">\(C=1\)</span> :</p>
+<ul>
+<li><strong>sur état</strong> → la bascule la « voit » et réagit tout de suite ;</li>
+<li><strong>sur front</strong> → si l'impulsion ne tombe pas <strong>pile sur le front</strong>, elle est <strong>ignorée</strong>.</li>
+</ul>
+<p>D'où l'intérêt des <strong>bascules sur front</strong> : elles ne regardent qu'un instant précis, donc elles sont <strong>insensibles au bruit</strong> entre deux tops. Entraîne-toi sur les chronogrammes du <strong>TD 1</strong>, c'est exactement ça.</p>
+</div>
+</details>
+<hr />
+<h2 id="exercice-7-les-reflexes-de-base-echauffement">Exercice 7 — Les réflexes de base <span class="diff diff-facile">🟢 Échauffement</span><a class="headerlink" href="#exercice-7-les-reflexes-de-base-echauffement" title="Lien direct vers cette section">&para;</a></h2>
+<blockquote>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg></span> <strong>Cours lié :</strong> <a href="../1_bascules/1_intro/#2-limage-qui-marche-pour-tout-la-lampe-a-memoire">La lampe à mémoire</a> · <a href="../1_bascules/1_intro/#3-le-symbole-quon-dessine-et-la-sortie-q">Le symbole &amp; la bulle</a> · <a href="../1_bascules/1_intro/#6-pourquoi-plusieurs-bascules-rs-d-jk-t">Pourquoi plusieurs bascules</a>.</p>
+</blockquote>
+<p>Réponds de tête (ce sont les fondations — si un point coince, clique sur le cours lié) :</p>
+<ol>
+<li>Remplis la table de vérité d'une bascule <strong>JK</strong> synchrone.</li>
+<li>Que fait une bascule <strong>RS</strong> quand <span class="arithmatex">\(R = S = 1\)</span> ? Et une <strong>JK</strong> quand <span class="arithmatex">\(J = K = 1\)</span> ?</li>
+<li>Que signifie une <strong>bulle ○</strong> sur un fil ?</li>
+<li>Quelle bascule « <strong>photocopie</strong> » son entrée ? Quelle est sa relation entrée/sortie ?</li>
+<li>Comment obtient-on un <strong>diviseur de fréquence par deux</strong> ?</li>
+</ol>
+<details class="success">
+<summary>Voir les réponses</summary>
+<p><strong>1.</strong> Table JK :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(J\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(K\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(Q^{+}\)</span></th>
+<th>Nom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="arithmatex">\(q\)</span> (inchangé)</td>
+<td>mémoire</td>
+</tr>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td>reset</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td>set</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="arithmatex">\(\overline{q}\)</span></td>
+<td><strong>basculement</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2.</strong> RS avec <span class="arithmatex">\(R=S=1\)</span> → <strong>état interdit</strong> (allumer et éteindre en même temps : absurde). JK avec <span class="arithmatex">\(J=K=1\)</span> → <strong>basculement</strong> : la sortie <strong>s'inverse</strong> à chaque top. <em>(C'est tout l'intérêt de la JK : elle récupère l'état interdit de la RS pour en faire quelque chose d'utile.)</em></p>
+<p><strong>3.</strong> Une <strong>bulle = une inversion</strong> (une porte NON cachée). Sur une <strong>sortie</strong> → c'est <span class="arithmatex">\(\overline{Q}\)</span>. Sur une <strong>entrée d'horloge</strong> → la bascule réagit sur le front <strong>descendant</strong>.</p>
+<p><strong>4.</strong> La bascule <strong>D</strong> (« Décalque »). Relation : <span class="arithmatex">\(Q^{+} = D\)</span> — à chaque top, la sortie copie l'entrée.</p>
+<p><strong>5.</strong> En forçant une bascule <strong>JK</strong> (ou <strong>T</strong>) en <strong>basculement permanent</strong> : <span class="arithmatex">\(J = K = 1\)</span>. La sortie change d'état à chaque top → elle va <strong>deux fois moins vite</strong> que l'horloge. C'est la <strong>brique de base des compteurs</strong>.</p>
+</details>
+<hr />
+<h2 id="tu-as-fini"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.4 6H20v10h-7l-.4-2H7v7H5V4h9zm-.4 8h2v-2h2v-2h-2V8h-2v2l-1-2V6h-2v2H9V6H7v2h2v2H7v2h2v-2h2v2h2v-2l1 2zm-3-4V8h2v2zm3 0h2v2h-2z"/></svg></span> Tu as fini ?<a class="headerlink" href="#tu-as-fini" title="Lien direct vers cette section">&para;</a></h2>
+<p>Si tu as fait les 7 exos <strong>sans regarder la correction</strong>, tu as couvert :</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Compteur synchrone <strong>JK</strong> (Ex 1) → exam Ex 2</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Compteur synchrone <strong>D</strong> (Ex 2) → exam Ex 3</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Câblage</strong> compteur asynchrone modulo m (Ex 3) → exam Ex 4</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Reconnaissance</strong> de montage (Ex 4) → exam Ex 4</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Chronogrammes</strong> de montages et de bascules (Ex 5 &amp; 6) → exam Ex 1</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Les <strong>réflexes de base</strong> (Ex 7) → indispensable partout</li>
+</ul>
+<p>Pour finir, refais les <strong>chronogrammes du TD 1</strong> et l'<strong>exercice 3 du TD 2</strong> sur papier, en conditions réelles. Tu es prêt. 💪</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../2_compteurs/1_cours/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Cours">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Cours
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="../../javascripts/pyodide-runner.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
